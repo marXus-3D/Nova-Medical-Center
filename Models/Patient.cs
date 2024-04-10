@@ -37,7 +37,6 @@ namespace Nova_Medical_Center.Models
                 patients = await Task.Run(() => JsonConvert.DeserializeObject<List<Patient>>(jsonString));
 
                 #endregion
-                Events.OnPatientLoad.Invoke(true);
                 return patients;
             }
             catch (Exception e)

@@ -14,6 +14,8 @@ namespace Nova_Medical_Center.Data
         public static async void LoadPatient() 
         {
             Data.patients = await Patient.DeserializePatients();
+            if (Data.patients != null)
+                Events.OnPatientLoad.Invoke(true);
         }
         public static async void LoadRooms()
         {
