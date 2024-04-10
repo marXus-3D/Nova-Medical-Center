@@ -168,11 +168,6 @@ namespace Nova_Medical_Center
             //lblTitleChildForm.Text = childForm.Text;
         }
 
-        private void iconButton1_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender, RGBColors.color3);
-        }
-
         private void empBtn_Click(object sender, EventArgs e)
         {
             employeeTransition.Start();
@@ -182,6 +177,18 @@ namespace Nova_Medical_Center
         {
             ActivateButton(sender, RGBColors.color1);
             OpenChildForm(new DoctorForm());
+        }
+
+        private void patientsBtn_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color2);
+            OpenChildForm(new PatientForm());
+        }
+
+        private void roomBtn_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color3);
+            OpenChildForm(new RoomForm());
         }
 
         private void employeeTransition_Tick(object sender, EventArgs e)

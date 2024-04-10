@@ -66,6 +66,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data\Data.cs" />
+    <Compile Include="Data\DataLoader.cs" />
     <Compile Include="HomePage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,10 +80,28 @@
     <Compile Include="LoginPage.Designer.cs">
       <DependentUpon>LoginPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\Bed.cs" />
     <Compile Include="Models\Employee.cs" />
+    <Compile Include="Models\MedicalCondition.cs" />
+    <Compile Include="Models\Patient.cs" />
+    <Compile Include="Models\Room.cs" />
+    <Compile Include="Models\Urgency.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Scripts\CustomDialog.cs" />
+    <Compile Include="Scripts\Events.cs" />
+    <Compile Include="Views\Controls\RoomControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Controls\RoomControl.Designer.cs">
+      <DependentUpon>RoomControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RoomForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\RoomForm.Designer.cs">
+      <DependentUpon>RoomForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,11 +114,35 @@
     <Compile Include="Views\DocAddForm.Designer.cs">
       <DependentUpon>DocAddForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\PatientAdmitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\PatientAdmitForm.Designer.cs">
+      <DependentUpon>PatientAdmitForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\NewPatientForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\NewPatientForm.Designer.cs">
+      <DependentUpon>NewPatientForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PatientHomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\PatientHomeForm.Designer.cs">
+      <DependentUpon>PatientHomeForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\DocHomeForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\DocHomeForm.Designer.cs">
       <DependentUpon>DocHomeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PatientForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\PatientForm.Designer.cs">
+      <DependentUpon>PatientForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\DocUpdateForm.cs">
       <SubType>Form</SubType>
@@ -140,14 +184,32 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Views\Controls\RoomControl.resx">
+      <DependentUpon>RoomControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\RoomForm.resx">
+      <DependentUpon>RoomForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\DocAddForm.resx">
       <DependentUpon>DocAddForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\PatientAdmitForm.resx">
+      <DependentUpon>PatientAdmitForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\NewPatientForm.resx">
+      <DependentUpon>NewPatientForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\PatientHomeForm.resx">
+      <DependentUpon>PatientHomeForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\DocHomeForm.resx">
       <DependentUpon>DocHomeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\PatientForm.resx">
+      <DependentUpon>PatientForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\DocUpdateForm.resx">
       <DependentUpon>DocUpdateForm.cs</DependentUpon>
@@ -176,7 +238,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Data\" />
+    <None Include="Resources\istockphoto-1415401589-612x612.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\hamburg.png" />
@@ -192,6 +254,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-user-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cube%401x-1.0s-200px-200px.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

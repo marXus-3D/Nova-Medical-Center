@@ -41,8 +41,8 @@
             this.settingBtn = new FontAwesome.Sharp.IconButton();
             this.accountBtn = new FontAwesome.Sharp.IconButton();
             this.logoutBtn = new FontAwesome.Sharp.IconButton();
-            this.aboutBtn = new FontAwesome.Sharp.IconButton();
-            this.pharmaBtn = new FontAwesome.Sharp.IconButton();
+            this.patientsBtn = new FontAwesome.Sharp.IconButton();
+            this.roomBtn = new FontAwesome.Sharp.IconButton();
             this.employeePanel = new System.Windows.Forms.FlowLayoutPanel();
             this.empBtn = new FontAwesome.Sharp.IconButton();
             this.doctorButton = new FontAwesome.Sharp.IconButton();
@@ -149,8 +149,8 @@
             this.sideBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
             this.sideBar.Controls.Add(this.dashboardBtn);
             this.sideBar.Controls.Add(this.settingPanel);
-            this.sideBar.Controls.Add(this.aboutBtn);
-            this.sideBar.Controls.Add(this.pharmaBtn);
+            this.sideBar.Controls.Add(this.patientsBtn);
+            this.sideBar.Controls.Add(this.roomBtn);
             this.sideBar.Controls.Add(this.employeePanel);
             this.sideBar.Dock = System.Windows.Forms.DockStyle.Left;
             this.sideBar.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
@@ -248,44 +248,45 @@
             this.logoutBtn.Text = "Logout";
             this.logoutBtn.UseVisualStyleBackColor = false;
             // 
-            // aboutBtn
+            // patientsBtn
             // 
-            this.aboutBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            this.aboutBtn.FlatAppearance.BorderSize = 0;
-            this.aboutBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.aboutBtn.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.aboutBtn.ForeColor = System.Drawing.Color.White;
-            this.aboutBtn.IconChar = FontAwesome.Sharp.IconChar.CircleInfo;
-            this.aboutBtn.IconColor = System.Drawing.Color.White;
-            this.aboutBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.aboutBtn.IconSize = 32;
-            this.aboutBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.aboutBtn.Location = new System.Drawing.Point(3, 128);
-            this.aboutBtn.Name = "aboutBtn";
-            this.aboutBtn.Size = new System.Drawing.Size(231, 53);
-            this.aboutBtn.TabIndex = 3;
-            this.aboutBtn.Text = "About";
-            this.aboutBtn.UseVisualStyleBackColor = false;
-            this.aboutBtn.Click += new System.EventHandler(this.iconButton1_Click);
+            this.patientsBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.patientsBtn.FlatAppearance.BorderSize = 0;
+            this.patientsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.patientsBtn.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.patientsBtn.ForeColor = System.Drawing.Color.White;
+            this.patientsBtn.IconChar = FontAwesome.Sharp.IconChar.UserInjured;
+            this.patientsBtn.IconColor = System.Drawing.Color.White;
+            this.patientsBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.patientsBtn.IconSize = 32;
+            this.patientsBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.patientsBtn.Location = new System.Drawing.Point(3, 128);
+            this.patientsBtn.Name = "patientsBtn";
+            this.patientsBtn.Size = new System.Drawing.Size(231, 53);
+            this.patientsBtn.TabIndex = 3;
+            this.patientsBtn.Text = "Patients";
+            this.patientsBtn.UseVisualStyleBackColor = false;
+            this.patientsBtn.Click += new System.EventHandler(this.patientsBtn_Click);
             // 
-            // pharmaBtn
+            // roomBtn
             // 
-            this.pharmaBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            this.pharmaBtn.FlatAppearance.BorderSize = 0;
-            this.pharmaBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.pharmaBtn.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pharmaBtn.ForeColor = System.Drawing.Color.White;
-            this.pharmaBtn.IconChar = FontAwesome.Sharp.IconChar.HouseMedicalCircleXmark;
-            this.pharmaBtn.IconColor = System.Drawing.Color.White;
-            this.pharmaBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.pharmaBtn.IconSize = 32;
-            this.pharmaBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.pharmaBtn.Location = new System.Drawing.Point(3, 187);
-            this.pharmaBtn.Name = "pharmaBtn";
-            this.pharmaBtn.Size = new System.Drawing.Size(231, 53);
-            this.pharmaBtn.TabIndex = 4;
-            this.pharmaBtn.Text = "Pharmacy";
-            this.pharmaBtn.UseVisualStyleBackColor = false;
+            this.roomBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.roomBtn.FlatAppearance.BorderSize = 0;
+            this.roomBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roomBtn.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roomBtn.ForeColor = System.Drawing.Color.White;
+            this.roomBtn.IconChar = FontAwesome.Sharp.IconChar.HospitalWide;
+            this.roomBtn.IconColor = System.Drawing.Color.White;
+            this.roomBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.roomBtn.IconSize = 32;
+            this.roomBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.roomBtn.Location = new System.Drawing.Point(3, 187);
+            this.roomBtn.Name = "roomBtn";
+            this.roomBtn.Size = new System.Drawing.Size(231, 53);
+            this.roomBtn.TabIndex = 4;
+            this.roomBtn.Text = "Rooms";
+            this.roomBtn.UseVisualStyleBackColor = false;
+            this.roomBtn.Click += new System.EventHandler(this.roomBtn_Click);
             // 
             // employeePanel
             // 
@@ -434,8 +435,8 @@
         private FontAwesome.Sharp.IconButton accountBtn;
         private FontAwesome.Sharp.IconButton logoutBtn;
         private System.Windows.Forms.Timer settingTransition;
-        private FontAwesome.Sharp.IconButton aboutBtn;
-        private FontAwesome.Sharp.IconButton pharmaBtn;
+        private FontAwesome.Sharp.IconButton patientsBtn;
+        private FontAwesome.Sharp.IconButton roomBtn;
         private System.Windows.Forms.Timer sideBarTransition;
         private FontAwesome.Sharp.IconButton buttonMinimize;
         private FontAwesome.Sharp.IconButton buttonMaximize;

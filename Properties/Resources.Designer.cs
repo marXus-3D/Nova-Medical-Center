@@ -63,6 +63,16 @@ namespace Nova_Medical_Center.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Cube_1x_1_0s_200px_200px {
+            get {
+                object obj = ResourceManager.GetObject("Cube@1x-1.0s-200px-200px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap hamburg {
             get {
                 object obj = ResourceManager.GetObject("hamburg", resourceCulture);
@@ -106,6 +116,16 @@ namespace Nova_Medical_Center.Properties {
         internal static System.Drawing.Bitmap icons8_user_100 {
             get {
                 object obj = ResourceManager.GetObject("icons8-user-100", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap istockphoto_1415401589_612x612 {
+            get {
+                object obj = ResourceManager.GetObject("istockphoto-1415401589-612x612", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

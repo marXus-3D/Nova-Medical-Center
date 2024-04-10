@@ -17,7 +17,7 @@ namespace Nova_Medical_Center
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginPage());
+            Application.Run(new HomePage());
         }
     }
 }
