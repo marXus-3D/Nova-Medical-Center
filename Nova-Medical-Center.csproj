@@ -90,6 +90,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Scripts\CustomDialog.cs" />
     <Compile Include="Scripts\Events.cs" />
+    <Compile Include="Views\Controls\CustomButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\Controls\CustomDatePicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\Controls\CustomRadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Views\Controls\RoomControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -257,6 +266,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Cube%401x-1.0s-200px-200px.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendarDark.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

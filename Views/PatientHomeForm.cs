@@ -24,7 +24,6 @@ namespace Nova_Medical_Center.Views
 
         private void LoadedPatients(bool val)
         {
-            MessageBox.Show("Loaded");
             if (val == true)
             {
                 loadPanel.Visible = false;
