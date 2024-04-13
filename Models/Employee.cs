@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using Nova_Medical_Center.Scripts;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -52,7 +53,7 @@ namespace Nova_Medical_Center.Models
             catch (Exception e) 
             {
                 MessageBox.Show("" + e);
-                LoginPage.OnEmployeeLoad.Invoke(false);
+                Events.OnEmployeeLoad.Invoke(false);
                 return null;
             }
 

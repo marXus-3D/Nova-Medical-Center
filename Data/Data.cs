@@ -12,5 +12,7 @@ namespace Nova_Medical_Center.Data
         public static List<Employee> employees;
         public static List<Patient> patients;
         public static List<Room> rooms;
+
+        public static Employee currentUser;
     }
 }

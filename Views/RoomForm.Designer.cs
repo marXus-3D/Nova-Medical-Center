@@ -48,8 +48,7 @@
             // 
             this.loadPanel.Controls.Add(this.errorLabel);
             this.loadPanel.Controls.Add(this.pictureBox1);
-            this.loadPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.loadPanel.Location = new System.Drawing.Point(0, 0);
+            this.loadPanel.Location = new System.Drawing.Point(3, 3);
             this.loadPanel.Name = "loadPanel";
             this.loadPanel.Size = new System.Drawing.Size(1046, 675);
             this.loadPanel.TabIndex = 2;

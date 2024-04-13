@@ -21,25 +21,49 @@ namespace Nova_Medical_Center.Views
             InitializeComponent();
         }
 
-        private void LoadedRooms(bool val)
+        private async void LoadedRooms(bool val)
         {
-            MessageBox.Show("Loaded");
             if (val == true)
             {
+                await Task.Run(() => {
+                    Populate();
+                });
                 loadPanel.Visible = false;
-                for (int i = 0; i < Data.Data.rooms.Count; i++)
-                {
-                    roomFlowPanel.Controls.Add(new RoomControl(Data.Data.rooms[i], ref i));
-                }
             }
             else
                 errorLabel.Visible = true;
         }
 
+        void Populate() 
+        {
+            FlowLayoutPanel flowLayoutPanel = new FlowLayoutPanel();
+            flowLayoutPanel.AutoScroll = true;
+            flowLayoutPanel.Location = new System.Drawing.Point(12, 12);
+            flowLayoutPanel.Name = "flowPanel";
+            flowLayoutPanel.Size = new System.Drawing.Size(1022, 631);
+            flowLayoutPanel.TabIndex = 0;
+
+            for (int i = 0; i < Data.Data.rooms.Count; i++)
+            {
+                //this.Invoke(new MethodInvoker(delegate {
+                //    roomFlowPanel.Controls.Add(new RoomControl(Data.Data.rooms[i], ref i));
+                //}));
+                Invoke(new Action(() =>
+                {
+                    roomFlowPanel.Controls.Add(new RoomControl(Data.Data.rooms[i], ref i));
+                }));
+            }
+        }
+
         private void RoomForm_Load(object sender, EventArgs e)
         {
             if(Data.Data.rooms == null)
+            {
                 DataLoader.LoadRooms();
+                return;
+            }
+
+            LoadedRooms(true);
         }
     }
 }

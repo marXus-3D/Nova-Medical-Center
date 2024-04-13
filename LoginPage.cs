@@ -1,7 +1,7 @@
 ﻿using MaterialSkin.Controls;
+using Nova_Medical_Center.Data;
 using Nova_Medical_Center.Models;
 using System;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Nova_Medical_Center
@@ -11,10 +11,9 @@ namespace Nova_Medical_Center
         
         private bool loaded = false;
         readonly MaterialSkin.MaterialSkinManager materialSkinManager;
-        public static Action<bool> OnEmployeeLoad; 
         public LoginPage()
         {
-            OnEmployeeLoad += (val) => loaded = val;
+            Scripts.Events.OnEmployeeLoad += (val) => loaded = val;
             InitializeComponent();
             materialSkinManager = MaterialSkin.MaterialSkinManager.Instance;
             materialSkinManager.EnforceBackcolorOnAllComponents = true;
@@ -34,6 +33,7 @@ namespace Nova_Medical_Center
                     {
                         if (emp.Password.Equals(Employee.HashPassword(Employee.HashPassword(passwordField.Text))))
                         {
+                            Data.Data.currentUser = emp;
                             this.Hide();
                             new HomePage().Show();
                             break;
@@ -49,15 +49,9 @@ namespace Nova_Medical_Center
             MessageBox.Show("Not Loaded");
         }
 
-        private async void LoginPage_Load(object sender, EventArgs e)
+        private void LoginPage_Load(object sender, EventArgs e)
         {
-            await LoadEmployee();
-        }
-
-        private async Task LoadEmployee()
-        {
-            Data.Data.employees = await Employee.DeserializeEmployees();
-            
+            DataLoader.LoadEmployees();
         }
     }
 }

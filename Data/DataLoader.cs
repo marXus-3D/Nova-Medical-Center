@@ -19,7 +19,6 @@ namespace Nova_Medical_Center.Data
         }
         public static async void LoadRooms()
         {
-            MessageBox.Show("Loading Rooms");
             Data.rooms = await Room.DeserializeRoomsAsync();
             if(Data.rooms != null)
                 Events.OnRoomLoad.Invoke(true);

@@ -22,11 +22,8 @@ namespace Nova_Medical_Center
         public HomePage()
         {
             InitializeComponent();
-            leftBorderBtn = new Panel
-            {
-                Size = new Size(7, 60)
-            };
-            sideBar.Controls.Add(leftBorderBtn);
+            ActivateButton(dashboardBtn, RGBColors.color1);
+            OpenChildForm(new Dashboard());
         }
 
         private void settingTransition_Tick(object sender, EventArgs e)
@@ -145,12 +142,6 @@ namespace Nova_Medical_Center
             }
         }
 
-        private void dashboardBtn_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender, RGBColors.color1);
-            OpenChildForm(new Dashboard());
-        }
-
         private void OpenChildForm(Form childForm)
         {
             if (currentChildForm != null)
@@ -168,6 +159,22 @@ namespace Nova_Medical_Center
             //lblTitleChildForm.Text = childForm.Text;
         }
 
+        private struct RGBColors
+        {
+            public static Color color1 = Color.FromArgb(172, 126, 241);
+            public static Color color2 = Color.FromArgb(249, 118, 176);
+            public static Color color3 = Color.FromArgb(253, 138, 114);
+            public static Color color4 = Color.FromArgb(95, 77, 221);
+            public static Color color5 = Color.FromArgb(249, 88, 155);
+            public static Color color6 = Color.FromArgb(24, 161, 251);
+        }
+
+        #region Click Events
+        private void dashboardBtn_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color1);
+            OpenChildForm(new Dashboard());
+        }
         private void empBtn_Click(object sender, EventArgs e)
         {
             employeeTransition.Start();
@@ -213,14 +220,6 @@ namespace Nova_Medical_Center
             }
         }
 
-        private struct RGBColors
-        {
-            public static Color color1 = Color.FromArgb(172, 126, 241);
-            public static Color color2 = Color.FromArgb(249, 118, 176);
-            public static Color color3 = Color.FromArgb(253, 138, 114);
-            public static Color color4 = Color.FromArgb(95, 77, 221);
-            public static Color color5 = Color.FromArgb(249, 88, 155);
-            public static Color color6 = Color.FromArgb(24, 161, 251);
-        }
+        #endregion
     }
 }
