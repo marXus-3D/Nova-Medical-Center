@@ -1,9 +1,5 @@
 ﻿using Nova_Medical_Center.Models;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Nova_Medical_Center.Data
 {
@@ -14,5 +10,9 @@ namespace Nova_Medical_Center.Data
         public static List<Room> rooms;
 
         public static Employee currentUser;
+
+        public static Queue<Patient> NonCriticalQueue;
+        public static Queue<Patient> CriticalQueue;
+        public static Queue<Patient> SemiCriticalQueue;
     }
 }

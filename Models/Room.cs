@@ -14,6 +14,7 @@ namespace Nova_Medical_Center.Models
     {
         public int Id { get; set; }
         public string Ward { get; set; }
+        public bool Occupied { get; set; }
         public string Type { get; set; }
         public List<Bed> Beds { get; set; }
 
