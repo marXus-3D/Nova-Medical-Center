@@ -47,7 +47,6 @@ namespace Nova_Medical_Center.Models
                 employees = await Task.Run(() => JsonConvert.DeserializeObject<List<Employee>>(jsonString));
 
                 #endregion
-                LoginPage.OnEmployeeLoad.Invoke(true);
                 return employees;
             }
             catch (Exception e) 

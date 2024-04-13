@@ -1,12 +1,6 @@
 ﻿using MaterialSkin.Controls;
 using Nova_Medical_Center.Models;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -14,7 +8,7 @@ namespace Nova_Medical_Center
 {
     public partial class LoginPage : MaterialForm
     {
-        public static List<Employee> employees;
+        
         private bool loaded = false;
         readonly MaterialSkin.MaterialSkinManager materialSkinManager;
         public static Action<bool> OnEmployeeLoad; 
@@ -34,7 +28,7 @@ namespace Nova_Medical_Center
         {
             if (loaded)
             {
-                foreach (var emp in employees)
+                foreach (var emp in Data.Data.employees)
                 {
                     if (emp.Id == usernameField.Text)
                     {
@@ -62,7 +56,7 @@ namespace Nova_Medical_Center
 
         private async Task LoadEmployee()
         {
-            employees = await Employee.DeserializeEmployees();
+            Data.Data.employees = await Employee.DeserializeEmployees();
             
         }
     }

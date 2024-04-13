@@ -32,7 +32,12 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.doctorGridView = new System.Windows.Forms.DataGridView();
+            this.loadPanel = new System.Windows.Forms.Panel();
+            this.errorLabel = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.doctorGridView)).BeginInit();
+            this.loadPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // doctorGridView
@@ -77,17 +82,53 @@
             this.doctorGridView.Size = new System.Drawing.Size(1022, 501);
             this.doctorGridView.TabIndex = 0;
             // 
-            // DocUpdateForm
+            // loadPanel
+            // 
+            this.loadPanel.Controls.Add(this.errorLabel);
+            this.loadPanel.Controls.Add(this.pictureBox1);
+            this.loadPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.loadPanel.Location = new System.Drawing.Point(0, 0);
+            this.loadPanel.Name = "loadPanel";
+            this.loadPanel.Size = new System.Drawing.Size(1046, 612);
+            this.loadPanel.TabIndex = 2;
+            // 
+            // errorLabel
+            // 
+            this.errorLabel.AutoSize = true;
+            this.errorLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.errorLabel.ForeColor = System.Drawing.Color.IndianRed;
+            this.errorLabel.Location = new System.Drawing.Point(298, 479);
+            this.errorLabel.Name = "errorLabel";
+            this.errorLabel.Size = new System.Drawing.Size(397, 25);
+            this.errorLabel.TabIndex = 1;
+            this.errorLabel.Text = "Error While Loading Doctors Please Try Again.";
+            this.errorLabel.Visible = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Nova_Medical_Center.Properties.Resources.Cube_1x_1_0s_200px_200px;
+            this.pictureBox1.Location = new System.Drawing.Point(338, 150);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(300, 300);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // DocHomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1046, 612);
+            this.Controls.Add(this.loadPanel);
             this.Controls.Add(this.doctorGridView);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "DocUpdateForm";
+            this.Name = "DocHomeForm";
             this.Text = "DoctorForm";
             this.Load += new System.EventHandler(this.DoctorUpdateForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.doctorGridView)).EndInit();
+            this.loadPanel.ResumeLayout(false);
+            this.loadPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -95,5 +136,8 @@
         #endregion
 
         private System.Windows.Forms.DataGridView doctorGridView;
+        private System.Windows.Forms.Panel loadPanel;
+        private System.Windows.Forms.Label errorLabel;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -24,5 +24,12 @@ namespace Nova_Medical_Center.Data
             if(Data.rooms != null)
                 Events.OnRoomLoad.Invoke(true);
         }
+
+        public static async void LoadEmployees() 
+        {
+            Data.employees = await Employee.DeserializeEmployees();
+            if (Data.employees != null)
+                Events.OnEmployeeLoad.Invoke(true);
+        }
     }
 }

@@ -22,7 +22,7 @@ namespace Nova_Medical_Center.Views
         }
         private void DoctorUpdateForm_Load(object sender, EventArgs e)
         {
-            doctorGridView.DataSource = LoginPage.employees;
+            doctorGridView.DataSource = Data.Data.employees;
         }
 
         private void updateBtn_Click(object sender, EventArgs e)
@@ -42,7 +42,7 @@ namespace Nova_Medical_Center.Views
                 Password = selectedRow.Cells[8].Value.ToString(),
             };
             MessageBox.Show(emp.ToString());
-            CustomDialog.ShowDialog(LoginPage.employees[selectedRowIndex], ref selectedRowIndex);
+            CustomDialog.ShowDialog(Data.Data.employees[selectedRowIndex], ref selectedRowIndex);
             updateBtn.Enabled = false;
             resetButton.Enabled = false;
         }
@@ -70,7 +70,7 @@ namespace Nova_Medical_Center.Views
                 Password = selectedRow.Cells[8].Value.ToString(),
             };
 
-            CustomDialog.ShowPasswordDialog(LoginPage.employees[selectedRowIndex], ref selectedRowIndex);
+            CustomDialog.ShowPasswordDialog(Data.Data.employees[selectedRowIndex], ref selectedRowIndex);
 
             updateBtn.Enabled = false;
             resetButton.Enabled = false;
