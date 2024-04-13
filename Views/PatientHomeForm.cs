@@ -15,10 +15,12 @@ namespace Nova_Medical_Center.Views
 {
     public partial class PatientHomeForm : Form
     {
+        int selectedIdx;
         IconButton current;
         public PatientHomeForm()
         {
             InitializeComponent();
+            loadPanel.BringToFront();
             Nova_Medical_Center.Scripts.Events.OnPatientLoad += LoadedPatients;
         }
 
@@ -36,6 +38,21 @@ namespace Nova_Medical_Center.Views
         private void PatientUpdateForm_Load(object sender, EventArgs e)
         {
             DataLoader.LoadPatient();
+        }
+
+        private void admitButton_Click(object sender, EventArgs e)
+        {
+            CustomDialog.ShowQuestionDialog(ref selectedIdx);
+            CentralControler.AdmitPatient(selectedIdx);
+        }
+
+        private void doctorGridView_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            selectedIdx = doctorGridView.SelectedRows[0].Index;
+            if (Data.Data.patients[selectedIdx].RoomOccupied == null)
+                admitButton.Enabled = true;
+            else 
+                admitButton.Enabled = false;
         }
     }
 }

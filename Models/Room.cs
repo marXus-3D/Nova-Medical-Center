@@ -16,7 +16,7 @@ namespace Nova_Medical_Center.Models
         public string Ward { get; set; }
         public bool Occupied { get; set; }
         public string Type { get; set; }
-        public List<Bed> Beds { get; set; }
+        //public List<Bed> Beds { get; set; }
 
         public static void SerializeRooms(List<Room> rooms)
         {
@@ -43,6 +43,11 @@ namespace Nova_Medical_Center.Models
                 Events.OnRoomLoad.Invoke(false);
                 return null;
             }
+        }
+
+        public override string ToString()
+        {
+            return Id.ToString();
         }
     }
 }

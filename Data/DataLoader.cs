@@ -15,20 +15,20 @@ namespace Nova_Medical_Center.Data
         {
             Data.patients = await Patient.DeserializePatients();
             if (Data.patients != null)
-                Events.OnPatientLoad.Invoke(true);
+                Events.OnPatientLoad?.Invoke(true);
         }
-        public static async void LoadRooms()
+        public static async Task LoadRooms()
         {
             Data.rooms = await Room.DeserializeRoomsAsync();
             if(Data.rooms != null)
-                Events.OnRoomLoad.Invoke(true);
+                Events.OnRoomLoad?.Invoke(true);
         }
 
         public static async void LoadEmployees() 
         {
             Data.employees = await Employee.DeserializeEmployees();
             if (Data.employees != null)
-                Events.OnEmployeeLoad.Invoke(true);
+                Events.OnEmployeeLoad?.Invoke(true);
         }
     }
 }

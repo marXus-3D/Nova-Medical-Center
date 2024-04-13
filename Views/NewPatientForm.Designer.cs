@@ -42,9 +42,10 @@
             this.historyBtn = new Nova_Medical_Center.Views.Controls.RJButton();
             this.delBtn = new Nova_Medical_Center.Views.Controls.RJButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.criticalRadio = new Nova_Medical_Center.Views.Controls.RJRadioButton();
-            this.semiRadio = new Nova_Medical_Center.Views.Controls.RJRadioButton();
             this.nonRadio = new Nova_Medical_Center.Views.Controls.RJRadioButton();
+            this.semiRadio = new Nova_Medical_Center.Views.Controls.RJRadioButton();
+            this.criticalRadio = new Nova_Medical_Center.Views.Controls.RJRadioButton();
+            this.admitBtn = new Nova_Medical_Center.Views.Controls.RJButton();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -194,7 +195,7 @@
             this.medicationComboBox.DropDownHeight = 118;
             this.medicationComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.medicationComboBox.DropDownWidth = 121;
-            this.medicationComboBox.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.medicationComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.medicationComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.medicationComboBox.FormattingEnabled = true;
             this.medicationComboBox.Hint = "Medications";
@@ -295,21 +296,20 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Urgency Level";
             // 
-            // criticalRadio
+            // nonRadio
             // 
-            this.criticalRadio.AutoSize = true;
-            this.criticalRadio.Checked = true;
-            this.criticalRadio.CheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            this.criticalRadio.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.criticalRadio.Location = new System.Drawing.Point(6, 28);
-            this.criticalRadio.MinimumSize = new System.Drawing.Size(0, 21);
-            this.criticalRadio.Name = "criticalRadio";
-            this.criticalRadio.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.criticalRadio.Size = new System.Drawing.Size(71, 21);
-            this.criticalRadio.TabIndex = 1;
-            this.criticalRadio.Text = "Critical";
-            this.criticalRadio.UnCheckedColor = System.Drawing.Color.Gray;
-            this.criticalRadio.UseVisualStyleBackColor = true;
+            this.nonRadio.AutoSize = true;
+            this.nonRadio.CheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.nonRadio.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nonRadio.Location = new System.Drawing.Point(6, 70);
+            this.nonRadio.MinimumSize = new System.Drawing.Size(0, 21);
+            this.nonRadio.Name = "nonRadio";
+            this.nonRadio.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.nonRadio.Size = new System.Drawing.Size(97, 21);
+            this.nonRadio.TabIndex = 3;
+            this.nonRadio.Text = "Non Critical";
+            this.nonRadio.UnCheckedColor = System.Drawing.Color.Gray;
+            this.nonRadio.UseVisualStyleBackColor = true;
             // 
             // semiRadio
             // 
@@ -326,26 +326,48 @@
             this.semiRadio.UnCheckedColor = System.Drawing.Color.Gray;
             this.semiRadio.UseVisualStyleBackColor = true;
             // 
-            // nonRadio
+            // criticalRadio
             // 
-            this.nonRadio.AutoSize = true;
-            this.nonRadio.CheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            this.nonRadio.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nonRadio.Location = new System.Drawing.Point(6, 70);
-            this.nonRadio.MinimumSize = new System.Drawing.Size(0, 21);
-            this.nonRadio.Name = "nonRadio";
-            this.nonRadio.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.nonRadio.Size = new System.Drawing.Size(97, 21);
-            this.nonRadio.TabIndex = 3;
-            this.nonRadio.Text = "Non Critical";
-            this.nonRadio.UnCheckedColor = System.Drawing.Color.Gray;
-            this.nonRadio.UseVisualStyleBackColor = true;
+            this.criticalRadio.AutoSize = true;
+            this.criticalRadio.Checked = true;
+            this.criticalRadio.CheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.criticalRadio.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.criticalRadio.Location = new System.Drawing.Point(6, 28);
+            this.criticalRadio.MinimumSize = new System.Drawing.Size(0, 21);
+            this.criticalRadio.Name = "criticalRadio";
+            this.criticalRadio.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.criticalRadio.Size = new System.Drawing.Size(71, 21);
+            this.criticalRadio.TabIndex = 1;
+            this.criticalRadio.TabStop = true;
+            this.criticalRadio.Text = "Critical";
+            this.criticalRadio.UnCheckedColor = System.Drawing.Color.Gray;
+            this.criticalRadio.UseVisualStyleBackColor = true;
+            // 
+            // admitBtn
+            // 
+            this.admitBtn.BackColor = System.Drawing.SystemColors.Control;
+            this.admitBtn.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.admitBtn.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.admitBtn.BorderRadius = 10;
+            this.admitBtn.BorderSize = 1;
+            this.admitBtn.FlatAppearance.BorderSize = 0;
+            this.admitBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.admitBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.admitBtn.ForeColor = System.Drawing.Color.Black;
+            this.admitBtn.Location = new System.Drawing.Point(12, 508);
+            this.admitBtn.Name = "admitBtn";
+            this.admitBtn.Size = new System.Drawing.Size(270, 34);
+            this.admitBtn.TabIndex = 15;
+            this.admitBtn.Text = "Admit Patient";
+            this.admitBtn.TextColor = System.Drawing.Color.Black;
+            this.admitBtn.UseVisualStyleBackColor = false;
             // 
             // NewPatientForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1046, 612);
+            this.Controls.Add(this.admitBtn);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.delBtn);
             this.Controls.Add(this.historyBtn);
@@ -390,5 +412,6 @@
         private Controls.RJRadioButton nonRadio;
         private Controls.RJRadioButton semiRadio;
         private Controls.RJRadioButton criticalRadio;
+        private Controls.RJButton admitBtn;
     }
 }

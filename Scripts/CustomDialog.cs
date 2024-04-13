@@ -25,5 +25,9 @@ namespace Nova_Medical_Center.Scripts
             Data.Data.employees[i] = employee;
             return value;
         }
+        public static void ShowQuestionDialog(ref int i)
+        {
+            new QuestionDialog("What is the Patient current urgency level", "Patient Urgency Level", ref i).ShowDialog();
+        }
     }
 }

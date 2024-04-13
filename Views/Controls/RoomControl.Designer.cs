@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.typeLbl = new System.Windows.Forms.Label();
-            this.bedLbl = new System.Windows.Forms.Label();
-            this.settingBtn = new FontAwesome.Sharp.IconButton();
             this.imageBox = new System.Windows.Forms.PictureBox();
             this.numberLbl = new System.Windows.Forms.Label();
+            this.bedLbl = new System.Windows.Forms.Label();
+            this.checkBox = new MaterialSkin.Controls.MaterialCheckbox();
             ((System.ComponentModel.ISupportInitialize)(this.imageBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -46,36 +46,6 @@
             this.typeLbl.TabIndex = 0;
             this.typeLbl.Text = "Type: ";
             // 
-            // bedLbl
-            // 
-            this.bedLbl.AutoSize = true;
-            this.bedLbl.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bedLbl.Location = new System.Drawing.Point(3, 205);
-            this.bedLbl.Name = "bedLbl";
-            this.bedLbl.Size = new System.Drawing.Size(44, 17);
-            this.bedLbl.TabIndex = 1;
-            this.bedLbl.Text = "Beds: ";
-            // 
-            // settingBtn
-            // 
-            this.settingBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            this.settingBtn.FlatAppearance.BorderSize = 0;
-            this.settingBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.settingBtn.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.settingBtn.ForeColor = System.Drawing.Color.White;
-            this.settingBtn.IconChar = FontAwesome.Sharp.IconChar.Bed;
-            this.settingBtn.IconColor = System.Drawing.Color.White;
-            this.settingBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.settingBtn.IconSize = 32;
-            this.settingBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.settingBtn.Location = new System.Drawing.Point(39, 225);
-            this.settingBtn.Name = "settingBtn";
-            this.settingBtn.Size = new System.Drawing.Size(135, 32);
-            this.settingBtn.TabIndex = 4;
-            this.settingBtn.Text = "Add Bed";
-            this.settingBtn.UseVisualStyleBackColor = false;
-            this.settingBtn.Click += new System.EventHandler(this.settingBtn_Click);
-            // 
             // imageBox
             // 
             this.imageBox.Location = new System.Drawing.Point(3, 3);
@@ -88,19 +58,47 @@
             // 
             this.numberLbl.AutoSize = true;
             this.numberLbl.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numberLbl.Location = new System.Drawing.Point(4, 139);
+            this.numberLbl.Location = new System.Drawing.Point(3, 139);
             this.numberLbl.Name = "numberLbl";
             this.numberLbl.Size = new System.Drawing.Size(66, 17);
             this.numberLbl.TabIndex = 6;
             this.numberLbl.Text = "Number: ";
             // 
+            // bedLbl
+            // 
+            this.bedLbl.AutoSize = true;
+            this.bedLbl.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bedLbl.Location = new System.Drawing.Point(3, 205);
+            this.bedLbl.Name = "bedLbl";
+            this.bedLbl.Size = new System.Drawing.Size(64, 17);
+            this.bedLbl.TabIndex = 1;
+            this.bedLbl.Text = "Occupied";
+            // 
+            // checkBox
+            // 
+            this.checkBox.AutoSize = true;
+            this.checkBox.Checked = true;
+            this.checkBox.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBox.Depth = 0;
+            this.checkBox.Enabled = false;
+            this.checkBox.Location = new System.Drawing.Point(70, 197);
+            this.checkBox.Margin = new System.Windows.Forms.Padding(0);
+            this.checkBox.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.checkBox.MouseState = MaterialSkin.MouseState.HOVER;
+            this.checkBox.Name = "checkBox";
+            this.checkBox.ReadOnly = false;
+            this.checkBox.Ripple = true;
+            this.checkBox.Size = new System.Drawing.Size(35, 37);
+            this.checkBox.TabIndex = 7;
+            this.checkBox.UseVisualStyleBackColor = true;
+            // 
             // RoomControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.checkBox);
             this.Controls.Add(this.numberLbl);
             this.Controls.Add(this.imageBox);
-            this.Controls.Add(this.settingBtn);
             this.Controls.Add(this.bedLbl);
             this.Controls.Add(this.typeLbl);
             this.Name = "RoomControl";
@@ -114,9 +112,9 @@
         #endregion
 
         private System.Windows.Forms.Label typeLbl;
-        private System.Windows.Forms.Label bedLbl;
-        private FontAwesome.Sharp.IconButton settingBtn;
         private System.Windows.Forms.PictureBox imageBox;
         private System.Windows.Forms.Label numberLbl;
+        private System.Windows.Forms.Label bedLbl;
+        private MaterialSkin.Controls.MaterialCheckbox checkBox;
     }
 }

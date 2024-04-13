@@ -88,6 +88,7 @@
     <Compile Include="Models\Urgency.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Scripts\CentralControler.cs" />
     <Compile Include="Scripts\CustomDialog.cs" />
     <Compile Include="Scripts\Events.cs" />
     <Compile Include="Views\Controls\CustomButton.cs">
@@ -165,6 +166,12 @@
     <Compile Include="Views\DoctorForm.Designer.cs">
       <DependentUpon>DoctorForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Static\QuestionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Static\QuestionDialog.Designer.cs">
+      <DependentUpon>QuestionDialog.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Static\PasswordDialogBox.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -225,6 +232,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\DoctorForm.resx">
       <DependentUpon>DoctorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Static\QuestionDialog.resx">
+      <DependentUpon>QuestionDialog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Static\PasswordDialogBox.resx">
       <DependentUpon>PasswordDialogBox.cs</DependentUpon>

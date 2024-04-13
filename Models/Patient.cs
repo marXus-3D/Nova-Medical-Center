@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Nova_Medical_Center.Models
 {
-    internal class Patient
+    public class Patient
     {
         public string Id { get; set; }
         public string First_Name { get; set; }
@@ -19,7 +19,8 @@ namespace Nova_Medical_Center.Models
         public DateTime AdmissionDate { get; set; }
         public Urgency UrgencyLevel { get; set; }
         public Room RoomOccupied { get; set; }
-        public int BedId { get; set; }
+        //public int BedId { get; set; }
+        public bool Vip { get; set; }
 
         public static void SerializePatients(List<Patient> patients)
         {

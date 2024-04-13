@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Nova_Medical_Center.Models
 {
-    internal class MedicalCondition
+    public class MedicalCondition
     {
         public string Name { get; set; }
         public DateTime DiagnosisDate { get; set; }

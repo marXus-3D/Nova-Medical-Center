@@ -14,5 +14,6 @@ namespace Nova_Medical_Center.Data
         public static Queue<Patient> NonCriticalQueue;
         public static Queue<Patient> CriticalQueue;
         public static Queue<Patient> SemiCriticalQueue;
+        public static Queue<Patient> VipQueue;
     }
 }
