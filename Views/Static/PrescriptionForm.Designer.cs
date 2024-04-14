@@ -35,7 +35,7 @@
             this.nameLbl = new System.Windows.Forms.Label();
             this.materialDivider1 = new MaterialSkin.Controls.MaterialDivider();
             this.dateLbl = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.preLbl = new System.Windows.Forms.Label();
             this.materialDivider2 = new MaterialSkin.Controls.MaterialDivider();
             this.diagnosisLbl = new System.Windows.Forms.Label();
             this.dosageLbl = new System.Windows.Forms.Label();
@@ -50,7 +50,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("SPACEBAR", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(311, 2);
+            this.label1.Location = new System.Drawing.Point(315, 2);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(146, 49);
             this.label1.TabIndex = 0;
@@ -108,15 +108,15 @@
             this.dateLbl.TabIndex = 5;
             this.dateLbl.Text = "Date: 2021-04-09T20:36:12.4574864+03:00";
             // 
-            // label5
+            // preLbl
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.label5.Location = new System.Drawing.Point(12, 516);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(237, 21);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "Prescribed By: Dr. Tarekegn Hailu";
+            this.preLbl.AutoSize = true;
+            this.preLbl.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.preLbl.Location = new System.Drawing.Point(12, 516);
+            this.preLbl.Name = "preLbl";
+            this.preLbl.Size = new System.Drawing.Size(237, 21);
+            this.preLbl.TabIndex = 6;
+            this.preLbl.Text = "Prescribed By: Dr. Tarekegn Hailu";
             // 
             // materialDivider2
             // 
@@ -211,7 +211,7 @@
             this.Controls.Add(this.dosageLbl);
             this.Controls.Add(this.diagnosisLbl);
             this.Controls.Add(this.materialDivider2);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.preLbl);
             this.Controls.Add(this.dateLbl);
             this.Controls.Add(this.materialDivider1);
             this.Controls.Add(this.nameLbl);
@@ -234,7 +234,7 @@
         private System.Windows.Forms.Label nameLbl;
         private MaterialSkin.Controls.MaterialDivider materialDivider1;
         private System.Windows.Forms.Label dateLbl;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label preLbl;
         private MaterialSkin.Controls.MaterialDivider materialDivider2;
         private System.Windows.Forms.Label diagnosisLbl;
         private System.Windows.Forms.Label dosageLbl;

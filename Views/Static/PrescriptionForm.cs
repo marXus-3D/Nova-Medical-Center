@@ -23,6 +23,8 @@ namespace Nova_Medical_Center.Views.Static
             dosageLbl.Text = $"Dosage: {dose}ml";
             endLbl.Text = "End Date: " + time.ToShortDateString();
             medicationArea.Text = "Medications: \n" + pat.MedicalHistory.Last().ToString(true);
+
+            preLbl.Text = "Prescribed By: Dr. " + Data.Data.currentUser.First_Name + " " + Data.Data.currentUser.Last_Name;
         }
 
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
