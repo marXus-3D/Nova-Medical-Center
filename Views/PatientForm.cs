@@ -1,4 +1,5 @@
 ﻿using FontAwesome.Sharp;
+using Nova_Medical_Center.Views.Static;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -42,7 +43,17 @@ namespace Nova_Medical_Center.Views
         private void dischargeBtn_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
-            //OpenChildForm(new DocUpdateForm());
+
+            if (Data.Data.currentUser == null)
+            {
+                OpenChildForm(new SecurityForm());
+                return;
+            }
+
+            if (Data.Data.currentUser.Position.Equals("Doctor"))
+                OpenChildForm(new PatientDischargeForm());
+            else
+                OpenChildForm(new SecurityForm());
         }
 
         private void addBtn_Click(object sender, EventArgs e)

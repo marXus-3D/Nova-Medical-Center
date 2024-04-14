@@ -110,6 +110,12 @@
     <Compile Include="Views\Controls\RoomControl.Designer.cs">
       <DependentUpon>RoomControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\PatientDischargeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\PatientDischargeForm.Designer.cs">
+      <DependentUpon>PatientDischargeForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\RoomForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -188,6 +194,12 @@
     <Compile Include="Views\Static\DialogBox.Designer.cs">
       <DependentUpon>DialogBox.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Static\SecurityForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Static\SecurityForm.Designer.cs">
+      <DependentUpon>SecurityForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="HomePage.resx">
       <DependentUpon>HomePage.cs</DependentUpon>
     </EmbeddedResource>
@@ -206,6 +218,9 @@
     </Compile>
     <EmbeddedResource Include="Views\Controls\RoomControl.resx">
       <DependentUpon>RoomControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\PatientDischargeForm.resx">
+      <DependentUpon>PatientDischargeForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\RoomForm.resx">
       <DependentUpon>RoomForm.cs</DependentUpon>
@@ -245,6 +260,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Static\DialogBox.resx">
       <DependentUpon>DialogBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Static\SecurityForm.resx">
+      <DependentUpon>SecurityForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
