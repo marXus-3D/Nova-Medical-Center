@@ -91,6 +91,7 @@
     <Compile Include="Scripts\CentralControler.cs" />
     <Compile Include="Scripts\CustomDialog.cs" />
     <Compile Include="Scripts\Events.cs" />
+    <Compile Include="Scripts\Generator.cs" />
     <Compile Include="Views\Controls\CustomButton.cs">
       <SubType>Component</SubType>
     </Compile>

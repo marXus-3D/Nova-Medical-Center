@@ -37,6 +37,7 @@ namespace Nova_Medical_Center.Views
         {
             Data.Data.patients.Add(new Patient() 
             {
+                Id = Generator.GeneratePatientID(),
                 First_Name = fnameField.Text,
                 Last_Name = lnameField.Text,
                 Gender = maleRadio.Checked? 'M':'F',
