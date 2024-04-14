@@ -9,6 +9,8 @@ namespace Nova_Medical_Center.Data
         public static List<Patient> patients;
         public static List<Room> rooms;
 
+        public static Dictionary<int, string> medications;
+
         public static Employee currentUser;
 
         public static Queue<Patient> NonCriticalQueue;

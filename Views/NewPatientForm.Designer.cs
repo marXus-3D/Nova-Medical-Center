@@ -37,7 +37,7 @@
             this.maleRadio = new MaterialSkin.Controls.MaterialRadioButton();
             this.femalRadio = new MaterialSkin.Controls.MaterialRadioButton();
             this.medicationComboBox = new MaterialSkin.Controls.MaterialComboBox();
-            this.materialMultiLineTextBox1 = new MaterialSkin.Controls.MaterialMultiLineTextBox();
+            this.medicationArea = new MaterialSkin.Controls.MaterialMultiLineTextBox();
             this.medicationBtn = new Nova_Medical_Center.Views.Controls.RJButton();
             this.historyBtn = new Nova_Medical_Center.Views.Controls.RJButton();
             this.delBtn = new Nova_Medical_Center.Views.Controls.RJButton();
@@ -46,6 +46,8 @@
             this.semiRadio = new Nova_Medical_Center.Views.Controls.RJRadioButton();
             this.criticalRadio = new Nova_Medical_Center.Views.Controls.RJRadioButton();
             this.admitBtn = new Nova_Medical_Center.Views.Controls.RJButton();
+            this.vipCheck = new Nova_Medical_Center.Views.Controls.RJToggleButton();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -79,7 +81,7 @@
             this.lnameField.Hint = "Last Name";
             this.lnameField.LeadingIcon = null;
             this.lnameField.LeaveOnEnterKey = true;
-            this.lnameField.Location = new System.Drawing.Point(288, 58);
+            this.lnameField.Location = new System.Drawing.Point(251, 58);
             this.lnameField.MaxLength = 50;
             this.lnameField.MouseState = MaterialSkin.MouseState.OUT;
             this.lnameField.Multiline = false;
@@ -143,7 +145,7 @@
             this.dobPicker.BorderSize = 1;
             this.dobPicker.CalendarFont = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dobPicker.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dobPicker.Location = new System.Drawing.Point(567, 59);
+            this.dobPicker.Location = new System.Drawing.Point(488, 59);
             this.dobPicker.MinimumSize = new System.Drawing.Size(4, 35);
             this.dobPicker.Name = "dobPicker";
             this.dobPicker.Size = new System.Drawing.Size(211, 35);
@@ -157,7 +159,7 @@
             this.maleRadio.Checked = true;
             this.maleRadio.Depth = 0;
             this.maleRadio.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maleRadio.Location = new System.Drawing.Point(832, 59);
+            this.maleRadio.Location = new System.Drawing.Point(726, 58);
             this.maleRadio.Margin = new System.Windows.Forms.Padding(0);
             this.maleRadio.MouseLocation = new System.Drawing.Point(-1, -1);
             this.maleRadio.MouseState = MaterialSkin.MouseState.HOVER;
@@ -174,7 +176,7 @@
             this.femalRadio.AutoSize = true;
             this.femalRadio.Depth = 0;
             this.femalRadio.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.femalRadio.Location = new System.Drawing.Point(947, 58);
+            this.femalRadio.Location = new System.Drawing.Point(814, 57);
             this.femalRadio.Margin = new System.Windows.Forms.Padding(0);
             this.femalRadio.MouseLocation = new System.Drawing.Point(-1, -1);
             this.femalRadio.MouseState = MaterialSkin.MouseState.HOVER;
@@ -203,6 +205,7 @@
             this.medicationComboBox.ItemHeight = 29;
             this.medicationComboBox.Location = new System.Drawing.Point(12, 267);
             this.medicationComboBox.MaxDropDownItems = 4;
+            this.medicationComboBox.MaxLength = 255;
             this.medicationComboBox.MouseState = MaterialSkin.MouseState.OUT;
             this.medicationComboBox.Name = "medicationComboBox";
             this.medicationComboBox.Size = new System.Drawing.Size(211, 35);
@@ -211,20 +214,20 @@
             this.medicationComboBox.UseAccent = false;
             this.medicationComboBox.UseTallSize = false;
             // 
-            // materialMultiLineTextBox1
+            // medicationArea
             // 
-            this.materialMultiLineTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.materialMultiLineTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialMultiLineTextBox1.Depth = 0;
-            this.materialMultiLineTextBox1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialMultiLineTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialMultiLineTextBox1.Location = new System.Drawing.Point(288, 152);
-            this.materialMultiLineTextBox1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialMultiLineTextBox1.Name = "materialMultiLineTextBox1";
-            this.materialMultiLineTextBox1.ReadOnly = true;
-            this.materialMultiLineTextBox1.Size = new System.Drawing.Size(746, 307);
-            this.materialMultiLineTextBox1.TabIndex = 10;
-            this.materialMultiLineTextBox1.Text = "";
+            this.medicationArea.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.medicationArea.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.medicationArea.Depth = 0;
+            this.medicationArea.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.medicationArea.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.medicationArea.Location = new System.Drawing.Point(288, 152);
+            this.medicationArea.MouseState = MaterialSkin.MouseState.HOVER;
+            this.medicationArea.Name = "medicationArea";
+            this.medicationArea.ReadOnly = true;
+            this.medicationArea.Size = new System.Drawing.Size(746, 307);
+            this.medicationArea.TabIndex = 10;
+            this.medicationArea.Text = "";
             // 
             // medicationBtn
             // 
@@ -244,6 +247,7 @@
             this.medicationBtn.Text = "Add";
             this.medicationBtn.TextColor = System.Drawing.Color.Black;
             this.medicationBtn.UseVisualStyleBackColor = false;
+            this.medicationBtn.Click += new System.EventHandler(this.medicationBtn_Click);
             // 
             // historyBtn
             // 
@@ -263,6 +267,7 @@
             this.historyBtn.Text = "Add History";
             this.historyBtn.TextColor = System.Drawing.Color.Black;
             this.historyBtn.UseVisualStyleBackColor = false;
+            this.historyBtn.Click += new System.EventHandler(this.historyBtn_Click);
             // 
             // delBtn
             // 
@@ -361,18 +366,45 @@
             this.admitBtn.Text = "Admit Patient";
             this.admitBtn.TextColor = System.Drawing.Color.Black;
             this.admitBtn.UseVisualStyleBackColor = false;
+            this.admitBtn.Click += new System.EventHandler(this.admitBtn_Click);
+            // 
+            // vipCheck
+            // 
+            this.vipCheck.AutoSize = true;
+            this.vipCheck.Location = new System.Drawing.Point(923, 65);
+            this.vipCheck.MinimumSize = new System.Drawing.Size(45, 22);
+            this.vipCheck.Name = "vipCheck";
+            this.vipCheck.OffBackColor = System.Drawing.Color.Gray;
+            this.vipCheck.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.vipCheck.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.vipCheck.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.vipCheck.Size = new System.Drawing.Size(45, 22);
+            this.vipCheck.TabIndex = 16;
+            this.vipCheck.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(974, 67);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(36, 21);
+            this.label1.TabIndex = 17;
+            this.label1.Text = "VIP";
             // 
             // NewPatientForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1046, 612);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.vipCheck);
             this.Controls.Add(this.admitBtn);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.delBtn);
             this.Controls.Add(this.historyBtn);
             this.Controls.Add(this.medicationBtn);
-            this.Controls.Add(this.materialMultiLineTextBox1);
+            this.Controls.Add(this.medicationArea);
             this.Controls.Add(this.medicationComboBox);
             this.Controls.Add(this.femalRadio);
             this.Controls.Add(this.maleRadio);
@@ -403,8 +435,7 @@
         private Controls.RJDatePicker dobPicker;
         private MaterialSkin.Controls.MaterialRadioButton maleRadio;
         private MaterialSkin.Controls.MaterialRadioButton femalRadio;
-        private MaterialSkin.Controls.MaterialComboBox medicationComboBox;
-        private MaterialSkin.Controls.MaterialMultiLineTextBox materialMultiLineTextBox1;
+        private MaterialSkin.Controls.MaterialMultiLineTextBox medicationArea;
         private Controls.RJButton medicationBtn;
         private Controls.RJButton historyBtn;
         private Controls.RJButton delBtn;
@@ -413,5 +444,8 @@
         private Controls.RJRadioButton semiRadio;
         private Controls.RJRadioButton criticalRadio;
         private Controls.RJButton admitBtn;
+        private Controls.RJToggleButton vipCheck;
+        private System.Windows.Forms.Label label1;
+        private MaterialSkin.Controls.MaterialComboBox medicationComboBox;
     }
 }

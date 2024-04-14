@@ -15,6 +15,8 @@ namespace Nova_Medical_Center.Models
         public string Id { get; set; }
         public string First_Name { get; set; }
         public string Last_Name { get; set;}
+        public char Gender { get; set; }
+        public DateTime DoB { get; set; }
         public List<MedicalCondition> MedicalHistory { get; set; }
         public DateTime AdmissionDate { get; set; }
         public Urgency UrgencyLevel { get; set; }
