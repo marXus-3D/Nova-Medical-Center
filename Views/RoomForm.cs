@@ -55,11 +55,11 @@ namespace Nova_Medical_Center.Views
             }
         }
 
-        private void RoomForm_Load(object sender, EventArgs e)
+        private async void RoomForm_Load(object sender, EventArgs e)
         {
             if(Data.Data.rooms == null)
             {
-                DataLoader.LoadRooms();
+                await DataLoader.LoadRooms();
                 return;
             }
 

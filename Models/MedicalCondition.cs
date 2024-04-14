@@ -24,5 +24,16 @@ namespace Nova_Medical_Center.Models
             }
             return "Medication Name: " + Name + "\nDiagnosis Date: " + DiagnosisDate + "\nMedications: " + str + "\n-----------------------------------------------------------------------------------------------------------------------------------------------------------------------";
         }
+        public string ToString(bool check)
+        {
+            string str = "";
+
+            foreach (var item in Medications)
+            {
+                str += "\n";
+                str += "\t- " + item;
+            }
+            return str;
+        }
     }
 }

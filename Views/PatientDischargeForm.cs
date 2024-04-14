@@ -48,14 +48,13 @@ namespace Nova_Medical_Center.Views
 
         private void admitButton_Click(object sender, EventArgs e)
         {
-            CustomDialog.ShowQuestionDialog(ref selectedIdx);
-            CentralControler.AdmitPatient(selectedIdx);
+            CustomDialog.ShowDischargeDialog(ref selectedIdx);
         }
 
         private void doctorGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             selectedIdx = doctorGridView.SelectedRows[0].Index;
-            if (Data.Data.patients[selectedIdx].RoomOccupied == null)
+            if (Data.Data.patients[selectedIdx].RoomOccupied != null)
                 admitButton.Enabled = true;
             else 
                 admitButton.Enabled = false;

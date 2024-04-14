@@ -176,6 +176,18 @@
     <Compile Include="Views\DoctorForm.Designer.cs">
       <DependentUpon>DoctorForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Static\DischargeDialogBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Static\DischargeDialogBox.Designer.cs">
+      <DependentUpon>DischargeDialogBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Static\PrescriptionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Static\PrescriptionForm.Designer.cs">
+      <DependentUpon>PrescriptionForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Static\QuestionDialog.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -251,6 +263,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\DoctorForm.resx">
       <DependentUpon>DoctorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Static\DischargeDialogBox.resx">
+      <DependentUpon>DischargeDialogBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Static\PrescriptionForm.resx">
+      <DependentUpon>PrescriptionForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Static\QuestionDialog.resx">
       <DependentUpon>QuestionDialog.cs</DependentUpon>

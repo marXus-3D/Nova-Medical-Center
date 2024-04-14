@@ -46,7 +46,7 @@ namespace Nova_Medical_Center.Views
 
             if (Data.Data.currentUser == null)
             {
-                OpenChildForm(new SecurityForm());
+                OpenChildForm(new PatientDischargeForm());
                 return;
             }
 

@@ -29,5 +29,9 @@ namespace Nova_Medical_Center.Scripts
         {
             new QuestionDialog("What is the Patient current urgency level", "Patient Urgency Level", ref i).ShowDialog();
         }
+        public static void ShowDischargeDialog(ref int i)
+        {
+            new DischargeDialogBox(ref i).ShowDialog();
+        }
     }
 }
