@@ -37,7 +37,13 @@ namespace Nova_Medical_Center.Views
 
         private void PatientUpdateForm_Load(object sender, EventArgs e)
         {
-            DataLoader.LoadPatient();
+            if (Data.Data.patients == null)
+            {
+                DataLoader.LoadPatient();
+                return;
+            }
+
+            LoadedPatients(true);
         }
 
         private void admitButton_Click(object sender, EventArgs e)
