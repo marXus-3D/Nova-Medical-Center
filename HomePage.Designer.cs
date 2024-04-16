@@ -148,10 +148,10 @@
             // 
             this.sideBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
             this.sideBar.Controls.Add(this.dashboardBtn);
-            this.sideBar.Controls.Add(this.settingPanel);
             this.sideBar.Controls.Add(this.patientsBtn);
             this.sideBar.Controls.Add(this.roomBtn);
             this.sideBar.Controls.Add(this.employeePanel);
+            this.sideBar.Controls.Add(this.settingPanel);
             this.sideBar.Dock = System.Windows.Forms.DockStyle.Left;
             this.sideBar.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.sideBar.Location = new System.Drawing.Point(0, 45);
@@ -166,7 +166,7 @@
             this.dashboardBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.dashboardBtn.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dashboardBtn.ForeColor = System.Drawing.Color.White;
-            this.dashboardBtn.IconChar = FontAwesome.Sharp.IconChar.LineChart;
+            this.dashboardBtn.IconChar = FontAwesome.Sharp.IconChar.HomeUser;
             this.dashboardBtn.IconColor = System.Drawing.Color.White;
             this.dashboardBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.dashboardBtn.IconSize = 32;
@@ -175,7 +175,7 @@
             this.dashboardBtn.Name = "dashboardBtn";
             this.dashboardBtn.Size = new System.Drawing.Size(231, 53);
             this.dashboardBtn.TabIndex = 2;
-            this.dashboardBtn.Text = "Dashboard";
+            this.dashboardBtn.Text = "Home";
             this.dashboardBtn.UseVisualStyleBackColor = false;
             this.dashboardBtn.Click += new System.EventHandler(this.dashboardBtn_Click);
             // 
@@ -185,7 +185,7 @@
             this.settingPanel.Controls.Add(this.settingBtn);
             this.settingPanel.Controls.Add(this.accountBtn);
             this.settingPanel.Controls.Add(this.logoutBtn);
-            this.settingPanel.Location = new System.Drawing.Point(3, 62);
+            this.settingPanel.Location = new System.Drawing.Point(3, 246);
             this.settingPanel.Name = "settingPanel";
             this.settingPanel.Size = new System.Drawing.Size(235, 60);
             this.settingPanel.TabIndex = 2;
@@ -217,7 +217,7 @@
             this.accountBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.accountBtn.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.accountBtn.ForeColor = System.Drawing.Color.White;
-            this.accountBtn.IconChar = FontAwesome.Sharp.IconChar.LineChart;
+            this.accountBtn.IconChar = FontAwesome.Sharp.IconChar.AddressBook;
             this.accountBtn.IconColor = System.Drawing.Color.White;
             this.accountBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.accountBtn.IconSize = 32;
@@ -236,7 +236,7 @@
             this.logoutBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.logoutBtn.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.logoutBtn.ForeColor = System.Drawing.Color.White;
-            this.logoutBtn.IconChar = FontAwesome.Sharp.IconChar.LineChart;
+            this.logoutBtn.IconChar = FontAwesome.Sharp.IconChar.SignOutAlt;
             this.logoutBtn.IconColor = System.Drawing.Color.White;
             this.logoutBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.logoutBtn.IconSize = 32;
@@ -260,7 +260,7 @@
             this.patientsBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.patientsBtn.IconSize = 32;
             this.patientsBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.patientsBtn.Location = new System.Drawing.Point(3, 128);
+            this.patientsBtn.Location = new System.Drawing.Point(3, 62);
             this.patientsBtn.Name = "patientsBtn";
             this.patientsBtn.Size = new System.Drawing.Size(231, 53);
             this.patientsBtn.TabIndex = 3;
@@ -280,7 +280,7 @@
             this.roomBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.roomBtn.IconSize = 32;
             this.roomBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.roomBtn.Location = new System.Drawing.Point(3, 187);
+            this.roomBtn.Location = new System.Drawing.Point(3, 121);
             this.roomBtn.Name = "roomBtn";
             this.roomBtn.Size = new System.Drawing.Size(231, 53);
             this.roomBtn.TabIndex = 4;
@@ -295,7 +295,7 @@
             this.employeePanel.Controls.Add(this.doctorButton);
             this.employeePanel.Controls.Add(this.nurseButton);
             this.employeePanel.Controls.Add(this.deskBtn);
-            this.employeePanel.Location = new System.Drawing.Point(3, 246);
+            this.employeePanel.Location = new System.Drawing.Point(3, 180);
             this.employeePanel.Name = "employeePanel";
             this.employeePanel.Size = new System.Drawing.Size(235, 60);
             this.employeePanel.TabIndex = 5;
@@ -358,6 +358,7 @@
             this.nurseButton.TabIndex = 5;
             this.nurseButton.Text = "Nurses";
             this.nurseButton.UseVisualStyleBackColor = false;
+            this.nurseButton.Click += new System.EventHandler(this.nurseButton_Click);
             // 
             // deskBtn
             // 
@@ -377,6 +378,7 @@
             this.deskBtn.TabIndex = 6;
             this.deskBtn.Text = "Front Desk";
             this.deskBtn.UseVisualStyleBackColor = false;
+            this.deskBtn.Click += new System.EventHandler(this.deskBtn_Click);
             // 
             // settingTransition
             // 

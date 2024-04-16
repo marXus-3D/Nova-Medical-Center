@@ -31,20 +31,23 @@
             this.loginBtn = new MaterialSkin.Controls.MaterialButton();
             this.passwordField = new MaterialSkin.Controls.MaterialTextBox();
             this.usernameField = new MaterialSkin.Controls.MaterialTextBox();
+            this.J = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // loginBtn
             // 
+            this.loginBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.loginBtn.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             this.loginBtn.Depth = 0;
             this.loginBtn.HighEmphasis = true;
             this.loginBtn.Icon = null;
-            this.loginBtn.Location = new System.Drawing.Point(202, 275);
+            this.loginBtn.Location = new System.Drawing.Point(226, 275);
             this.loginBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.loginBtn.MouseState = MaterialSkin.MouseState.HOVER;
             this.loginBtn.Name = "loginBtn";
             this.loginBtn.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.loginBtn.Size = new System.Drawing.Size(96, 36);
+            this.loginBtn.Size = new System.Drawing.Size(64, 36);
             this.loginBtn.TabIndex = 2;
             this.loginBtn.Text = "Login";
             this.loginBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
@@ -97,12 +100,36 @@
             this.usernameField.UseAccent = false;
             this.usernameField.UseTallSize = false;
             // 
+            // J
+            // 
+            this.J.AutoSize = true;
+            this.J.BackColor = System.Drawing.SystemColors.Control;
+            this.J.Font = new System.Drawing.Font("Greek Column", 90F);
+            this.J.Location = new System.Drawing.Point(195, -17);
+            this.J.Name = "J";
+            this.J.Size = new System.Drawing.Size(150, 125);
+            this.J.TabIndex = 7;
+            this.J.Text = "J";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.Control;
+            this.label1.Font = new System.Drawing.Font("SPACEBAR", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(194, 89);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(146, 49);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "NOVA";
+            // 
             // LoginPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(525, 320);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.J);
             this.Controls.Add(this.usernameField);
             this.Controls.Add(this.passwordField);
             this.Controls.Add(this.loginBtn);
@@ -121,5 +148,7 @@
         private MaterialSkin.Controls.MaterialButton loginBtn;
         private MaterialSkin.Controls.MaterialTextBox passwordField;
         private MaterialSkin.Controls.MaterialTextBox usernameField;
+        private System.Windows.Forms.Label J;
+        private System.Windows.Forms.Label label1;
     }
 }

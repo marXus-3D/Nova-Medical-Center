@@ -26,33 +26,6 @@ namespace Nova_Medical_Center
             OpenChildForm(new Dashboard());
         }
 
-        private void settingTransition_Tick(object sender, EventArgs e)
-        {
-            if (!settingExpanded) 
-            {
-                settingPanel.Height += 10;
-                if (settingPanel.Height >= 180)
-                {
-                    settingTransition.Stop();
-                    settingExpanded = true;
-                }
-            }
-            else
-            {
-                settingPanel.Height -= 10;
-                if (settingPanel.Height <= 60)
-                {
-                    settingTransition.Stop();
-                    settingExpanded = false;
-                }
-            }
-        }
-
-        private void settingBtn_Click(object sender, EventArgs e)
-        {
-            settingTransition.Start();
-        }
-
         private void hamBurgerMenu_Click(object sender, EventArgs e)
         {
             sideBarTransition.Start();
@@ -113,6 +86,10 @@ namespace Nova_Medical_Center
         {
             if (senderBtn != null)
             {
+                if (employeeExpanded)
+                    employeeTransition.Start();
+                else if(settingExpanded)
+                    settingTransition.Start();
                 DisableButton();
                 //Button
                 currentBtn = (IconButton)senderBtn;
@@ -167,6 +144,8 @@ namespace Nova_Medical_Center
             public static Color color4 = Color.FromArgb(95, 77, 221);
             public static Color color5 = Color.FromArgb(249, 88, 155);
             public static Color color6 = Color.FromArgb(24, 161, 251);
+            public static Color color7 = Color.FromArgb(241, 23, 18);
+            public static Color color8 = Color.FromArgb(0, 210, 255);
         }
 
         #region Click Events
@@ -175,17 +154,6 @@ namespace Nova_Medical_Center
             ActivateButton(sender, RGBColors.color1);
             OpenChildForm(new Dashboard());
         }
-        private void empBtn_Click(object sender, EventArgs e)
-        {
-            employeeTransition.Start();
-        }
-
-        private void doctorButton_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender, RGBColors.color1);
-            OpenChildForm(new DoctorForm());
-        }
-
         private void patientsBtn_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color2);
@@ -196,6 +164,56 @@ namespace Nova_Medical_Center
         {
             ActivateButton(sender, RGBColors.color3);
             OpenChildForm(new RoomForm());
+        }
+
+        private void empBtn_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color7);
+            employeeTransition.Start();
+        }
+
+        private void doctorButton_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color4);
+            OpenChildForm(new DoctorForm());
+        }
+
+        private void nurseButton_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color5);
+        }
+
+        private void deskBtn_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color6);
+        }
+
+        private void settingBtn_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color8);
+            settingTransition.Start();
+        }
+
+        private void settingTransition_Tick(object sender, EventArgs e)
+        {
+            if (!settingExpanded)
+            {
+                settingPanel.Height += 10;
+                if (settingPanel.Height >= 180)
+                {
+                    settingTransition.Stop();
+                    settingExpanded = true;
+                }
+            }
+            else
+            {
+                settingPanel.Height -= 10;
+                if (settingPanel.Height <= 60)
+                {
+                    settingTransition.Stop();
+                    settingExpanded = false;
+                }
+            }
         }
 
         private void employeeTransition_Tick(object sender, EventArgs e)
