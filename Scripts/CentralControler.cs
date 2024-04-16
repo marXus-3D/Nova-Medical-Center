@@ -47,9 +47,33 @@ namespace Nova_Medical_Center.Scripts
     
         public static void RoomUpdate(int roomIdx) 
         {
-            if (Data.Data.CriticalQueue.Count > 1)
+            if (Data.Data.CriticalQueue.Count > 0)
             {
                 var patient = Data.Data.CriticalQueue.Dequeue();
+
+                Data.Data.rooms[roomIdx].Occupied = true;
+                patient.RoomOccupied = Data.Data.rooms[roomIdx];
+
+                if (Data.Data.patients.IndexOf(patient) == -1)
+                {
+                    Data.Data.patients.Add(patient);
+                }
+            }
+            else if(Data.Data.SemiCriticalQueue.Count > 0)
+            {
+                var patient = Data.Data.SemiCriticalQueue.Dequeue();
+
+                Data.Data.rooms[roomIdx].Occupied = true;
+                patient.RoomOccupied = Data.Data.rooms[roomIdx];
+
+                if (Data.Data.patients.IndexOf(patient) == -1)
+                {
+                    Data.Data.patients.Add(patient);
+                }
+            }
+            else if (Data.Data.NonCriticalQueue.Count > 0)
+            {
+                var patient = Data.Data.NonCriticalQueue.Dequeue();
 
                 Data.Data.rooms[roomIdx].Occupied = true;
                 patient.RoomOccupied = Data.Data.rooms[roomIdx];
