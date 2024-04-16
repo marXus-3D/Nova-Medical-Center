@@ -207,6 +207,7 @@
             this.Controls.Add(this.diagnosisField);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "DischargeDialogBox";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DialogBox";
             this.Load += new System.EventHandler(this.DischargeDialogBox_Load);
             this.ResumeLayout(false);

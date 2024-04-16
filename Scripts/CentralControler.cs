@@ -47,7 +47,7 @@ namespace Nova_Medical_Center.Scripts
     
         public static void RoomUpdate(int roomIdx) 
         {
-            if (Data.Data.CriticalQueue.Count > 0)
+            if (Data.Data.CriticalQueue?.Count > 0)
             {
                 var patient = Data.Data.CriticalQueue.Dequeue();
 
@@ -59,7 +59,7 @@ namespace Nova_Medical_Center.Scripts
                     Data.Data.patients.Add(patient);
                 }
             }
-            else if(Data.Data.SemiCriticalQueue.Count > 0)
+            else if(Data.Data.SemiCriticalQueue?.Count > 0)
             {
                 var patient = Data.Data.SemiCriticalQueue.Dequeue();
 
@@ -71,7 +71,7 @@ namespace Nova_Medical_Center.Scripts
                     Data.Data.patients.Add(patient);
                 }
             }
-            else if (Data.Data.NonCriticalQueue.Count > 0)
+            else if (Data.Data.NonCriticalQueue?.Count > 0)
             {
                 var patient = Data.Data.NonCriticalQueue.Dequeue();
 

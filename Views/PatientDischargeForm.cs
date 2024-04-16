@@ -54,9 +54,9 @@ namespace Nova_Medical_Center.Views
         {
             selectedIdx = doctorGridView.SelectedRows[0].Index;
             if (Data.Data.patients[selectedIdx].RoomOccupied != null)
-                admitButton.Enabled = true;
-            else 
-                admitButton.Enabled = false;
+                admitBtn.Enabled = true;
+            else
+                admitBtn.Enabled = false;
         }
     }
 }

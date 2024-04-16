@@ -246,6 +246,7 @@
             this.Controls.Add(this.fnameField);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "DialogBox";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DialogBox";
             this.ResumeLayout(false);
 

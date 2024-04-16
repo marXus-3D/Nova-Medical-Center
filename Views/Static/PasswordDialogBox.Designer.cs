@@ -111,6 +111,7 @@
             this.Controls.Add(this.passwordField);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "PasswordDialogBox";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DialogBox";
             this.ResumeLayout(false);
 
