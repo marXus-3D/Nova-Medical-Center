@@ -37,10 +37,6 @@
             this.hamBurgerMenu = new System.Windows.Forms.PictureBox();
             this.sideBar = new System.Windows.Forms.FlowLayoutPanel();
             this.dashboardBtn = new FontAwesome.Sharp.IconButton();
-            this.settingPanel = new System.Windows.Forms.FlowLayoutPanel();
-            this.settingBtn = new FontAwesome.Sharp.IconButton();
-            this.accountBtn = new FontAwesome.Sharp.IconButton();
-            this.logoutBtn = new FontAwesome.Sharp.IconButton();
             this.patientsBtn = new FontAwesome.Sharp.IconButton();
             this.roomBtn = new FontAwesome.Sharp.IconButton();
             this.employeePanel = new System.Windows.Forms.FlowLayoutPanel();
@@ -48,6 +44,10 @@
             this.doctorButton = new FontAwesome.Sharp.IconButton();
             this.nurseButton = new FontAwesome.Sharp.IconButton();
             this.deskBtn = new FontAwesome.Sharp.IconButton();
+            this.settingPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.settingBtn = new FontAwesome.Sharp.IconButton();
+            this.accountBtn = new FontAwesome.Sharp.IconButton();
+            this.logoutBtn = new FontAwesome.Sharp.IconButton();
             this.settingTransition = new System.Windows.Forms.Timer(this.components);
             this.sideBarTransition = new System.Windows.Forms.Timer(this.components);
             this.panelDesktop = new System.Windows.Forms.Panel();
@@ -55,8 +55,8 @@
             this.titleBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.hamBurgerMenu)).BeginInit();
             this.sideBar.SuspendLayout();
-            this.settingPanel.SuspendLayout();
             this.employeePanel.SuspendLayout();
+            this.settingPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // titleBar
@@ -166,7 +166,7 @@
             this.dashboardBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.dashboardBtn.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dashboardBtn.ForeColor = System.Drawing.Color.White;
-            this.dashboardBtn.IconChar = FontAwesome.Sharp.IconChar.HomeUser;
+            this.dashboardBtn.IconChar = FontAwesome.Sharp.IconChar.HospitalUser;
             this.dashboardBtn.IconColor = System.Drawing.Color.White;
             this.dashboardBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.dashboardBtn.IconSize = 32;
@@ -178,75 +178,6 @@
             this.dashboardBtn.Text = "Home";
             this.dashboardBtn.UseVisualStyleBackColor = false;
             this.dashboardBtn.Click += new System.EventHandler(this.dashboardBtn_Click);
-            // 
-            // settingPanel
-            // 
-            this.settingPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
-            this.settingPanel.Controls.Add(this.settingBtn);
-            this.settingPanel.Controls.Add(this.accountBtn);
-            this.settingPanel.Controls.Add(this.logoutBtn);
-            this.settingPanel.Location = new System.Drawing.Point(3, 246);
-            this.settingPanel.Name = "settingPanel";
-            this.settingPanel.Size = new System.Drawing.Size(235, 60);
-            this.settingPanel.TabIndex = 2;
-            // 
-            // settingBtn
-            // 
-            this.settingBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            this.settingBtn.FlatAppearance.BorderSize = 0;
-            this.settingBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.settingBtn.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.settingBtn.ForeColor = System.Drawing.Color.White;
-            this.settingBtn.IconChar = FontAwesome.Sharp.IconChar.Gear;
-            this.settingBtn.IconColor = System.Drawing.Color.White;
-            this.settingBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.settingBtn.IconSize = 32;
-            this.settingBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.settingBtn.Location = new System.Drawing.Point(3, 3);
-            this.settingBtn.Name = "settingBtn";
-            this.settingBtn.Size = new System.Drawing.Size(231, 53);
-            this.settingBtn.TabIndex = 3;
-            this.settingBtn.Text = "Settings";
-            this.settingBtn.UseVisualStyleBackColor = false;
-            this.settingBtn.Click += new System.EventHandler(this.settingBtn_Click);
-            // 
-            // accountBtn
-            // 
-            this.accountBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
-            this.accountBtn.FlatAppearance.BorderSize = 0;
-            this.accountBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.accountBtn.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.accountBtn.ForeColor = System.Drawing.Color.White;
-            this.accountBtn.IconChar = FontAwesome.Sharp.IconChar.AddressBook;
-            this.accountBtn.IconColor = System.Drawing.Color.White;
-            this.accountBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.accountBtn.IconSize = 32;
-            this.accountBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.accountBtn.Location = new System.Drawing.Point(3, 62);
-            this.accountBtn.Name = "accountBtn";
-            this.accountBtn.Size = new System.Drawing.Size(231, 53);
-            this.accountBtn.TabIndex = 4;
-            this.accountBtn.Text = "Account";
-            this.accountBtn.UseVisualStyleBackColor = false;
-            // 
-            // logoutBtn
-            // 
-            this.logoutBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
-            this.logoutBtn.FlatAppearance.BorderSize = 0;
-            this.logoutBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.logoutBtn.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.logoutBtn.ForeColor = System.Drawing.Color.White;
-            this.logoutBtn.IconChar = FontAwesome.Sharp.IconChar.SignOutAlt;
-            this.logoutBtn.IconColor = System.Drawing.Color.White;
-            this.logoutBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.logoutBtn.IconSize = 32;
-            this.logoutBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.logoutBtn.Location = new System.Drawing.Point(3, 121);
-            this.logoutBtn.Name = "logoutBtn";
-            this.logoutBtn.Size = new System.Drawing.Size(231, 53);
-            this.logoutBtn.TabIndex = 5;
-            this.logoutBtn.Text = "Logout";
-            this.logoutBtn.UseVisualStyleBackColor = false;
             // 
             // patientsBtn
             // 
@@ -380,6 +311,75 @@
             this.deskBtn.UseVisualStyleBackColor = false;
             this.deskBtn.Click += new System.EventHandler(this.deskBtn_Click);
             // 
+            // settingPanel
+            // 
+            this.settingPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
+            this.settingPanel.Controls.Add(this.settingBtn);
+            this.settingPanel.Controls.Add(this.accountBtn);
+            this.settingPanel.Controls.Add(this.logoutBtn);
+            this.settingPanel.Location = new System.Drawing.Point(3, 246);
+            this.settingPanel.Name = "settingPanel";
+            this.settingPanel.Size = new System.Drawing.Size(235, 60);
+            this.settingPanel.TabIndex = 2;
+            // 
+            // settingBtn
+            // 
+            this.settingBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.settingBtn.FlatAppearance.BorderSize = 0;
+            this.settingBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.settingBtn.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.settingBtn.ForeColor = System.Drawing.Color.White;
+            this.settingBtn.IconChar = FontAwesome.Sharp.IconChar.Gear;
+            this.settingBtn.IconColor = System.Drawing.Color.White;
+            this.settingBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.settingBtn.IconSize = 32;
+            this.settingBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.settingBtn.Location = new System.Drawing.Point(3, 3);
+            this.settingBtn.Name = "settingBtn";
+            this.settingBtn.Size = new System.Drawing.Size(231, 53);
+            this.settingBtn.TabIndex = 3;
+            this.settingBtn.Text = "Settings";
+            this.settingBtn.UseVisualStyleBackColor = false;
+            this.settingBtn.Click += new System.EventHandler(this.settingBtn_Click);
+            // 
+            // accountBtn
+            // 
+            this.accountBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
+            this.accountBtn.FlatAppearance.BorderSize = 0;
+            this.accountBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.accountBtn.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.accountBtn.ForeColor = System.Drawing.Color.White;
+            this.accountBtn.IconChar = FontAwesome.Sharp.IconChar.AddressBook;
+            this.accountBtn.IconColor = System.Drawing.Color.White;
+            this.accountBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.accountBtn.IconSize = 32;
+            this.accountBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.accountBtn.Location = new System.Drawing.Point(3, 62);
+            this.accountBtn.Name = "accountBtn";
+            this.accountBtn.Size = new System.Drawing.Size(231, 53);
+            this.accountBtn.TabIndex = 4;
+            this.accountBtn.Text = "Account";
+            this.accountBtn.UseVisualStyleBackColor = false;
+            // 
+            // logoutBtn
+            // 
+            this.logoutBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
+            this.logoutBtn.FlatAppearance.BorderSize = 0;
+            this.logoutBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.logoutBtn.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logoutBtn.ForeColor = System.Drawing.Color.White;
+            this.logoutBtn.IconChar = FontAwesome.Sharp.IconChar.SignOutAlt;
+            this.logoutBtn.IconColor = System.Drawing.Color.White;
+            this.logoutBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.logoutBtn.IconSize = 32;
+            this.logoutBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.logoutBtn.Location = new System.Drawing.Point(3, 121);
+            this.logoutBtn.Name = "logoutBtn";
+            this.logoutBtn.Size = new System.Drawing.Size(231, 53);
+            this.logoutBtn.TabIndex = 5;
+            this.logoutBtn.Text = "Logout";
+            this.logoutBtn.UseVisualStyleBackColor = false;
+            // 
             // settingTransition
             // 
             this.settingTransition.Interval = 50;
@@ -419,8 +419,8 @@
             this.titleBar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.hamBurgerMenu)).EndInit();
             this.sideBar.ResumeLayout(false);
-            this.settingPanel.ResumeLayout(false);
             this.employeePanel.ResumeLayout(false);
+            this.settingPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
