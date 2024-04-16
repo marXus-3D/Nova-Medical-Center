@@ -11,6 +11,6 @@ namespace Nova_Medical_Center.Scripts
         public static Action<bool> OnPatientLoad;
         public static Action<bool> OnRoomLoad;
         public static Action<bool> OnEmployeeLoad;
-        public static Action OnDischarge;
+        public static Action<int> OnDischarge;
     }
 }

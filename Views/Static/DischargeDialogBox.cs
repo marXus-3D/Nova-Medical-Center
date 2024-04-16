@@ -34,10 +34,11 @@ namespace Nova_Medical_Center.Views.Static
                 DiagnosisDate = DateTime.Now,
                 Medications = medications,
             });
-            Data.Data.rooms.Where(r => r.Id == Data.Data.patients[idx].RoomOccupied.Id).First().Occupied = false;
+            int roomIdx = Data.Data.rooms.IndexOf(Data.Data.rooms.Where(r => r.Id == Data.Data.patients[idx].RoomOccupied.Id).First());
+            Data.Data.rooms[roomIdx].Occupied = false;
             Data.Data.patients[idx].RoomOccupied = null;
 
-            Scripts.Events.OnDischarge?.Invoke();
+            Scripts.Events.OnDischarge?.Invoke(roomIdx);
             new PrescriptionForm(ref idx, medicationDate.Value, ref ml).ShowDialog();
             this.Close();
         }

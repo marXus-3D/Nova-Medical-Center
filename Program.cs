@@ -1,4 +1,5 @@
-﻿using Nova_Medical_Center.Views;
+﻿using Nova_Medical_Center.Scripts;
+using Nova_Medical_Center.Views;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,6 +16,7 @@ namespace Nova_Medical_Center
         [STAThread]
         static void Main()
         {
+            Events.OnDischarge += CentralControler.RoomUpdate;
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new HomePage());

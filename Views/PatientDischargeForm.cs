@@ -16,7 +16,6 @@ namespace Nova_Medical_Center.Views
     public partial class PatientDischargeForm : Form
     {
         int selectedIdx;
-        IconButton current;
         public PatientDischargeForm()
         {
             InitializeComponent();

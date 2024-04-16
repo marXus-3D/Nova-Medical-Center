@@ -44,5 +44,21 @@ namespace Nova_Medical_Center.Scripts
                 await DataLoader.LoadRooms();
             return Data.Data.rooms.Where(room => !room.Occupied).FirstOrDefault();
         }
+    
+        public static void RoomUpdate(int roomIdx) 
+        {
+            if (Data.Data.CriticalQueue.Count > 1)
+            {
+                var patient = Data.Data.CriticalQueue.Dequeue();
+
+                Data.Data.rooms[roomIdx].Occupied = true;
+                patient.RoomOccupied = Data.Data.rooms[roomIdx];
+
+                if (Data.Data.patients.IndexOf(patient) == -1)
+                {
+                    Data.Data.patients.Add(patient);
+                }
+            }
+        }
     }
 }

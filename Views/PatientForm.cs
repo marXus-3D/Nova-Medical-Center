@@ -44,7 +44,7 @@ namespace Nova_Medical_Center.Views
         {
             ActivateButton(sender);
 
-            if (Data.Data.currentUser == null)
+            if (Data.Data.currentUser == null) // Todo Remove this Don't Forget
             {
                 OpenChildForm(new PatientDischargeForm());
                 return;
