@@ -2,21 +2,15 @@
 using Nova_Medical_Center.Data;
 using Nova_Medical_Center.Scripts;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using QRCoder;
+using Newtonsoft.Json;
 
 namespace Nova_Medical_Center.Views
 {
     public partial class PatientHomeForm : Form
     {
         int selectedIdx;
-        IconButton current;
         public PatientHomeForm()
         {
             InitializeComponent();
@@ -54,11 +48,18 @@ namespace Nova_Medical_Center.Views
 
         private void doctorGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            shareBtn.Enabled = true;
+
             selectedIdx = doctorGridView.SelectedRows[0].Index;
             if (Data.Data.patients[selectedIdx].RoomOccupied == null)
                 admitButton.Enabled = true;
             else 
                 admitButton.Enabled = false;
+        }
+
+        private void shareBtn_Click(object sender, EventArgs e)
+        {
+            CustomDialog.ShowQrDialog(ref selectedIdx);
         }
     }
 }

@@ -33,5 +33,9 @@ namespace Nova_Medical_Center.Scripts
         {
             new DischargeDialogBox(ref i).ShowDialog();
         }
+        public static void ShowQrDialog(ref int i)
+        {
+            new QRForm(ref i).ShowDialog();
+        }
     }
 }

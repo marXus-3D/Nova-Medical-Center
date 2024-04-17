@@ -32,15 +32,16 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.loadPanel = new System.Windows.Forms.Panel();
+            this.errorLabel = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.doctorGridView = new System.Windows.Forms.DataGridView();
-            this.errorLabel = new System.Windows.Forms.Label();
+            this.shareBtn = new Nova_Medical_Center.Views.Controls.RJButton();
             this.admitButton = new Nova_Medical_Center.Views.Controls.RJButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.loadPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.doctorGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // loadPanel
@@ -53,8 +54,31 @@
             this.loadPanel.Size = new System.Drawing.Size(1046, 612);
             this.loadPanel.TabIndex = 1;
             // 
+            // errorLabel
+            // 
+            this.errorLabel.AutoSize = true;
+            this.errorLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.errorLabel.ForeColor = System.Drawing.Color.IndianRed;
+            this.errorLabel.Location = new System.Drawing.Point(324, 458);
+            this.errorLabel.Name = "errorLabel";
+            this.errorLabel.Size = new System.Drawing.Size(398, 25);
+            this.errorLabel.TabIndex = 5;
+            this.errorLabel.Text = "Error While Loading Patients Please Try Again.";
+            this.errorLabel.Visible = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Nova_Medical_Center.Properties.Resources.Cube_1x_1_0s_200px_200px;
+            this.pictureBox1.Location = new System.Drawing.Point(364, 129);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(300, 300);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.shareBtn);
             this.panel1.Controls.Add(this.admitButton);
             this.panel1.Controls.Add(this.doctorGridView);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -106,17 +130,26 @@
             this.doctorGridView.TabIndex = 1;
             this.doctorGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.doctorGridView_CellClick);
             // 
-            // errorLabel
+            // shareBtn
             // 
-            this.errorLabel.AutoSize = true;
-            this.errorLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.errorLabel.ForeColor = System.Drawing.Color.IndianRed;
-            this.errorLabel.Location = new System.Drawing.Point(324, 458);
-            this.errorLabel.Name = "errorLabel";
-            this.errorLabel.Size = new System.Drawing.Size(398, 25);
-            this.errorLabel.TabIndex = 5;
-            this.errorLabel.Text = "Error While Loading Patients Please Try Again.";
-            this.errorLabel.Visible = false;
+            this.shareBtn.BackColor = System.Drawing.SystemColors.Control;
+            this.shareBtn.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.shareBtn.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.shareBtn.BorderRadius = 6;
+            this.shareBtn.BorderSize = 1;
+            this.shareBtn.Enabled = false;
+            this.shareBtn.FlatAppearance.BorderSize = 0;
+            this.shareBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.shareBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.shareBtn.ForeColor = System.Drawing.Color.Black;
+            this.shareBtn.Location = new System.Drawing.Point(513, 540);
+            this.shareBtn.Name = "shareBtn";
+            this.shareBtn.Size = new System.Drawing.Size(95, 40);
+            this.shareBtn.TabIndex = 4;
+            this.shareBtn.Text = "Share";
+            this.shareBtn.TextColor = System.Drawing.Color.Black;
+            this.shareBtn.UseVisualStyleBackColor = false;
+            this.shareBtn.Click += new System.EventHandler(this.shareBtn_Click);
             // 
             // admitButton
             // 
@@ -130,7 +163,7 @@
             this.admitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.admitButton.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.admitButton.ForeColor = System.Drawing.Color.Black;
-            this.admitButton.Location = new System.Drawing.Point(459, 538);
+            this.admitButton.Location = new System.Drawing.Point(391, 540);
             this.admitButton.Name = "admitButton";
             this.admitButton.Size = new System.Drawing.Size(95, 40);
             this.admitButton.TabIndex = 3;
@@ -138,16 +171,6 @@
             this.admitButton.TextColor = System.Drawing.Color.Black;
             this.admitButton.UseVisualStyleBackColor = false;
             this.admitButton.Click += new System.EventHandler(this.admitButton_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Nova_Medical_Center.Properties.Resources.Cube_1x_1_0s_200px_200px;
-            this.pictureBox1.Location = new System.Drawing.Point(364, 129);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(300, 300);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
             // 
             // PatientHomeForm
             // 
@@ -162,9 +185,9 @@
             this.Load += new System.EventHandler(this.PatientUpdateForm_Load);
             this.loadPanel.ResumeLayout(false);
             this.loadPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.doctorGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -176,5 +199,6 @@
         private System.Windows.Forms.Panel panel1;
         private Controls.RJButton admitButton;
         private System.Windows.Forms.DataGridView doctorGridView;
+        private Controls.RJButton shareBtn;
     }
 }
