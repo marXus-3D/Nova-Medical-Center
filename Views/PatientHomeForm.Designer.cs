@@ -35,9 +35,10 @@
             this.errorLabel = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.doctorGridView = new System.Windows.Forms.DataGridView();
             this.shareBtn = new Nova_Medical_Center.Views.Controls.RJButton();
             this.admitButton = new Nova_Medical_Center.Views.Controls.RJButton();
+            this.doctorGridView = new System.Windows.Forms.DataGridView();
+            this.recordBtn = new Nova_Medical_Center.Views.Controls.RJButton();
             this.loadPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -78,6 +79,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.recordBtn);
             this.panel1.Controls.Add(this.shareBtn);
             this.panel1.Controls.Add(this.admitButton);
             this.panel1.Controls.Add(this.doctorGridView);
@@ -86,6 +88,48 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1046, 612);
             this.panel1.TabIndex = 3;
+            // 
+            // shareBtn
+            // 
+            this.shareBtn.BackColor = System.Drawing.SystemColors.Control;
+            this.shareBtn.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.shareBtn.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.shareBtn.BorderRadius = 6;
+            this.shareBtn.BorderSize = 1;
+            this.shareBtn.Enabled = false;
+            this.shareBtn.FlatAppearance.BorderSize = 0;
+            this.shareBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.shareBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.shareBtn.ForeColor = System.Drawing.Color.Black;
+            this.shareBtn.Location = new System.Drawing.Point(450, 540);
+            this.shareBtn.Name = "shareBtn";
+            this.shareBtn.Size = new System.Drawing.Size(95, 40);
+            this.shareBtn.TabIndex = 4;
+            this.shareBtn.Text = "Share";
+            this.shareBtn.TextColor = System.Drawing.Color.Black;
+            this.shareBtn.UseVisualStyleBackColor = false;
+            this.shareBtn.Click += new System.EventHandler(this.shareBtn_Click);
+            // 
+            // admitButton
+            // 
+            this.admitButton.BackColor = System.Drawing.SystemColors.Control;
+            this.admitButton.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.admitButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.admitButton.BorderRadius = 6;
+            this.admitButton.BorderSize = 1;
+            this.admitButton.Enabled = false;
+            this.admitButton.FlatAppearance.BorderSize = 0;
+            this.admitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.admitButton.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.admitButton.ForeColor = System.Drawing.Color.Black;
+            this.admitButton.Location = new System.Drawing.Point(323, 540);
+            this.admitButton.Name = "admitButton";
+            this.admitButton.Size = new System.Drawing.Size(95, 40);
+            this.admitButton.TabIndex = 3;
+            this.admitButton.Text = "Admit";
+            this.admitButton.TextColor = System.Drawing.Color.Black;
+            this.admitButton.UseVisualStyleBackColor = false;
+            this.admitButton.Click += new System.EventHandler(this.admitButton_Click);
             // 
             // doctorGridView
             // 
@@ -130,47 +174,26 @@
             this.doctorGridView.TabIndex = 1;
             this.doctorGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.doctorGridView_CellClick);
             // 
-            // shareBtn
+            // recordBtn
             // 
-            this.shareBtn.BackColor = System.Drawing.SystemColors.Control;
-            this.shareBtn.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.shareBtn.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            this.shareBtn.BorderRadius = 6;
-            this.shareBtn.BorderSize = 1;
-            this.shareBtn.Enabled = false;
-            this.shareBtn.FlatAppearance.BorderSize = 0;
-            this.shareBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.shareBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.shareBtn.ForeColor = System.Drawing.Color.Black;
-            this.shareBtn.Location = new System.Drawing.Point(513, 540);
-            this.shareBtn.Name = "shareBtn";
-            this.shareBtn.Size = new System.Drawing.Size(95, 40);
-            this.shareBtn.TabIndex = 4;
-            this.shareBtn.Text = "Share";
-            this.shareBtn.TextColor = System.Drawing.Color.Black;
-            this.shareBtn.UseVisualStyleBackColor = false;
-            this.shareBtn.Click += new System.EventHandler(this.shareBtn_Click);
-            // 
-            // admitButton
-            // 
-            this.admitButton.BackColor = System.Drawing.SystemColors.Control;
-            this.admitButton.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.admitButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            this.admitButton.BorderRadius = 6;
-            this.admitButton.BorderSize = 1;
-            this.admitButton.Enabled = false;
-            this.admitButton.FlatAppearance.BorderSize = 0;
-            this.admitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.admitButton.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.admitButton.ForeColor = System.Drawing.Color.Black;
-            this.admitButton.Location = new System.Drawing.Point(391, 540);
-            this.admitButton.Name = "admitButton";
-            this.admitButton.Size = new System.Drawing.Size(95, 40);
-            this.admitButton.TabIndex = 3;
-            this.admitButton.Text = "Admit";
-            this.admitButton.TextColor = System.Drawing.Color.Black;
-            this.admitButton.UseVisualStyleBackColor = false;
-            this.admitButton.Click += new System.EventHandler(this.admitButton_Click);
+            this.recordBtn.BackColor = System.Drawing.SystemColors.Control;
+            this.recordBtn.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.recordBtn.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.recordBtn.BorderRadius = 6;
+            this.recordBtn.BorderSize = 1;
+            this.recordBtn.Enabled = false;
+            this.recordBtn.FlatAppearance.BorderSize = 0;
+            this.recordBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.recordBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.recordBtn.ForeColor = System.Drawing.Color.Black;
+            this.recordBtn.Location = new System.Drawing.Point(569, 540);
+            this.recordBtn.Name = "recordBtn";
+            this.recordBtn.Size = new System.Drawing.Size(95, 40);
+            this.recordBtn.TabIndex = 5;
+            this.recordBtn.Text = "Records";
+            this.recordBtn.TextColor = System.Drawing.Color.Black;
+            this.recordBtn.UseVisualStyleBackColor = false;
+            this.recordBtn.Click += new System.EventHandler(this.recordBtn_Click);
             // 
             // PatientHomeForm
             // 
@@ -200,5 +223,6 @@
         private Controls.RJButton admitButton;
         private System.Windows.Forms.DataGridView doctorGridView;
         private Controls.RJButton shareBtn;
+        private Controls.RJButton recordBtn;
     }
 }

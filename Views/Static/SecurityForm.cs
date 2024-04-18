@@ -16,5 +16,10 @@ namespace Nova_Medical_Center.Views.Static
         {
             InitializeComponent();
         }
+        public SecurityForm(string str): this()
+        {
+            
+            label1.Text = str;
+        }
     }
 }

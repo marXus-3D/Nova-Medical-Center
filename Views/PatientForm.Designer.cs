@@ -32,7 +32,7 @@
             this.line = new System.Windows.Forms.Panel();
             this.newBtn = new FontAwesome.Sharp.IconButton();
             this.dischargeBtn = new FontAwesome.Sharp.IconButton();
-            this.admitBtn = new FontAwesome.Sharp.IconButton();
+            this.recordBtn = new FontAwesome.Sharp.IconButton();
             this.homeBtn = new FontAwesome.Sharp.IconButton();
             this.deskPanel = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
@@ -44,7 +44,7 @@
             this.panel1.Controls.Add(this.line);
             this.panel1.Controls.Add(this.newBtn);
             this.panel1.Controls.Add(this.dischargeBtn);
-            this.panel1.Controls.Add(this.admitBtn);
+            this.panel1.Controls.Add(this.recordBtn);
             this.panel1.Controls.Add(this.homeBtn);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -100,25 +100,25 @@
             this.dischargeBtn.UseVisualStyleBackColor = false;
             this.dischargeBtn.Click += new System.EventHandler(this.dischargeBtn_Click);
             // 
-            // admitBtn
+            // recordBtn
             // 
-            this.admitBtn.BackColor = System.Drawing.Color.White;
-            this.admitBtn.FlatAppearance.BorderSize = 0;
-            this.admitBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.admitBtn.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.admitBtn.ForeColor = System.Drawing.Color.Black;
-            this.admitBtn.IconChar = FontAwesome.Sharp.IconChar.UserEdit;
-            this.admitBtn.IconColor = System.Drawing.Color.Black;
-            this.admitBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.admitBtn.IconSize = 32;
-            this.admitBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.admitBtn.Location = new System.Drawing.Point(188, 3);
-            this.admitBtn.Name = "admitBtn";
-            this.admitBtn.Size = new System.Drawing.Size(152, 47);
-            this.admitBtn.TabIndex = 4;
-            this.admitBtn.Text = "Admit";
-            this.admitBtn.UseVisualStyleBackColor = false;
-            this.admitBtn.Click += new System.EventHandler(this.updateBtn_Click);
+            this.recordBtn.BackColor = System.Drawing.Color.White;
+            this.recordBtn.FlatAppearance.BorderSize = 0;
+            this.recordBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.recordBtn.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.recordBtn.ForeColor = System.Drawing.Color.Black;
+            this.recordBtn.IconChar = FontAwesome.Sharp.IconChar.UserEdit;
+            this.recordBtn.IconColor = System.Drawing.Color.Black;
+            this.recordBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.recordBtn.IconSize = 32;
+            this.recordBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.recordBtn.Location = new System.Drawing.Point(188, 3);
+            this.recordBtn.Name = "recordBtn";
+            this.recordBtn.Size = new System.Drawing.Size(152, 47);
+            this.recordBtn.TabIndex = 4;
+            this.recordBtn.Text = "Records";
+            this.recordBtn.UseVisualStyleBackColor = false;
+            this.recordBtn.Click += new System.EventHandler(this.updateBtn_Click);
             // 
             // homeBtn
             // 
@@ -170,7 +170,7 @@
         private System.Windows.Forms.Panel line;
         private FontAwesome.Sharp.IconButton newBtn;
         private FontAwesome.Sharp.IconButton dischargeBtn;
-        private FontAwesome.Sharp.IconButton admitBtn;
+        private FontAwesome.Sharp.IconButton recordBtn;
         private System.Windows.Forms.Panel deskPanel;
     }
 }

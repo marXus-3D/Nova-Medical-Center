@@ -1,10 +1,7 @@
-﻿using FontAwesome.Sharp;
-using Nova_Medical_Center.Data;
+﻿using Nova_Medical_Center.Data;
 using Nova_Medical_Center.Scripts;
 using System;
 using System.Windows.Forms;
-using QRCoder;
-using Newtonsoft.Json;
 
 namespace Nova_Medical_Center.Views
 {
@@ -49,6 +46,7 @@ namespace Nova_Medical_Center.Views
         private void doctorGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             shareBtn.Enabled = true;
+            recordBtn.Enabled = true;
 
             selectedIdx = doctorGridView.SelectedRows[0].Index;
             if (Data.Data.patients[selectedIdx].RoomOccupied == null)
@@ -60,6 +58,11 @@ namespace Nova_Medical_Center.Views
         private void shareBtn_Click(object sender, EventArgs e)
         {
             CustomDialog.ShowQrDialog(ref selectedIdx);
+        }
+
+        private void recordBtn_Click(object sender, EventArgs e)
+        {
+            PatientForm.OnRecord?.Invoke(selectedIdx);
         }
     }
 }

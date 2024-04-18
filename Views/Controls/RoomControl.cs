@@ -8,10 +8,8 @@ namespace Nova_Medical_Center.Views.Controls
 {
     public partial class RoomControl : UserControl
     {
-        private int idx;
-        public RoomControl(Room room, ref int a)
+        public RoomControl(Room room, ref int i)
         {
-            this.idx = a;
             InitializeComponent();
             //bedLbl.Text +=" " + room.Beds.Count;
             typeLbl.Text += " " + room.Type;

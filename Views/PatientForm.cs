@@ -16,16 +16,22 @@ namespace Nova_Medical_Center.Views
     {
         IconButton current;
         Form currentForm;
+        public static Action<int> OnRecord;
         public PatientForm()
         {
             InitializeComponent();
             current = homeBtn;
             OpenChildForm(new PatientHomeForm());
+            OnRecord += (int idx) =>
+            {
+                ActivateButton(recordBtn);
+                OpenChildForm(new PatientRecordForm(ref idx));
+            };
         }
 
         private void DoctorForm_Load(object sender, EventArgs e)
         {
-            //doctorGridView.DataSource = LoginPage.employees;
+            
         }
 
         private void homeBtn_Click(object sender, EventArgs e)
@@ -37,7 +43,7 @@ namespace Nova_Medical_Center.Views
         private void updateBtn_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
-            //OpenChildForm(new ());
+            OpenChildForm(new SecurityForm("This tab can't be directly please use select records from the home tab."));
         }
 
         private void dischargeBtn_Click(object sender, EventArgs e)
