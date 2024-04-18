@@ -1,4 +1,5 @@
 ﻿using Nova_Medical_Center.Models;
+using Nova_Medical_Center.Views.Controls;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -29,6 +30,17 @@ namespace Nova_Medical_Center.Views
             ageField.Text = (DateTime.Now.Year - patient.DoB.Year).ToString();
             vipCheck.Text = "Vipa check";
             vipCheck.Checked = patient.Vip;
+
+            if (patient.RoomOccupied != null)
+            {
+                roomPanel.Controls.Add(new RoomControl(patient.RoomOccupied));
+            }
+            else errLabel.Visible = true;
+
+            foreach (var item in patient.MedicalHistory)
+            {
+                medicationArea.Text += item.ToString();
+            }
         }
     }
 }

@@ -8,7 +8,7 @@ namespace Nova_Medical_Center.Views.Controls
 {
     public partial class RoomControl : UserControl
     {
-        public RoomControl(Room room, ref int i)
+        public RoomControl(Room room)
         {
             InitializeComponent();
             //bedLbl.Text +=" " + room.Beds.Count;

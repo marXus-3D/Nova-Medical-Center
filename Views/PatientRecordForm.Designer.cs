@@ -38,6 +38,8 @@
             this.roomPanel = new System.Windows.Forms.Panel();
             this.dobPicker = new Nova_Medical_Center.Views.Controls.RJDatePicker();
             this.vipCheck = new Nova_Medical_Center.Views.Controls.RJToggleButton();
+            this.errLabel = new System.Windows.Forms.Label();
+            this.roomPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // fnameField
@@ -161,12 +163,13 @@
             this.medicationArea.MouseState = MaterialSkin.MouseState.HOVER;
             this.medicationArea.Name = "medicationArea";
             this.medicationArea.ReadOnly = true;
-            this.medicationArea.Size = new System.Drawing.Size(746, 554);
+            this.medicationArea.Size = new System.Drawing.Size(746, 520);
             this.medicationArea.TabIndex = 22;
             this.medicationArea.Text = "";
             // 
             // roomPanel
             // 
+            this.roomPanel.Controls.Add(this.errLabel);
             this.roomPanel.Location = new System.Drawing.Point(775, 80);
             this.roomPanel.Name = "roomPanel";
             this.roomPanel.Size = new System.Drawing.Size(259, 279);
@@ -201,12 +204,24 @@
             this.vipCheck.TabIndex = 18;
             this.vipCheck.UseVisualStyleBackColor = true;
             // 
+            // errLabel
+            // 
+            this.errLabel.AutoSize = true;
+            this.errLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
+            this.errLabel.ForeColor = System.Drawing.Color.Firebrick;
+            this.errLabel.Location = new System.Drawing.Point(22, 12);
+            this.errLabel.Name = "errLabel";
+            this.errLabel.Size = new System.Drawing.Size(218, 25);
+            this.errLabel.TabIndex = 0;
+            this.errLabel.Text = "Not Occuping any room";
+            this.errLabel.Visible = false;
+            // 
             // PatientRecordForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1046, 675);
+            this.ClientSize = new System.Drawing.Size(1046, 612);
             this.Controls.Add(this.roomPanel);
             this.Controls.Add(this.medicationArea);
             this.Controls.Add(this.ageField);
@@ -221,6 +236,8 @@
             this.Name = "PatientRecordForm";
             this.Text = "Dashboard";
             this.Load += new System.EventHandler(this.PatientRecordForm_Load);
+            this.roomPanel.ResumeLayout(false);
+            this.roomPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -238,5 +255,6 @@
         private MaterialSkin.Controls.MaterialTextBox ageField;
         private MaterialSkin.Controls.MaterialMultiLineTextBox medicationArea;
         private System.Windows.Forms.Panel roomPanel;
+        private System.Windows.Forms.Label errLabel;
     }
 }

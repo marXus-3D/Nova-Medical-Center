@@ -50,7 +50,7 @@ namespace Nova_Medical_Center.Views
                 //}));
                 Invoke(new Action(() =>
                 {
-                    roomFlowPanel.Controls.Add(new RoomControl(Data.Data.rooms[i], ref i));
+                    roomFlowPanel.Controls.Add(new RoomControl(Data.Data.rooms[i]));//, ref i));
                 }));
             }
         }
