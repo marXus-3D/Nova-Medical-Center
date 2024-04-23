@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace Nova_Medical_Center.Scripts
 {
@@ -21,6 +22,7 @@ namespace Nova_Medical_Center.Scripts
 
         public static bool ShowPasswordDialog(Employee employee, ref int i)
         {
+            MessageBox.Show(employee.First_Name + " " + employee.Last_Name + " " + employee.Position);
             new PasswordDialogBox(ref employee).ShowDialog();
             Data.Data.employees[employee.Position  + "s"][i] = employee;
             return value;

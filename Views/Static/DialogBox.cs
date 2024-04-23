@@ -67,7 +67,7 @@ namespace Nova_Medical_Center.Views.Static
                     employee.Position = posField.Text;
                 }
 
-                CustomDialog.OnEmployeeUpdate.Invoke(true);
+                CustomDialog.OnEmployeeUpdate?.Invoke(true);
                 this.Close();
             }
         }

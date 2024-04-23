@@ -15,7 +15,7 @@ namespace Nova_Medical_Center.Views.Static
 {
     public partial class PasswordDialogBox : Form
     {
-        Employee employee;
+        readonly Employee employee;
         public PasswordDialogBox(ref Employee employee)
         {
             this.employee = employee;
@@ -38,9 +38,11 @@ namespace Nova_Medical_Center.Views.Static
                     return;
                 }
                 
-                employee.Password = passwordField.Text;
-                CustomDialog.OnEmployeeUpdate.Invoke(true);
-                this.Close();
+            employee.Password = passwordField.Text;
+            MessageBox.Show("Closing");
+            CustomDialog.OnEmployeeUpdate?.Invoke(true);
+            MessageBox.Show("Closing");
+            this.Close();
         }
 
         private void FlipForm()

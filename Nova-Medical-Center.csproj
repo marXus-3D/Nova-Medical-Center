@@ -119,6 +119,18 @@
     <Compile Include="Views\DocAddForm.Designer.cs">
       <DependentUpon>DocAddForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\NurseUpdateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\NurseUpdateForm.Designer.cs">
+      <DependentUpon>NurseUpdateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\NurseDeleteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\NurseDeleteForm.Designer.cs">
+      <DependentUpon>NurseDeleteForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\DocDeleteForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -272,6 +284,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\DocAddForm.resx">
       <DependentUpon>DocAddForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\NurseUpdateForm.resx">
+      <DependentUpon>NurseUpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\NurseDeleteForm.resx">
+      <DependentUpon>NurseDeleteForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\DocDeleteForm.resx">
       <DependentUpon>DocDeleteForm.cs</DependentUpon>

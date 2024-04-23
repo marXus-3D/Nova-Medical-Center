@@ -36,7 +36,7 @@ namespace Nova_Medical_Center.Views
         private void updateBtn_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
-            //OpenChildForm(new DocUpdateForm());
+            OpenChildForm(new NurseUpdateForm());
         }
 
         private void addBtn_Click(object sender, EventArgs e)
@@ -48,6 +48,7 @@ namespace Nova_Medical_Center.Views
         private void deleteBtn_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
+            OpenChildForm(new NurseDeleteForm());
         }
 
         private void ActivateButton(object sender)
