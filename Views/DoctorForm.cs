@@ -42,12 +42,13 @@ namespace Nova_Medical_Center.Views
         private void addBtn_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
-            OpenChildForm(new DocUpdateForm());
+            OpenChildForm(new DocAddForm());
         }
 
         private void deleteBtn_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
+            OpenChildForm(new DocDeleteForm());
         }
 
         private void ActivateButton(object sender)

@@ -113,6 +113,18 @@
     <Compile Include="Views\Controls\RoomControl.Designer.cs">
       <DependentUpon>RoomControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\DocAddForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\DocAddForm.Designer.cs">
+      <DependentUpon>DocAddForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DocDeleteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\DocDeleteForm.Designer.cs">
+      <DependentUpon>DocDeleteForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\NurseHomeForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -154,12 +166,6 @@
     </Compile>
     <Compile Include="Views\Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Views\DocAddForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\DocAddForm.Designer.cs">
-      <DependentUpon>DocAddForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\PatientAdmitForm.cs">
       <SubType>Form</SubType>
@@ -264,6 +270,12 @@
     <EmbeddedResource Include="Views\Controls\RoomControl.resx">
       <DependentUpon>RoomControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\DocAddForm.resx">
+      <DependentUpon>DocAddForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DocDeleteForm.resx">
+      <DependentUpon>DocDeleteForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\NurseHomeForm.resx">
       <DependentUpon>NurseHomeForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -284,9 +296,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\DocAddForm.resx">
-      <DependentUpon>DocAddForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\PatientAdmitForm.resx">
       <DependentUpon>PatientAdmitForm.cs</DependentUpon>
