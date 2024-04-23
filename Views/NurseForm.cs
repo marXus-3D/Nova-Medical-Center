@@ -19,7 +19,7 @@ namespace Nova_Medical_Center.Views
         {
             InitializeComponent();
             current = homeBtn;
-            OpenChildForm(new DocHomeForm());
+            OpenChildForm(new NurseHomeForm());
         }
 
         private void DoctorForm_Load(object sender, EventArgs e)
@@ -30,19 +30,19 @@ namespace Nova_Medical_Center.Views
         private void homeBtn_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
-            OpenChildForm(new DocHomeForm());
+            OpenChildForm(new NurseHomeForm());
         }
 
         private void updateBtn_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
-            OpenChildForm(new DocUpdateForm());
+            //OpenChildForm(new DocUpdateForm());
         }
 
         private void addBtn_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
-            OpenChildForm(new DocUpdateForm());
+            //OpenChildForm(new DocUpdateForm());
         }
 
         private void deleteBtn_Click(object sender, EventArgs e)

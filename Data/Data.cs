@@ -5,7 +5,7 @@ namespace Nova_Medical_Center.Data
 {
     internal class Data
     {
-        public static List<Employee> employees;
+        public static Dictionary<string,List<Employee>> employees;
         public static List<Patient> patients;
         public static List<Room> rooms;
 

@@ -113,6 +113,18 @@
     <Compile Include="Views\Controls\RoomControl.Designer.cs">
       <DependentUpon>RoomControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\NurseHomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\NurseHomeForm.Designer.cs">
+      <DependentUpon>NurseHomeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\NurseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\NurseForm.Designer.cs">
+      <DependentUpon>NurseForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\PatientRecordForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,12 +136,6 @@
     </Compile>
     <Compile Include="Views\FrontForm.Designer.cs">
       <DependentUpon>FrontForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Views\NurseForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\NurseForm.Designer.cs">
-      <DependentUpon>NurseForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\PatientDischargeForm.cs">
       <SubType>Form</SubType>
@@ -258,14 +264,17 @@
     <EmbeddedResource Include="Views\Controls\RoomControl.resx">
       <DependentUpon>RoomControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\NurseHomeForm.resx">
+      <DependentUpon>NurseHomeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\NurseForm.resx">
+      <DependentUpon>NurseForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\PatientRecordForm.resx">
       <DependentUpon>PatientRecordForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\FrontForm.resx">
       <DependentUpon>FrontForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\NurseForm.resx">
-      <DependentUpon>NurseForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\PatientDischargeForm.resx">
       <DependentUpon>PatientDischargeForm.cs</DependentUpon>

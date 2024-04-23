@@ -37,15 +37,15 @@ namespace Nova_Medical_Center.Models
             File.WriteAllText("employees.json", jsonString, Encoding.UTF8);
         }
 
-        public static async Task<List<Employee>> DeserializeEmployees()
+        public static async Task<Dictionary<string, List<Employee>>> DeserializeEmployees()
         {
-            List<Employee> employees;
+            Dictionary<string, List<Employee>> employees;
 
             try 
             {
                 string jsonString = await Task.Run(() => File.ReadAllText("employees.json", Encoding.UTF8));
                 #region Deserialization approach
-                employees = await Task.Run(() => JsonConvert.DeserializeObject<List<Employee>>(jsonString));
+                employees = await Task.Run(() => JsonConvert.DeserializeObject<Dictionary<string, List<Employee>>>(jsonString));
 
                 #endregion
                 return employees;

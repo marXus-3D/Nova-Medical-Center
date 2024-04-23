@@ -15,14 +15,14 @@ namespace Nova_Medical_Center.Scripts
         public static bool ShowDialog(Employee employee,ref int i) 
         {
            new DialogBox(ref employee).ShowDialog();
-           Data.Data.employees[i] = employee;
+           Data.Data.employees[employee.Position + "s"][i] = employee;
            return value;
         }
 
         public static bool ShowPasswordDialog(Employee employee, ref int i)
         {
             new PasswordDialogBox(ref employee).ShowDialog();
-            Data.Data.employees[i] = employee;
+            Data.Data.employees[employee.Position  + "s"][i] = employee;
             return value;
         }
         public static void ShowQuestionDialog(ref int i)

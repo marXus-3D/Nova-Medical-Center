@@ -21,7 +21,7 @@ namespace Nova_Medical_Center.Views
 
         private void DoctorHomeForm_Load(object sender, EventArgs e)
         {
-            doctorGridView.DataSource = Data.Data.employees;
+            doctorGridView.DataSource = Data.Data.employees["Doctors"];
         }
     }
 }

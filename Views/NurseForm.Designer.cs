@@ -67,7 +67,7 @@
             this.deleteBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.deleteBtn.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.deleteBtn.ForeColor = System.Drawing.Color.Black;
-            this.deleteBtn.IconChar = FontAwesome.Sharp.IconChar.HouseCircleXmark;
+            this.deleteBtn.IconChar = FontAwesome.Sharp.IconChar.HouseMedicalCircleXmark;
             this.deleteBtn.IconColor = System.Drawing.Color.Black;
             this.deleteBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.deleteBtn.IconSize = 32;
@@ -87,7 +87,7 @@
             this.addBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.addBtn.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addBtn.ForeColor = System.Drawing.Color.Black;
-            this.addBtn.IconChar = FontAwesome.Sharp.IconChar.HouseChimneyMedical;
+            this.addBtn.IconChar = FontAwesome.Sharp.IconChar.HouseMedicalFlag;
             this.addBtn.IconColor = System.Drawing.Color.Black;
             this.addBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.addBtn.IconSize = 32;
@@ -107,7 +107,7 @@
             this.updateBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.updateBtn.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.updateBtn.ForeColor = System.Drawing.Color.Black;
-            this.updateBtn.IconChar = FontAwesome.Sharp.IconChar.HouseCircleCheck;
+            this.updateBtn.IconChar = FontAwesome.Sharp.IconChar.HouseMedicalCircleCheck;
             this.updateBtn.IconColor = System.Drawing.Color.Black;
             this.updateBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.updateBtn.IconSize = 32;
@@ -127,7 +127,7 @@
             this.homeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.homeBtn.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.homeBtn.ForeColor = System.Drawing.Color.Black;
-            this.homeBtn.IconChar = FontAwesome.Sharp.IconChar.House;
+            this.homeBtn.IconChar = FontAwesome.Sharp.IconChar.HouseMedical;
             this.homeBtn.IconColor = System.Drawing.Color.Black;
             this.homeBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.homeBtn.IconSize = 32;
@@ -148,7 +148,7 @@
             this.deskPanel.Size = new System.Drawing.Size(1046, 612);
             this.deskPanel.TabIndex = 2;
             // 
-            // NurseForm
+            // DoctorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -156,7 +156,7 @@
             this.Controls.Add(this.deskPanel);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "NurseForm";
+            this.Name = "DoctorForm";
             this.Text = "DoctorForm";
             this.Load += new System.EventHandler(this.DoctorForm_Load);
             this.panel1.ResumeLayout(false);

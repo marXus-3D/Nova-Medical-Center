@@ -2,6 +2,7 @@
 using Nova_Medical_Center.Data;
 using Nova_Medical_Center.Models;
 using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace Nova_Medical_Center
@@ -25,9 +26,16 @@ namespace Nova_Medical_Center
 
         private void loginBtn_Click(object sender, EventArgs e)
         {
+            List<Employee> emps;
             if (loaded)
             {
-                foreach (var emp in Data.Data.employees)
+                if (usernameField.Text.Substring(0, 4).Contains("DOC"))
+                    emps = Data.Data.employees["Doctors"];
+                else if (usernameField.Text.Substring(0, 4).Contains("NRS"))
+                    emps = Data.Data.employees["Nurses"];
+                else
+                    emps = Data.Data.employees["Front Desks"];
+                foreach (var emp in emps)
                 {
                     if (emp.Id == usernameField.Text)
                     {

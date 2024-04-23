@@ -86,10 +86,10 @@ namespace Nova_Medical_Center
         {
             if (senderBtn != null)
             {
-                if (employeeExpanded)
-                    employeeTransition.Start();
-                else if(settingExpanded)
-                    settingTransition.Start();
+                //if (employeeExpanded)
+                //    employeeTransition.Start();
+                //else if(settingExpanded)
+                //    settingTransition.Start();
                 DisableButton();
                 //Button
                 currentBtn = (IconButton)senderBtn;
@@ -181,6 +181,7 @@ namespace Nova_Medical_Center
         private void nurseButton_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color5);
+            OpenChildForm(new NurseForm());
         }
 
         private void deskBtn_Click(object sender, EventArgs e)
