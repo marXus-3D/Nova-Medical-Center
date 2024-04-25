@@ -187,6 +187,7 @@ namespace Nova_Medical_Center
         private void deskBtn_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color6);
+            OpenChildForm(new FrontDeskForm());
         }
 
         private void settingBtn_Click(object sender, EventArgs e)

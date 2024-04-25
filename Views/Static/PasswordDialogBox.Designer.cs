@@ -28,57 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.passwordField = new MaterialSkin.Controls.MaterialTextBox();
-            this.confirmField = new MaterialSkin.Controls.MaterialTextBox();
             this.editBtn = new FontAwesome.Sharp.IconButton();
+            this.confirmField = new Nova_Medical_Center.Views.Controls.RJTextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.passwordField = new Nova_Medical_Center.Views.Controls.RJTextBox();
             this.SuspendLayout();
-            // 
-            // passwordField
-            // 
-            this.passwordField.AnimateReadOnly = false;
-            this.passwordField.BackColor = System.Drawing.Color.White;
-            this.passwordField.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.passwordField.Depth = 0;
-            this.passwordField.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.passwordField.Hint = "Password";
-            this.passwordField.LeadingIcon = null;
-            this.passwordField.LeaveOnEnterKey = true;
-            this.passwordField.Location = new System.Drawing.Point(128, 86);
-            this.passwordField.MaxLength = 50;
-            this.passwordField.MouseState = MaterialSkin.MouseState.OUT;
-            this.passwordField.Multiline = false;
-            this.passwordField.Name = "passwordField";
-            this.passwordField.Password = true;
-            this.passwordField.Size = new System.Drawing.Size(208, 36);
-            this.passwordField.TabIndex = 0;
-            this.passwordField.Text = "";
-            this.passwordField.TrailingIcon = null;
-            this.passwordField.UseAccent = false;
-            this.passwordField.UseTallSize = false;
-            // 
-            // confirmField
-            // 
-            this.confirmField.AnimateReadOnly = false;
-            this.confirmField.BackColor = System.Drawing.Color.White;
-            this.confirmField.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.confirmField.Depth = 0;
-            this.confirmField.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.confirmField.Hint = "Confrim Password";
-            this.confirmField.LeadingIcon = null;
-            this.confirmField.LeaveOnEnterKey = true;
-            this.confirmField.Location = new System.Drawing.Point(128, 154);
-            this.confirmField.MaxLength = 50;
-            this.confirmField.MouseState = MaterialSkin.MouseState.OUT;
-            this.confirmField.Multiline = false;
-            this.confirmField.Name = "confirmField";
-            this.confirmField.Password = true;
-            this.confirmField.Size = new System.Drawing.Size(214, 36);
-            this.confirmField.TabIndex = 1;
-            this.confirmField.Text = "";
-            this.confirmField.TrailingIcon = null;
-            this.confirmField.UseAccent = false;
-            this.confirmField.UseTallSize = false;
-            this.confirmField.TextChanged += new System.EventHandler(this.confirmField_TextChanged);
             // 
             // editBtn
             // 
@@ -101,26 +56,89 @@
             this.editBtn.UseVisualStyleBackColor = false;
             this.editBtn.Click += new System.EventHandler(this.editBtn_Click);
             // 
+            // confirmField
+            // 
+            this.confirmField.BackColor = System.Drawing.SystemColors.Control;
+            this.confirmField.BorderColor = System.Drawing.Color.Gray;
+            this.confirmField.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.confirmField.BorderSize = 2;
+            this.confirmField.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.confirmField.ForeColor = System.Drawing.Color.Black;
+            this.confirmField.Location = new System.Drawing.Point(163, 155);
+            this.confirmField.Margin = new System.Windows.Forms.Padding(4);
+            this.confirmField.Multiline = false;
+            this.confirmField.Name = "confirmField";
+            this.confirmField.Padding = new System.Windows.Forms.Padding(7);
+            this.confirmField.PasswordChar = true;
+            this.confirmField.Size = new System.Drawing.Size(214, 31);
+            this.confirmField.TabIndex = 25;
+            this.confirmField.Texts = "Password";
+            this.confirmField.UnderlinedStyle = true;
+            this.confirmField.Click += new System.EventHandler(this.passField_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.label1.Location = new System.Drawing.Point(49, 171);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(107, 15);
+            this.label1.TabIndex = 26;
+            this.label1.Text = "Confirm Password:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.label2.Location = new System.Drawing.Point(96, 116);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(60, 15);
+            this.label2.TabIndex = 28;
+            this.label2.Text = "Password:";
+            // 
+            // passwordField
+            // 
+            this.passwordField.BackColor = System.Drawing.SystemColors.Control;
+            this.passwordField.BorderColor = System.Drawing.Color.Gray;
+            this.passwordField.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.passwordField.BorderSize = 2;
+            this.passwordField.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passwordField.ForeColor = System.Drawing.Color.Black;
+            this.passwordField.Location = new System.Drawing.Point(163, 100);
+            this.passwordField.Margin = new System.Windows.Forms.Padding(4);
+            this.passwordField.Multiline = false;
+            this.passwordField.Name = "passwordField";
+            this.passwordField.Padding = new System.Windows.Forms.Padding(7);
+            this.passwordField.PasswordChar = true;
+            this.passwordField.Size = new System.Drawing.Size(214, 31);
+            this.passwordField.TabIndex = 27;
+            this.passwordField.Texts = "Password";
+            this.passwordField.UnderlinedStyle = true;
+            // 
             // PasswordDialogBox
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(480, 320);
-            this.Controls.Add(this.editBtn);
-            this.Controls.Add(this.confirmField);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.passwordField);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.confirmField);
+            this.Controls.Add(this.editBtn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "PasswordDialogBox";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DialogBox";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private MaterialSkin.Controls.MaterialTextBox passwordField;
-        private MaterialSkin.Controls.MaterialTextBox confirmField;
         private FontAwesome.Sharp.IconButton editBtn;
+        private Controls.RJTextBox confirmField;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private Controls.RJTextBox passwordField;
     }
 }

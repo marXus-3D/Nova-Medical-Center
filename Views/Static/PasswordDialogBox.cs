@@ -1,5 +1,6 @@
 ﻿using Nova_Medical_Center.Models;
 using Nova_Medical_Center.Scripts;
+using Nova_Medical_Center.Views.Controls;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -55,6 +56,11 @@ namespace Nova_Medical_Center.Views.Static
         {
             if(!(confirmField.Text == "") && !(passwordField.Text == "") && !(confirmField.Text.Contains(" ") || passwordField.Text.Contains(" "))) 
                 editBtn.Enabled = true;
+        }
+
+        private void passField_Click(object sender, EventArgs e)
+        {
+            ((RJTextBox)sender).Texts = "";
         }
     }
 }

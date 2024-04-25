@@ -19,7 +19,7 @@ namespace Nova_Medical_Center.Views
         {
             InitializeComponent();
             current = homeBtn;
-            OpenChildForm(new DocHomeForm());
+            OpenChildForm(new FrontHomeForm());
         }
 
         private void DoctorForm_Load(object sender, EventArgs e)
