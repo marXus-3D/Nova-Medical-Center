@@ -119,6 +119,18 @@
     <Compile Include="Views\Controls\RoomControl.Designer.cs">
       <DependentUpon>RoomControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\NurseAddForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\NurseAddForm.Designer.cs">
+      <DependentUpon>NurseAddForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FrontAddForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FrontAddForm.Designer.cs">
+      <DependentUpon>FrontAddForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\DocAddForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -287,6 +299,12 @@
     </Compile>
     <EmbeddedResource Include="Views\Controls\RoomControl.resx">
       <DependentUpon>RoomControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\NurseAddForm.resx">
+      <DependentUpon>NurseAddForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FrontAddForm.resx">
+      <DependentUpon>FrontAddForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\DocAddForm.resx">
       <DependentUpon>DocAddForm.cs</DependentUpon>

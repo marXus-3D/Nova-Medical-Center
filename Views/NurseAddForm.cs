@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace Nova_Medical_Center.Views
 {
-    public partial class DocAddForm : Form
+    public partial class NurseAddForm : Form
     {
-        public DocAddForm()
+        public NurseAddForm()
         {
             InitializeComponent();
         }
@@ -23,26 +23,7 @@ namespace Nova_Medical_Center.Views
         {
             departmentComboBox.DataSource = new List<string>()
             {
-                "Cardiology",
-                "Neurology",
-                "Orthopedics",
-                "Oncology",
-                "Pediatrics",
-                "Gynecology",
-                "Dermatology",
-                "Urology",
-                "Ophthalmology",
-                "Psychiatry",
-                "Radiology",
-                "Emergency Medicine",
-                "Anesthesiology",
-                "Pathology",
-                "Physical Therapy",
-                "Respiratory Therapy",
-                "Nutrition and Dietetics",
-                "Pharmacy",
-                "Laboratory Medicine",
-                "Patient Services"
+                "Nursing",
             }; ;
         }
 
@@ -61,11 +42,11 @@ namespace Nova_Medical_Center.Views
                     PhoneNumber = "251-" + phoneField.Text,
                     HiredDate = DateTime.Now.Date,
                     Department = departmentComboBox.SelectedItem.ToString(),
-                    Position = "Doctor",
+                    Position = "Nurse",
                     Password = passField.Text,
                 };
                 Generator.GenerateEmployeeID(ref emp);
-                Data.Data.employees["Doctors"].Add(emp);
+                Data.Data.employees["Nurses"].Add(emp);
 
                 MessageBox.Show("Task Successfull");
             }
