@@ -16,9 +16,12 @@ namespace Nova_Medical_Center.Models
         public string Id { get; set; }
         public string First_Name { get; set; }
         public string Last_Name { get; set;}
+        public DateTime DoB { get; set; }
+        public char Gender { get; set; }
         public string Address { get; set; }
         public string City { get; set; }
         public string PhoneNumber { get; set; }
+        public DateTime HiredDate { get; set; }
         public string Department { get; set; }
         public string Position { get; set; }
         private string password;

@@ -1,14 +1,8 @@
-﻿using FontAwesome.Sharp;
-using Newtonsoft.Json;
-using Nova_Medical_Center.Data;
+﻿using Newtonsoft.Json;
 using Nova_Medical_Center.Models;
 using Nova_Medical_Center.Scripts;
-using Nova_Medical_Center.Views.Controls;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -19,53 +13,74 @@ namespace Nova_Medical_Center.Views
 {
     public partial class DocAddForm : Form
     {
-        List<String> medicationList = new List<string>();
-        List<MedicalCondition> medicalConditions = new List<MedicalCondition>();
         public DocAddForm()
         {
             InitializeComponent();
         }
 
-        private async void NewPatientForm_Load(object sender, EventArgs e)
+        private void NewPatientForm_Load(object sender, EventArgs e)
         {
-            string jsonString = await Task.Run(() => File.ReadAllText("medications.json", Encoding.UTF8));
-            Data.Data.medications = await Task.Run(() => JsonConvert.DeserializeObject<Dictionary<int,string>>(jsonString));
-            medicationComboBox.DataSource = Data.Data.medications.Values.ToList();
+            departmentComboBox.DataSource = new List<string>() 
+            {
+                "Cardiology",
+                "Neurology",
+                "Orthopedics",
+                "Oncology",
+                "Pediatrics",
+                "Gynecology",
+                "Dermatology",
+                "Urology",
+                "Ophthalmology",
+                "Psychiatry",
+                "Radiology",
+                "Emergency Medicine",
+                "Anesthesiology",
+                "Pathology",
+                "Physical Therapy",
+                "Respiratory Therapy",
+                "Nutrition and Dietetics",
+                "Pharmacy",
+                "Laboratory Medicine",
+                "Patient Services"
+            };
         }
 
         private void admitBtn_Click(object sender, EventArgs e)
         {
-            Data.Data.patients.Add(new Patient() 
+            if (CheckForm())
             {
-                Id = Generator.GeneratePatientID(),
-                First_Name = fnameField.Text,
-                Last_Name = lnameField.Text,
-                Gender = maleRadio.Checked? 'M':'F',
-                DoB = dobPicker.Value,
-                AdmissionDate = DateTime.Now,
-                UrgencyLevel = criticalRadio.Checked ? Urgency.Critical: nonRadio.Checked? Urgency.NonCritical : Urgency.SemiCritical,
-                Vip = vipCheck.Checked,
-                MedicalHistory = medicalConditions,
-            });
-            CentralControler.AdmitPatient(Data.Data.patients.Count-1);
+                Data.Data.employees["Doctors"].Add(new Employee()
+                {
+                    Id = Generator.GeneratePatientID(),
+                    First_Name = fnameField.Text,
+                    Last_Name = lnameField.Text,
+                    Gender = maleRadio.Checked ? 'M' : 'F',
+                    DoB = dobPicker.Value,
+                    Address = addressField.Text,
+                    City = cityField.Text,
+                    PhoneNumber = "251-" + phoneField.Text,
+                    HiredDate = DateTime.Now,
+                    Department = departmentComboBox.SelectedItem.ToString(),
+                    Position = "Doctor",
+                    Password = passField.Text,
+                });
+            }
         }
 
-        private void historyBtn_Click(object sender, EventArgs e)
+        bool CheckForm() 
         {
-            medicalConditions.Add(new MedicalCondition()
+            if(fnameField.Text == "" || fnameField.Text.Contains(" ") || lnameField.Text == "" || lnameField.Text.Contains(" ") || addressField.Text == "" || cityField.Text == "" || phoneField.Text.Contains(" ") || passField.Text == "" || passField.Text.Contains(" ") || confirmField.Text == "" || confirmField.Text.Contains(" ")) 
             {
-                Name = diagnosisField.Text,
-                DiagnosisDate = medicationDate.Value,
-                Medications = medicationList,
-            });
+                MessageBox.Show("Please make sure you've filled the form correctlly", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+            if (!passField.Text.Equals(confirmField.Text)) 
+            {
+                MessageBox.Show("Make sure the passwords match", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
 
-            medicationArea.Text += "\n" + medicalConditions.Last().ToString();
-            medicationList = new List<string>();
-        }
-
-        private void medicationBtn_Click(object sender, EventArgs e)
-        {
-            medicationList.Add(medicationComboBox.SelectedItem.ToString());
+            return true;
         }
     }
 }

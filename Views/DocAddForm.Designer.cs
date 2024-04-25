@@ -31,24 +31,20 @@
             this.fnameField = new MaterialSkin.Controls.MaterialTextBox();
             this.lnameField = new MaterialSkin.Controls.MaterialTextBox();
             this.materialDivider1 = new MaterialSkin.Controls.MaterialDivider();
-            this.diagnosisField = new MaterialSkin.Controls.MaterialTextBox();
-            this.medicationDate = new Nova_Medical_Center.Views.Controls.RJDatePicker();
+            this.addressField = new MaterialSkin.Controls.MaterialTextBox();
             this.dobPicker = new Nova_Medical_Center.Views.Controls.RJDatePicker();
             this.maleRadio = new MaterialSkin.Controls.MaterialRadioButton();
             this.femalRadio = new MaterialSkin.Controls.MaterialRadioButton();
-            this.medicationComboBox = new MaterialSkin.Controls.MaterialComboBox();
-            this.medicationArea = new MaterialSkin.Controls.MaterialMultiLineTextBox();
-            this.medicationBtn = new Nova_Medical_Center.Views.Controls.RJButton();
-            this.historyBtn = new Nova_Medical_Center.Views.Controls.RJButton();
-            this.delBtn = new Nova_Medical_Center.Views.Controls.RJButton();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.nonRadio = new Nova_Medical_Center.Views.Controls.RJRadioButton();
-            this.semiRadio = new Nova_Medical_Center.Views.Controls.RJRadioButton();
-            this.criticalRadio = new Nova_Medical_Center.Views.Controls.RJRadioButton();
-            this.admitBtn = new Nova_Medical_Center.Views.Controls.RJButton();
-            this.vipCheck = new Nova_Medical_Center.Views.Controls.RJToggleButton();
-            this.label1 = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
+            this.hireBtn = new Nova_Medical_Center.Views.Controls.RJButton();
+            this.phoneField = new MaterialSkin.Controls.MaterialTextBox2();
+            this.cityField = new MaterialSkin.Controls.MaterialTextBox();
+            this.passField = new MaterialSkin.Controls.MaterialTextBox();
+            this.confirmField = new MaterialSkin.Controls.MaterialTextBox();
+            this.departmentComboBox = new MaterialSkin.Controls.MaterialComboBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // fnameField
@@ -81,7 +77,7 @@
             this.lnameField.Hint = "Last Name";
             this.lnameField.LeadingIcon = null;
             this.lnameField.LeaveOnEnterKey = true;
-            this.lnameField.Location = new System.Drawing.Point(251, 58);
+            this.lnameField.Location = new System.Drawing.Point(288, 58);
             this.lnameField.MaxLength = 50;
             this.lnameField.MouseState = MaterialSkin.MouseState.OUT;
             this.lnameField.Multiline = false;
@@ -104,40 +100,26 @@
             this.materialDivider1.TabIndex = 3;
             this.materialDivider1.Text = "materialDivider1";
             // 
-            // diagnosisField
+            // addressField
             // 
-            this.diagnosisField.AnimateReadOnly = false;
-            this.diagnosisField.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.diagnosisField.Depth = 0;
-            this.diagnosisField.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.diagnosisField.Hint = "Diagnosis Name";
-            this.diagnosisField.LeadingIcon = null;
-            this.diagnosisField.LeaveOnEnterKey = true;
-            this.diagnosisField.Location = new System.Drawing.Point(12, 154);
-            this.diagnosisField.MaxLength = 50;
-            this.diagnosisField.MouseState = MaterialSkin.MouseState.OUT;
-            this.diagnosisField.Multiline = false;
-            this.diagnosisField.Name = "diagnosisField";
-            this.diagnosisField.Size = new System.Drawing.Size(211, 36);
-            this.diagnosisField.TabIndex = 4;
-            this.diagnosisField.Text = "";
-            this.diagnosisField.TrailingIcon = null;
-            this.diagnosisField.UseAccent = false;
-            this.diagnosisField.UseTallSize = false;
-            // 
-            // medicationDate
-            // 
-            this.medicationDate.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            this.medicationDate.BorderSize = 1;
-            this.medicationDate.CalendarFont = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.medicationDate.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.medicationDate.Location = new System.Drawing.Point(12, 213);
-            this.medicationDate.MinimumSize = new System.Drawing.Size(4, 35);
-            this.medicationDate.Name = "medicationDate";
-            this.medicationDate.Size = new System.Drawing.Size(211, 35);
-            this.medicationDate.SkinColor = System.Drawing.SystemColors.Control;
-            this.medicationDate.TabIndex = 5;
-            this.medicationDate.TextColor = System.Drawing.Color.Black;
+            this.addressField.AnimateReadOnly = false;
+            this.addressField.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.addressField.Depth = 0;
+            this.addressField.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.addressField.Hint = "Address";
+            this.addressField.LeadingIcon = null;
+            this.addressField.LeaveOnEnterKey = true;
+            this.addressField.Location = new System.Drawing.Point(6, 28);
+            this.addressField.MaxLength = 50;
+            this.addressField.MouseState = MaterialSkin.MouseState.OUT;
+            this.addressField.Multiline = false;
+            this.addressField.Name = "addressField";
+            this.addressField.Size = new System.Drawing.Size(211, 36);
+            this.addressField.TabIndex = 4;
+            this.addressField.Text = "";
+            this.addressField.TrailingIcon = null;
+            this.addressField.UseAccent = false;
+            this.addressField.UseTallSize = false;
             // 
             // dobPicker
             // 
@@ -145,7 +127,7 @@
             this.dobPicker.BorderSize = 1;
             this.dobPicker.CalendarFont = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dobPicker.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dobPicker.Location = new System.Drawing.Point(488, 59);
+            this.dobPicker.Location = new System.Drawing.Point(577, 59);
             this.dobPicker.MinimumSize = new System.Drawing.Size(4, 35);
             this.dobPicker.Name = "dobPicker";
             this.dobPicker.Size = new System.Drawing.Size(211, 35);
@@ -159,7 +141,7 @@
             this.maleRadio.Checked = true;
             this.maleRadio.Depth = 0;
             this.maleRadio.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maleRadio.Location = new System.Drawing.Point(726, 58);
+            this.maleRadio.Location = new System.Drawing.Point(859, 59);
             this.maleRadio.Margin = new System.Windows.Forms.Padding(0);
             this.maleRadio.MouseLocation = new System.Drawing.Point(-1, -1);
             this.maleRadio.MouseState = MaterialSkin.MouseState.HOVER;
@@ -176,7 +158,7 @@
             this.femalRadio.AutoSize = true;
             this.femalRadio.Depth = 0;
             this.femalRadio.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.femalRadio.Location = new System.Drawing.Point(814, 57);
+            this.femalRadio.Location = new System.Drawing.Point(947, 58);
             this.femalRadio.Margin = new System.Windows.Forms.Padding(0);
             this.femalRadio.MouseLocation = new System.Drawing.Point(-1, -1);
             this.femalRadio.MouseState = MaterialSkin.MouseState.HOVER;
@@ -188,238 +170,197 @@
             this.femalRadio.Text = "Female";
             this.femalRadio.UseVisualStyleBackColor = true;
             // 
-            // medicationComboBox
+            // hireBtn
             // 
-            this.medicationComboBox.AutoResize = false;
-            this.medicationComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.medicationComboBox.Depth = 0;
-            this.medicationComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.medicationComboBox.DropDownHeight = 118;
-            this.medicationComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.medicationComboBox.DropDownWidth = 121;
-            this.medicationComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.medicationComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.medicationComboBox.FormattingEnabled = true;
-            this.medicationComboBox.Hint = "Medications";
-            this.medicationComboBox.IntegralHeight = false;
-            this.medicationComboBox.ItemHeight = 29;
-            this.medicationComboBox.Location = new System.Drawing.Point(12, 267);
-            this.medicationComboBox.MaxDropDownItems = 4;
-            this.medicationComboBox.MaxLength = 255;
-            this.medicationComboBox.MouseState = MaterialSkin.MouseState.OUT;
-            this.medicationComboBox.Name = "medicationComboBox";
-            this.medicationComboBox.Size = new System.Drawing.Size(211, 35);
-            this.medicationComboBox.StartIndex = 0;
-            this.medicationComboBox.TabIndex = 9;
-            this.medicationComboBox.UseAccent = false;
-            this.medicationComboBox.UseTallSize = false;
+            this.hireBtn.BackColor = System.Drawing.SystemColors.Control;
+            this.hireBtn.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.hireBtn.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.hireBtn.BorderRadius = 10;
+            this.hireBtn.BorderSize = 1;
+            this.hireBtn.FlatAppearance.BorderSize = 0;
+            this.hireBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.hireBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hireBtn.ForeColor = System.Drawing.Color.Black;
+            this.hireBtn.Location = new System.Drawing.Point(387, 566);
+            this.hireBtn.Name = "hireBtn";
+            this.hireBtn.Size = new System.Drawing.Size(270, 34);
+            this.hireBtn.TabIndex = 15;
+            this.hireBtn.Text = "Hire Employee";
+            this.hireBtn.TextColor = System.Drawing.Color.Black;
+            this.hireBtn.UseVisualStyleBackColor = false;
+            this.hireBtn.Click += new System.EventHandler(this.admitBtn_Click);
             // 
-            // medicationArea
+            // phoneField
             // 
-            this.medicationArea.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.medicationArea.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.medicationArea.Depth = 0;
-            this.medicationArea.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.medicationArea.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.medicationArea.Location = new System.Drawing.Point(288, 152);
-            this.medicationArea.MouseState = MaterialSkin.MouseState.HOVER;
-            this.medicationArea.Name = "medicationArea";
-            this.medicationArea.ReadOnly = true;
-            this.medicationArea.Size = new System.Drawing.Size(746, 307);
-            this.medicationArea.TabIndex = 10;
-            this.medicationArea.Text = "";
+            this.phoneField.AnimateReadOnly = false;
+            this.phoneField.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.phoneField.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.phoneField.Depth = 0;
+            this.phoneField.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.phoneField.HideSelection = true;
+            this.phoneField.Hint = "Phone Number";
+            this.phoneField.LeadingIcon = null;
+            this.phoneField.LeaveOnEnterKey = true;
+            this.phoneField.Location = new System.Drawing.Point(6, 161);
+            this.phoneField.MaxLength = 32767;
+            this.phoneField.MouseState = MaterialSkin.MouseState.OUT;
+            this.phoneField.Name = "phoneField";
+            this.phoneField.PasswordChar = '\0';
+            this.phoneField.PrefixSuffix = MaterialSkin.Controls.MaterialTextBox2.PrefixSuffixTypes.Prefix;
+            this.phoneField.PrefixSuffixText = "251";
+            this.phoneField.ReadOnly = false;
+            this.phoneField.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.phoneField.SelectedText = "";
+            this.phoneField.SelectionLength = 0;
+            this.phoneField.SelectionStart = 0;
+            this.phoneField.ShortcutsEnabled = true;
+            this.phoneField.ShowAssistiveText = true;
+            this.phoneField.Size = new System.Drawing.Size(211, 52);
+            this.phoneField.TabIndex = 17;
+            this.phoneField.TabStop = false;
+            this.phoneField.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.phoneField.TrailingIcon = null;
+            this.phoneField.UseAccent = false;
+            this.phoneField.UseSystemPasswordChar = false;
+            this.phoneField.UseTallSize = false;
             // 
-            // medicationBtn
+            // cityField
             // 
-            this.medicationBtn.BackColor = System.Drawing.SystemColors.Control;
-            this.medicationBtn.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.medicationBtn.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            this.medicationBtn.BorderRadius = 10;
-            this.medicationBtn.BorderSize = 1;
-            this.medicationBtn.FlatAppearance.BorderSize = 0;
-            this.medicationBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.medicationBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.medicationBtn.ForeColor = System.Drawing.Color.Black;
-            this.medicationBtn.Location = new System.Drawing.Point(230, 267);
-            this.medicationBtn.Name = "medicationBtn";
-            this.medicationBtn.Size = new System.Drawing.Size(52, 34);
-            this.medicationBtn.TabIndex = 11;
-            this.medicationBtn.Text = "Add";
-            this.medicationBtn.TextColor = System.Drawing.Color.Black;
-            this.medicationBtn.UseVisualStyleBackColor = false;
-            this.medicationBtn.Click += new System.EventHandler(this.medicationBtn_Click);
+            this.cityField.AnimateReadOnly = false;
+            this.cityField.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.cityField.Depth = 0;
+            this.cityField.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.cityField.Hint = "City";
+            this.cityField.LeadingIcon = null;
+            this.cityField.LeaveOnEnterKey = true;
+            this.cityField.Location = new System.Drawing.Point(6, 92);
+            this.cityField.MaxLength = 50;
+            this.cityField.MouseState = MaterialSkin.MouseState.OUT;
+            this.cityField.Multiline = false;
+            this.cityField.Name = "cityField";
+            this.cityField.Size = new System.Drawing.Size(211, 36);
+            this.cityField.TabIndex = 18;
+            this.cityField.Text = "";
+            this.cityField.TrailingIcon = null;
+            this.cityField.UseAccent = false;
+            this.cityField.UseTallSize = false;
             // 
-            // historyBtn
+            // passField
             // 
-            this.historyBtn.BackColor = System.Drawing.SystemColors.Control;
-            this.historyBtn.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.historyBtn.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            this.historyBtn.BorderRadius = 10;
-            this.historyBtn.BorderSize = 1;
-            this.historyBtn.FlatAppearance.BorderSize = 0;
-            this.historyBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.historyBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.historyBtn.ForeColor = System.Drawing.Color.Black;
-            this.historyBtn.Location = new System.Drawing.Point(12, 328);
-            this.historyBtn.Name = "historyBtn";
-            this.historyBtn.Size = new System.Drawing.Size(119, 34);
-            this.historyBtn.TabIndex = 12;
-            this.historyBtn.Text = "Add History";
-            this.historyBtn.TextColor = System.Drawing.Color.Black;
-            this.historyBtn.UseVisualStyleBackColor = false;
-            this.historyBtn.Click += new System.EventHandler(this.historyBtn_Click);
+            this.passField.AnimateReadOnly = false;
+            this.passField.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.passField.Depth = 0;
+            this.passField.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.passField.Hint = "Password";
+            this.passField.LeadingIcon = null;
+            this.passField.LeaveOnEnterKey = true;
+            this.passField.Location = new System.Drawing.Point(53, 91);
+            this.passField.MaxLength = 50;
+            this.passField.MouseState = MaterialSkin.MouseState.OUT;
+            this.passField.Multiline = false;
+            this.passField.Name = "passField";
+            this.passField.Password = true;
+            this.passField.Size = new System.Drawing.Size(211, 36);
+            this.passField.TabIndex = 19;
+            this.passField.Text = "";
+            this.passField.TrailingIcon = null;
+            this.passField.UseAccent = false;
+            this.passField.UseTallSize = false;
             // 
-            // delBtn
+            // confirmField
             // 
-            this.delBtn.BackColor = System.Drawing.SystemColors.Control;
-            this.delBtn.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.delBtn.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            this.delBtn.BorderRadius = 10;
-            this.delBtn.BorderSize = 1;
-            this.delBtn.FlatAppearance.BorderSize = 0;
-            this.delBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.delBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.delBtn.ForeColor = System.Drawing.Color.Black;
-            this.delBtn.Location = new System.Drawing.Point(163, 328);
-            this.delBtn.Name = "delBtn";
-            this.delBtn.Size = new System.Drawing.Size(119, 34);
-            this.delBtn.TabIndex = 13;
-            this.delBtn.Text = "Delete History";
-            this.delBtn.TextColor = System.Drawing.Color.Black;
-            this.delBtn.UseVisualStyleBackColor = false;
+            this.confirmField.AnimateReadOnly = false;
+            this.confirmField.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.confirmField.Depth = 0;
+            this.confirmField.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.confirmField.Hint = "Confirm Password";
+            this.confirmField.LeadingIcon = null;
+            this.confirmField.LeaveOnEnterKey = true;
+            this.confirmField.Location = new System.Drawing.Point(53, 159);
+            this.confirmField.MaxLength = 50;
+            this.confirmField.MouseState = MaterialSkin.MouseState.OUT;
+            this.confirmField.Multiline = false;
+            this.confirmField.Name = "confirmField";
+            this.confirmField.Password = true;
+            this.confirmField.Size = new System.Drawing.Size(211, 36);
+            this.confirmField.TabIndex = 20;
+            this.confirmField.Text = "";
+            this.confirmField.TrailingIcon = null;
+            this.confirmField.UseAccent = false;
+            this.confirmField.UseTallSize = false;
             // 
-            // groupBox1
+            // departmentComboBox
             // 
-            this.groupBox1.Controls.Add(this.nonRadio);
-            this.groupBox1.Controls.Add(this.semiRadio);
-            this.groupBox1.Controls.Add(this.criticalRadio);
-            this.groupBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(12, 368);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(270, 100);
-            this.groupBox1.TabIndex = 14;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Urgency Level";
+            this.departmentComboBox.AutoResize = false;
+            this.departmentComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.departmentComboBox.Depth = 0;
+            this.departmentComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.departmentComboBox.DropDownHeight = 118;
+            this.departmentComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.departmentComboBox.DropDownWidth = 121;
+            this.departmentComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.departmentComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.departmentComboBox.FormattingEnabled = true;
+            this.departmentComboBox.Hint = "Department";
+            this.departmentComboBox.IntegralHeight = false;
+            this.departmentComboBox.ItemHeight = 29;
+            this.departmentComboBox.Location = new System.Drawing.Point(53, 28);
+            this.departmentComboBox.MaxDropDownItems = 4;
+            this.departmentComboBox.MaxLength = 255;
+            this.departmentComboBox.MouseState = MaterialSkin.MouseState.OUT;
+            this.departmentComboBox.Name = "departmentComboBox";
+            this.departmentComboBox.Size = new System.Drawing.Size(211, 35);
+            this.departmentComboBox.StartIndex = 0;
+            this.departmentComboBox.TabIndex = 21;
+            this.departmentComboBox.UseAccent = false;
+            this.departmentComboBox.UseTallSize = false;
             // 
-            // nonRadio
+            // groupBox2
             // 
-            this.nonRadio.AutoSize = true;
-            this.nonRadio.CheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            this.nonRadio.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nonRadio.Location = new System.Drawing.Point(6, 70);
-            this.nonRadio.MinimumSize = new System.Drawing.Size(0, 21);
-            this.nonRadio.Name = "nonRadio";
-            this.nonRadio.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.nonRadio.Size = new System.Drawing.Size(97, 21);
-            this.nonRadio.TabIndex = 3;
-            this.nonRadio.Text = "Non Critical";
-            this.nonRadio.UnCheckedColor = System.Drawing.Color.Gray;
-            this.nonRadio.UseVisualStyleBackColor = true;
+            this.groupBox2.Controls.Add(this.addressField);
+            this.groupBox2.Controls.Add(this.cityField);
+            this.groupBox2.Controls.Add(this.phoneField);
+            this.groupBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Location = new System.Drawing.Point(12, 189);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(270, 202);
+            this.groupBox2.TabIndex = 22;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Contact Info";
             // 
-            // semiRadio
+            // groupBox3
             // 
-            this.semiRadio.AutoSize = true;
-            this.semiRadio.CheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            this.semiRadio.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.semiRadio.Location = new System.Drawing.Point(83, 28);
-            this.semiRadio.MinimumSize = new System.Drawing.Size(0, 21);
-            this.semiRadio.Name = "semiRadio";
-            this.semiRadio.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.semiRadio.Size = new System.Drawing.Size(101, 21);
-            this.semiRadio.TabIndex = 2;
-            this.semiRadio.Text = "Semi Critical";
-            this.semiRadio.UnCheckedColor = System.Drawing.Color.Gray;
-            this.semiRadio.UseVisualStyleBackColor = true;
+            this.groupBox3.Controls.Add(this.departmentComboBox);
+            this.groupBox3.Controls.Add(this.passField);
+            this.groupBox3.Controls.Add(this.confirmField);
+            this.groupBox3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.Location = new System.Drawing.Point(764, 189);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(270, 202);
+            this.groupBox3.TabIndex = 23;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Work Info";
             // 
-            // criticalRadio
-            // 
-            this.criticalRadio.AutoSize = true;
-            this.criticalRadio.Checked = true;
-            this.criticalRadio.CheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            this.criticalRadio.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.criticalRadio.Location = new System.Drawing.Point(6, 28);
-            this.criticalRadio.MinimumSize = new System.Drawing.Size(0, 21);
-            this.criticalRadio.Name = "criticalRadio";
-            this.criticalRadio.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.criticalRadio.Size = new System.Drawing.Size(71, 21);
-            this.criticalRadio.TabIndex = 1;
-            this.criticalRadio.TabStop = true;
-            this.criticalRadio.Text = "Critical";
-            this.criticalRadio.UnCheckedColor = System.Drawing.Color.Gray;
-            this.criticalRadio.UseVisualStyleBackColor = true;
-            // 
-            // admitBtn
-            // 
-            this.admitBtn.BackColor = System.Drawing.SystemColors.Control;
-            this.admitBtn.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.admitBtn.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            this.admitBtn.BorderRadius = 10;
-            this.admitBtn.BorderSize = 1;
-            this.admitBtn.FlatAppearance.BorderSize = 0;
-            this.admitBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.admitBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.admitBtn.ForeColor = System.Drawing.Color.Black;
-            this.admitBtn.Location = new System.Drawing.Point(12, 508);
-            this.admitBtn.Name = "admitBtn";
-            this.admitBtn.Size = new System.Drawing.Size(270, 34);
-            this.admitBtn.TabIndex = 15;
-            this.admitBtn.Text = "Admit Patient";
-            this.admitBtn.TextColor = System.Drawing.Color.Black;
-            this.admitBtn.UseVisualStyleBackColor = false;
-            this.admitBtn.Click += new System.EventHandler(this.admitBtn_Click);
-            // 
-            // vipCheck
-            // 
-            this.vipCheck.AutoSize = true;
-            this.vipCheck.Location = new System.Drawing.Point(923, 65);
-            this.vipCheck.MinimumSize = new System.Drawing.Size(45, 22);
-            this.vipCheck.Name = "vipCheck";
-            this.vipCheck.OffBackColor = System.Drawing.Color.Gray;
-            this.vipCheck.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.vipCheck.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            this.vipCheck.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.vipCheck.Size = new System.Drawing.Size(45, 22);
-            this.vipCheck.TabIndex = 16;
-            this.vipCheck.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(974, 67);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(36, 21);
-            this.label1.TabIndex = 17;
-            this.label1.Text = "VIP";
-            // 
-            // NewPatientForm
+            // DocAddForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1046, 612);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.vipCheck);
-            this.Controls.Add(this.admitBtn);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.delBtn);
-            this.Controls.Add(this.historyBtn);
-            this.Controls.Add(this.medicationBtn);
-            this.Controls.Add(this.medicationArea);
-            this.Controls.Add(this.medicationComboBox);
+            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.hireBtn);
             this.Controls.Add(this.femalRadio);
             this.Controls.Add(this.maleRadio);
             this.Controls.Add(this.dobPicker);
-            this.Controls.Add(this.medicationDate);
-            this.Controls.Add(this.diagnosisField);
             this.Controls.Add(this.materialDivider1);
             this.Controls.Add(this.lnameField);
             this.Controls.Add(this.fnameField);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "NewPatientForm";
+            this.Name = "DocAddForm";
             this.Text = "DoctorForm";
             this.Load += new System.EventHandler(this.NewPatientForm_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -430,22 +371,17 @@
         private MaterialSkin.Controls.MaterialTextBox fnameField;
         private MaterialSkin.Controls.MaterialTextBox lnameField;
         private MaterialSkin.Controls.MaterialDivider materialDivider1;
-        private MaterialSkin.Controls.MaterialTextBox diagnosisField;
-        private Controls.RJDatePicker medicationDate;
+        private MaterialSkin.Controls.MaterialTextBox addressField;
         private Controls.RJDatePicker dobPicker;
         private MaterialSkin.Controls.MaterialRadioButton maleRadio;
         private MaterialSkin.Controls.MaterialRadioButton femalRadio;
-        private MaterialSkin.Controls.MaterialMultiLineTextBox medicationArea;
-        private Controls.RJButton medicationBtn;
-        private Controls.RJButton historyBtn;
-        private Controls.RJButton delBtn;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private Controls.RJRadioButton nonRadio;
-        private Controls.RJRadioButton semiRadio;
-        private Controls.RJRadioButton criticalRadio;
-        private Controls.RJButton admitBtn;
-        private Controls.RJToggleButton vipCheck;
-        private System.Windows.Forms.Label label1;
-        private MaterialSkin.Controls.MaterialComboBox medicationComboBox;
+        private Controls.RJButton hireBtn;
+        private MaterialSkin.Controls.MaterialTextBox2 phoneField;
+        private MaterialSkin.Controls.MaterialTextBox cityField;
+        private MaterialSkin.Controls.MaterialTextBox passField;
+        private MaterialSkin.Controls.MaterialTextBox confirmField;
+        private MaterialSkin.Controls.MaterialComboBox departmentComboBox;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBox3;
     }
 }
