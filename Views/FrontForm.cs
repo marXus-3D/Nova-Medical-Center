@@ -30,24 +30,25 @@ namespace Nova_Medical_Center.Views
         private void homeBtn_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
-            OpenChildForm(new DocHomeForm());
+            OpenChildForm(new FrontHomeForm());
         }
 
         private void updateBtn_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
-            OpenChildForm(new DocUpdateForm());
+            OpenChildForm(new FrontUpdateForm());
         }
 
         private void addBtn_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
-            OpenChildForm(new DocUpdateForm());
+            OpenChildForm(new FrontAddForm());
         }
 
         private void deleteBtn_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
+            OpenChildForm(new FrontDeleteForm());
         }
 
         private void ActivateButton(object sender)

@@ -137,6 +137,24 @@
     <Compile Include="Views\DocAddForm.Designer.cs">
       <DependentUpon>DocAddForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\FrontDeleteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FrontDeleteForm.Designer.cs">
+      <DependentUpon>FrontDeleteForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FrontHomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FrontHomeForm.Designer.cs">
+      <DependentUpon>FrontHomeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FrontUpdateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FrontUpdateForm.Designer.cs">
+      <DependentUpon>FrontUpdateForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\NurseUpdateForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -308,6 +326,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\DocAddForm.resx">
       <DependentUpon>DocAddForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FrontDeleteForm.resx">
+      <DependentUpon>FrontDeleteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FrontHomeForm.resx">
+      <DependentUpon>FrontHomeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FrontUpdateForm.resx">
+      <DependentUpon>FrontUpdateForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\NurseUpdateForm.resx">
       <DependentUpon>NurseUpdateForm.cs</DependentUpon>
