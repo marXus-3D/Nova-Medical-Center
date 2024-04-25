@@ -104,6 +104,12 @@
     <Compile Include="Views\Controls\CustomRadioButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Views\Controls\CustomText.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Controls\CustomTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Views\Controls\CustomToggle.cs">
       <SubType>Component</SubType>
     </Compile>

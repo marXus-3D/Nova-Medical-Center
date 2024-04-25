@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using Nova_Medical_Center.Models;
 using Nova_Medical_Center.Scripts;
+using Nova_Medical_Center.Views.Controls;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -20,7 +21,7 @@ namespace Nova_Medical_Center.Views
 
         private void NewPatientForm_Load(object sender, EventArgs e)
         {
-            departmentComboBox.DataSource = new List<string>() 
+            var ls = new List<string>() 
             {
                 "Cardiology",
                 "Neurology",
@@ -43,15 +44,16 @@ namespace Nova_Medical_Center.Views
                 "Laboratory Medicine",
                 "Patient Services"
             };
+
+            departmentComboBox.DataSource = ls;
         }
 
         private void admitBtn_Click(object sender, EventArgs e)
         {
-            if (CheckForm())
+            if (true)
             {
-                Data.Data.employees["Doctors"].Add(new Employee()
+                var emp = new Employee()
                 {
-                    Id = Generator.GeneratePatientID(),
                     First_Name = fnameField.Text,
                     Last_Name = lnameField.Text,
                     Gender = maleRadio.Checked ? 'M' : 'F',
@@ -63,7 +65,11 @@ namespace Nova_Medical_Center.Views
                     Department = departmentComboBox.SelectedItem.ToString(),
                     Position = "Doctor",
                     Password = passField.Text,
-                });
+                };
+                Generator.GenerateEmployeeID(ref emp);
+                Data.Data.employees["Doctors"].Add(emp);
+
+                MessageBox.Show("Task Successfull");
             }
         }
 
@@ -82,5 +88,24 @@ namespace Nova_Medical_Center.Views
 
             return true;
         }
+
+        private void confirmField_Click(object sender, EventArgs e)
+        {
+            ((RJTextBox)sender).Texts = "";
+        }
+
+        //protected override void Dispose(bool disposing)
+        //{
+        //    if (disposing && components != null)
+        //    {
+        //        components.Dispose(); // Dispose of all components on the form
+        //    }
+        //    base.Dispose(disposing);
+        //}
+
+        //private void DocAddForm_FormClosing(object sender, FormClosingEventArgs e)
+        //{
+        //    this.Dispose(true);
+        //}
     }
 }

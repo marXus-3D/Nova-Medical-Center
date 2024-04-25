@@ -38,11 +38,11 @@
             this.hireBtn = new Nova_Medical_Center.Views.Controls.RJButton();
             this.phoneField = new MaterialSkin.Controls.MaterialTextBox2();
             this.cityField = new MaterialSkin.Controls.MaterialTextBox();
-            this.passField = new MaterialSkin.Controls.MaterialTextBox();
-            this.confirmField = new MaterialSkin.Controls.MaterialTextBox();
             this.departmentComboBox = new MaterialSkin.Controls.MaterialComboBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.confirmField = new Nova_Medical_Center.Views.Controls.RJTextBox();
+            this.passField = new Nova_Medical_Center.Views.Controls.RJTextBox();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
@@ -245,50 +245,6 @@
             this.cityField.UseAccent = false;
             this.cityField.UseTallSize = false;
             // 
-            // passField
-            // 
-            this.passField.AnimateReadOnly = false;
-            this.passField.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.passField.Depth = 0;
-            this.passField.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.passField.Hint = "Password";
-            this.passField.LeadingIcon = null;
-            this.passField.LeaveOnEnterKey = true;
-            this.passField.Location = new System.Drawing.Point(53, 91);
-            this.passField.MaxLength = 50;
-            this.passField.MouseState = MaterialSkin.MouseState.OUT;
-            this.passField.Multiline = false;
-            this.passField.Name = "passField";
-            this.passField.Password = true;
-            this.passField.Size = new System.Drawing.Size(211, 36);
-            this.passField.TabIndex = 19;
-            this.passField.Text = "";
-            this.passField.TrailingIcon = null;
-            this.passField.UseAccent = false;
-            this.passField.UseTallSize = false;
-            // 
-            // confirmField
-            // 
-            this.confirmField.AnimateReadOnly = false;
-            this.confirmField.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.confirmField.Depth = 0;
-            this.confirmField.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.confirmField.Hint = "Confirm Password";
-            this.confirmField.LeadingIcon = null;
-            this.confirmField.LeaveOnEnterKey = true;
-            this.confirmField.Location = new System.Drawing.Point(53, 159);
-            this.confirmField.MaxLength = 50;
-            this.confirmField.MouseState = MaterialSkin.MouseState.OUT;
-            this.confirmField.Multiline = false;
-            this.confirmField.Name = "confirmField";
-            this.confirmField.Password = true;
-            this.confirmField.Size = new System.Drawing.Size(211, 36);
-            this.confirmField.TabIndex = 20;
-            this.confirmField.Text = "";
-            this.confirmField.TrailingIcon = null;
-            this.confirmField.UseAccent = false;
-            this.confirmField.UseTallSize = false;
-            // 
             // departmentComboBox
             // 
             this.departmentComboBox.AutoResize = false;
@@ -330,9 +286,9 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.departmentComboBox);
-            this.groupBox3.Controls.Add(this.passField);
             this.groupBox3.Controls.Add(this.confirmField);
+            this.groupBox3.Controls.Add(this.passField);
+            this.groupBox3.Controls.Add(this.departmentComboBox);
             this.groupBox3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(764, 189);
             this.groupBox3.Name = "groupBox3";
@@ -340,6 +296,46 @@
             this.groupBox3.TabIndex = 23;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Work Info";
+            // 
+            // confirmField
+            // 
+            this.confirmField.BackColor = System.Drawing.SystemColors.Control;
+            this.confirmField.BorderColor = System.Drawing.Color.Gray;
+            this.confirmField.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.confirmField.BorderSize = 2;
+            this.confirmField.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.confirmField.ForeColor = System.Drawing.Color.Black;
+            this.confirmField.Location = new System.Drawing.Point(53, 161);
+            this.confirmField.Margin = new System.Windows.Forms.Padding(4);
+            this.confirmField.Multiline = false;
+            this.confirmField.Name = "confirmField";
+            this.confirmField.Padding = new System.Windows.Forms.Padding(7);
+            this.confirmField.PasswordChar = true;
+            this.confirmField.Size = new System.Drawing.Size(210, 31);
+            this.confirmField.TabIndex = 25;
+            this.confirmField.Texts = "Confrim Password";
+            this.confirmField.UnderlinedStyle = true;
+            this.confirmField.Click += new System.EventHandler(this.confirmField_Click);
+            // 
+            // passField
+            // 
+            this.passField.BackColor = System.Drawing.SystemColors.Control;
+            this.passField.BorderColor = System.Drawing.Color.Gray;
+            this.passField.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.passField.BorderSize = 2;
+            this.passField.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passField.ForeColor = System.Drawing.Color.Black;
+            this.passField.Location = new System.Drawing.Point(53, 92);
+            this.passField.Margin = new System.Windows.Forms.Padding(4);
+            this.passField.Multiline = false;
+            this.passField.Name = "passField";
+            this.passField.Padding = new System.Windows.Forms.Padding(7);
+            this.passField.PasswordChar = true;
+            this.passField.Size = new System.Drawing.Size(210, 31);
+            this.passField.TabIndex = 24;
+            this.passField.Texts = "Password";
+            this.passField.UnderlinedStyle = true;
+            this.passField.Click += new System.EventHandler(this.confirmField_Click);
             // 
             // DocAddForm
             // 
@@ -378,10 +374,10 @@
         private Controls.RJButton hireBtn;
         private MaterialSkin.Controls.MaterialTextBox2 phoneField;
         private MaterialSkin.Controls.MaterialTextBox cityField;
-        private MaterialSkin.Controls.MaterialTextBox passField;
-        private MaterialSkin.Controls.MaterialTextBox confirmField;
         private MaterialSkin.Controls.MaterialComboBox departmentComboBox;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox3;
+        private Controls.RJTextBox passField;
+        private Controls.RJTextBox confirmField;
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Nova_Medical_Center.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -25,6 +26,16 @@ namespace Nova_Medical_Center.Scripts
             }
             string str = "PAT-" + chars[random.Next(chars.Length)] + chars[random.Next(chars.Length)] + chars[random.Next(chars.Length)] + "-" + ++lastId; 
             return str;
+        }
+        public static void GenerateEmployeeID(ref Employee emp)
+        {
+            if (emp.Department.Equals("Nursing"))
+                emp.Id = "NRS-";
+            else if (emp.Department.Equals("Managment"))
+                emp.Id = "FDK-";
+            else
+                emp.Id = "DOC-";
+            emp.Id += emp.First_Name.ToUpper().Substring(0, 3) + "-" + emp.Last_Name.ToUpper().Substring(0, 3) + "-" + random.Next(100, 999);
         }
     }
 }

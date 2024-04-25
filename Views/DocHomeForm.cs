@@ -7,7 +7,6 @@ namespace Nova_Medical_Center.Views
 {
     public partial class DocHomeForm : Form
     {
-        IconButton current;
         public DocHomeForm()
         {
             InitializeComponent();
