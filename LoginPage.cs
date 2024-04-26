@@ -29,15 +29,15 @@ namespace Nova_Medical_Center
             List<Employee> emps;
             if (loaded)
             {
-                if (usernameField.Text.Substring(0, 4).Contains("DOC"))
+                if (empBox.SelectedItem.ToString().Contains("DOC"))
                     emps = Data.Data.employees["Doctors"];
-                else if (usernameField.Text.Substring(0, 4).Contains("NRS"))
+                else if (empBox.SelectedItem.ToString().Contains("NRS"))
                     emps = Data.Data.employees["Nurses"];
                 else
                     emps = Data.Data.employees["Front Desks"];
                 foreach (var emp in emps)
                 {
-                    if (emp.Id == usernameField.Text)
+                    if (emp.Id == empBox.SelectedItem.ToString()+'-'+usernameField.Text)
                     {
                         if (emp.Password.Equals(Employee.HashPassword(Employee.HashPassword(passwordField.Text))))
                         {
@@ -60,6 +60,11 @@ namespace Nova_Medical_Center
         private void LoginPage_Load(object sender, EventArgs e)
         {
             DataLoader.LoadEmployees();
+            empBox.DataSource = new List<String>() {
+                "DOC",
+                "NRS",
+                "FDK"
+            };
         }
     }
 }

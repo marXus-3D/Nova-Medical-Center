@@ -64,7 +64,7 @@ namespace Nova_Medical_Center
         {
             if (!sideBarExpanded)
             {
-                sideBar.Width += 5;
+                sideBar.Width += 15;
                 if (sideBar.Width >= 235)
                 {
                     sideBarTransition.Stop();
@@ -73,7 +73,7 @@ namespace Nova_Medical_Center
             }
             else
             {
-                sideBar.Width -= 5;
+                sideBar.Width -= 15;
                 if (sideBar.Width <= 55)
                 {
                     sideBarTransition.Stop();

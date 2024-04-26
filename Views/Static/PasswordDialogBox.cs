@@ -48,8 +48,8 @@ namespace Nova_Medical_Center.Views.Static
 
         private void FlipForm()
         {
-            passwordField.ReadOnly = !passwordField.ReadOnly;
-            confirmField.ReadOnly = !confirmField.ReadOnly;
+            passwordField.Enabled = !passwordField.Enabled;
+            confirmField.Enabled = !confirmField.Enabled;
         }
 
         private void confirmField_TextChanged(object sender, EventArgs e)

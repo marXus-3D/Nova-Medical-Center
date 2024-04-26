@@ -449,5 +449,14 @@
   <ItemGroup>
     <None Include="Resources\calendarDark.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nova.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\novalogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nova1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -387,7 +387,7 @@
             // 
             // sideBarTransition
             // 
-            this.sideBarTransition.Interval = 25;
+            this.sideBarTransition.Interval = 5;
             this.sideBarTransition.Tick += new System.EventHandler(this.sideBarTransition_Tick);
             // 
             // panelDesktop
@@ -400,7 +400,7 @@
             // 
             // employeeTransition
             // 
-            this.employeeTransition.Interval = 40;
+            this.employeeTransition.Interval = 10;
             this.employeeTransition.Tick += new System.EventHandler(this.employeeTransition_Tick);
             // 
             // HomePage
