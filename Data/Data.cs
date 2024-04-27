@@ -13,9 +13,9 @@ namespace Nova_Medical_Center.Data
 
         public static Employee currentUser;
 
-        public static Queue<Patient> NonCriticalQueue;
-        public static Queue<Patient> CriticalQueue;
-        public static Queue<Patient> SemiCriticalQueue;
-        public static Queue<Patient> VipQueue;
+        public static Queue<Patient> NonCriticalQueue = new Queue<Patient>();
+        public static Queue<Patient> CriticalQueue = new Queue<Patient>();
+        public static Queue<Patient> SemiCriticalQueue = new Queue<Patient>();
+        public static Queue<Patient> VipQueue = new Queue<Patient>();
     }
 }

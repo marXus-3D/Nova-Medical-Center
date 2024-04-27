@@ -24,6 +24,12 @@ namespace Nova_Medical_Center.Scripts
 
                 return;
             }
+            if (patient.Vip) 
+            {
+                Data.Data.VipQueue.Enqueue(patient);
+                return;
+            }
+
             switch (patient.UrgencyLevel)
             {
                 case Urgency.Critical:
@@ -77,6 +83,8 @@ namespace Nova_Medical_Center.Scripts
                     }
                     break;
             }
+
+            return null;
         }
     
         public static void RoomUpdate(int roomIdx) 
@@ -84,6 +92,18 @@ namespace Nova_Medical_Center.Scripts
             if (Data.Data.CriticalQueue?.Count > 0)
             {
                 var patient = Data.Data.CriticalQueue.Dequeue();
+
+                Data.Data.rooms[roomIdx].Occupied = true;
+                patient.RoomOccupied = Data.Data.rooms[roomIdx];
+
+                if (Data.Data.patients.IndexOf(patient) == -1)
+                {
+                    Data.Data.patients.Add(patient);
+                }
+            }
+            else if (Data.Data.VipQueue?.Count > 0 && Data.Data.rooms[roomIdx].Type.Equals("VIP"))
+            {
+                var patient = Data.Data.VipQueue.Dequeue();
 
                 Data.Data.rooms[roomIdx].Occupied = true;
                 patient.RoomOccupied = Data.Data.rooms[roomIdx];
