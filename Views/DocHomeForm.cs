@@ -1,5 +1,6 @@
 ﻿using FontAwesome.Sharp;
 using Nova_Medical_Center.Data;
+using Nova_Medical_Center.Scripts;
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
@@ -18,7 +19,7 @@ namespace Nova_Medical_Center.Views
             if (val == true)
             {
                 loadPanel.Visible = false;
-                InsertionSort(Data.Data.employees["Doctors"], emp => emp.First_Name);
+                CentralControler.InsertionSort(Data.Data.employees["Doctors"], emp => emp.First_Name);
                 doctorGridView.DataSource = Data.Data.employees["Doctors"];
             }
             else
@@ -33,23 +34,18 @@ namespace Nova_Medical_Center.Views
             }
             DataLoader.LoadEmployees();
         }
-        public static void InsertionSort<T>(List<T> list, Func<T, string> getProperty) where T : class
+
+        private async void searchField_TextChanged(object sender, EventArgs e)
         {
-            for (int i = 1; i < list.Count; i++)
+            doctorGridView.DataSource = null;
+            if (searchField.Text=="")
             {
-                T key = list[i];
-                int j = i - 1;
-
-                // Compare elements based on the property retrieved using the getProperty function
-                while (j >= 0 && getProperty(list[j]).CompareTo(getProperty(key)) > 0)
-                {
-                    list[j + 1] = list[j];
-                    j--;
-                }
-
-                // Insert the current element at its correct position
-                list[j + 1] = key;
+                doctorGridView.DataSource = Data.Data.employees["Doctors"];
+                return;
             }
+
+            doctorGridView.DataSource = null;
+            doctorGridView.DataSource = await CentralControler.SearchList(list: Data.Data.employees["Doctors"], searchTerm: searchField.Text);
         }
     }
 }

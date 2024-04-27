@@ -140,5 +140,43 @@ namespace Nova_Medical_Center.Scripts
                 }
             }
         }
+
+        public static void InsertionSort<T>(List<T> list, Func<T, string> getProperty) where T : class
+        {
+            for (int i = 1; i < list.Count; i++)
+            {
+                T key = list[i];
+                int j = i - 1;
+
+                // Compare elements based on the property retrieved using the getProperty function
+                while (j >= 0 && getProperty(list[j]).CompareTo(getProperty(key)) > 0)
+                {
+                    list[j + 1] = list[j];
+                    j--;
+                }
+
+                // Insert the current element at its correct position
+                list[j + 1] = key;
+            }
+        }
+
+        public static async Task<List<Employee>> SearchList(List<Employee> list, string searchTerm) //where T : Employee
+        {
+            return await Task.Run(() =>
+            {
+                List<Employee> res = new List<Employee>();
+
+                foreach (var emp in list)
+                {
+                    if (emp.First_Name.ToLower().First() > searchTerm.ToLower().First())
+                        break;
+
+                    if(emp.First_Name.ToLower().StartsWith(searchTerm.ToLower()))
+                        res.Add(emp);
+                }
+
+                return res;
+            });
+        }
     }
 }

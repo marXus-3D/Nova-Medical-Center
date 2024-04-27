@@ -1,5 +1,6 @@
 ﻿using FontAwesome.Sharp;
 using Nova_Medical_Center.Data;
+using Nova_Medical_Center.Scripts;
 using System;
 using System.Windows.Forms;
 
@@ -17,6 +18,7 @@ namespace Nova_Medical_Center.Views
             if (val == true)
             {
                 loadPanel.Visible = false;
+                CentralControler.InsertionSort(Data.Data.employees["Front Desks"], emp => emp.First_Name);
                 doctorGridView.DataSource = Data.Data.employees["Front Desks"];
             }
             else

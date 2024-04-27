@@ -458,5 +458,8 @@
   <ItemGroup>
     <None Include="Resources\nova1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-search-100.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
