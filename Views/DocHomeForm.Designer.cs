@@ -34,8 +34,8 @@
             this.doctorGridView = new System.Windows.Forms.DataGridView();
             this.loadPanel = new System.Windows.Forms.Panel();
             this.errorLabel = new System.Windows.Forms.Label();
-            this.searchField = new MaterialSkin.Controls.MaterialTextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.searchField = new MaterialSkin.Controls.MaterialTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.doctorGridView)).BeginInit();
             this.loadPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -105,6 +105,16 @@
             this.errorLabel.Text = "Error While Loading Doctors Please Try Again.";
             this.errorLabel.Visible = false;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Nova_Medical_Center.Properties.Resources.Cube_1x_1_0s_200px_200px;
+            this.pictureBox1.Location = new System.Drawing.Point(338, 150);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(300, 300);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // searchField
             // 
             this.searchField.AnimateReadOnly = false;
@@ -125,16 +135,6 @@
             this.searchField.UseAccent = false;
             this.searchField.UseTallSize = false;
             this.searchField.TextChanged += new System.EventHandler(this.searchField_TextChanged);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Nova_Medical_Center.Properties.Resources.Cube_1x_1_0s_200px_200px;
-            this.pictureBox1.Location = new System.Drawing.Point(338, 150);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(300, 300);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // DocHomeForm
             // 

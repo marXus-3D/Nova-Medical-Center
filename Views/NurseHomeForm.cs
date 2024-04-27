@@ -33,5 +33,18 @@ namespace Nova_Medical_Center.Views
             }
             DataLoader.LoadEmployees();
         }
+
+        private async void searchField_TextChanged(object sender, EventArgs e)
+        {
+            doctorGridView.DataSource = null;
+            if (searchField.Text == "")
+            {
+                doctorGridView.DataSource = Data.Data.employees["Nurses"];
+                return;
+            }
+
+            doctorGridView.DataSource = null;
+            doctorGridView.DataSource = await CentralControler.SearchList(list: Data.Data.employees["Nurses"], searchTerm: searchField.Text);
+        }
     }
 }

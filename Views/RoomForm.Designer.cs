@@ -32,6 +32,7 @@
             this.loadPanel = new System.Windows.Forms.Panel();
             this.errorLabel = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.nurseBar = new CircularProgressBar.CircularProgressBar();
             this.loadPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -46,6 +47,7 @@
             // 
             // loadPanel
             // 
+            this.loadPanel.Controls.Add(this.nurseBar);
             this.loadPanel.Controls.Add(this.errorLabel);
             this.loadPanel.Controls.Add(this.pictureBox1);
             this.loadPanel.Location = new System.Drawing.Point(3, 3);
@@ -75,6 +77,38 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // nurseBar
+            // 
+            this.nurseBar.AnimationFunction = WinFormAnimation.KnownAnimationFunctions.Liner;
+            this.nurseBar.AnimationSpeed = 500;
+            this.nurseBar.BackColor = System.Drawing.Color.Transparent;
+            this.nurseBar.Font = new System.Drawing.Font("Segoe UI Semibold", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nurseBar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.nurseBar.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.nurseBar.InnerMargin = 2;
+            this.nurseBar.InnerWidth = -1;
+            this.nurseBar.Location = new System.Drawing.Point(455, 411);
+            this.nurseBar.MarqueeAnimationSpeed = 2000;
+            this.nurseBar.Name = "nurseBar";
+            this.nurseBar.OuterColor = System.Drawing.Color.Gray;
+            this.nurseBar.OuterMargin = -25;
+            this.nurseBar.OuterWidth = 15;
+            this.nurseBar.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.nurseBar.ProgressWidth = 20;
+            this.nurseBar.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 36F);
+            this.nurseBar.Size = new System.Drawing.Size(65, 65);
+            this.nurseBar.StartAngle = 270;
+            this.nurseBar.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
+            this.nurseBar.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+            this.nurseBar.SubscriptMargin = new System.Windows.Forms.Padding(10, -35, 0, 0);
+            this.nurseBar.SubscriptText = "";
+            this.nurseBar.SuperscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+            this.nurseBar.SuperscriptMargin = new System.Windows.Forms.Padding(10, 35, 0, 0);
+            this.nurseBar.SuperscriptText = "";
+            this.nurseBar.TabIndex = 5;
+            this.nurseBar.TextMargin = new System.Windows.Forms.Padding(8, 8, 8, 0);
+            this.nurseBar.Value = 68;
+            // 
             // RoomForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -99,5 +133,6 @@
         private System.Windows.Forms.Panel loadPanel;
         private System.Windows.Forms.Label errorLabel;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private CircularProgressBar.CircularProgressBar nurseBar;
     }
 }

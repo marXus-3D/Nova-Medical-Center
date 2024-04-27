@@ -19,6 +19,7 @@ namespace Nova_Medical_Center.Views
         {
             Nova_Medical_Center.Scripts.Events.OnRoomLoad += LoadedRooms;
             InitializeComponent();
+            nurseBar.Step = 5;
         }
 
         private async void LoadedRooms(bool val)
