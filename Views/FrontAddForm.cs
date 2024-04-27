@@ -54,7 +54,7 @@ namespace Nova_Medical_Center.Views
 
         bool CheckForm() 
         {
-            if(fnameField.Text == "" || fnameField.Text.Contains(" ") || lnameField.Text == "" || lnameField.Text.Contains(" ") || addressField.Text == "" || cityField.Text == "" || phoneField.Text.Contains(" ") || passField.Text == "" || passField.Text.Contains(" ") || confirmField.Text == "" || confirmField.Text.Contains(" ")) 
+            if(fnameField.Text == "" || fnameField.Text.Contains(" ") || lnameField.Text == "" || lnameField.Text.Contains(" ") || addressField.Text == "" || cityField.Text == "" || phoneField.Text.Contains(" ") || passField.Texts == "" || passField.Texts.Contains(" ") || confirmField.Texts == "" || confirmField.Texts.Contains(" ")) 
             {
                 MessageBox.Show("Please make sure you've filled the form correctlly", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
