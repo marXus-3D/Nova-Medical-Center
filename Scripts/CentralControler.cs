@@ -15,7 +15,7 @@ namespace Nova_Medical_Center.Scripts
         {
             var patient = Data.Data.patients[idx];
 
-            var room = await CheckRooms();
+            var room = await CheckRooms(patient);
             if (room != null) 
             {
                 MessageBox.Show("Room " + room.Id);
@@ -38,11 +38,45 @@ namespace Nova_Medical_Center.Scripts
             }
         }
 
-        private async static Task<Room> CheckRooms()
+        private async static Task<Room> CheckRooms(Patient patient)
         {
             if (Data.Data.rooms == null)
                 await DataLoader.LoadRooms();
-            return Data.Data.rooms.Where(room => !room.Occupied).FirstOrDefault();
+            switch (patient.Vip) 
+            {
+                case true:
+                    return Data.Data.rooms.Where(room => !room.Occupied && room.Type.Equals("VIP")).FirstOrDefault();
+                    break;
+                case false:
+                    switch (patient.UrgencyLevel) 
+                    {
+                        case Urgency.Critical:
+                            Room tmp = null;
+                            Room searchedRoom = Data.Data.rooms.Where(room =>
+                            {
+                                if (!room.Occupied)
+                                {
+                                    if(room.Type.Equals("ICU"))
+                                        return true;
+                                    tmp = room.Type.Equals("Normal")? room: null;
+
+                                    return !(room == null);
+                                } else
+                                    return false;
+                            }).FirstOrDefault();
+                            if (searchedRoom == null)
+                                return tmp;
+                            return searchedRoom;
+                            break;
+                        case Urgency.SemiCritical:
+                            return Data.Data.rooms.Where(room => !room.Occupied && room.Type.Equals("Normal") || room.Type.Equals("ICU")).FirstOrDefault();
+                            break;
+                        case Urgency.NonCritical:
+                            return Data.Data.rooms.Where(room => !room.Occupied && room.Type.Equals("Normal")).FirstOrDefault();
+                            break;
+                    }
+                    break;
+            }
         }
     
         public static void RoomUpdate(int roomIdx) 
