@@ -89,9 +89,9 @@ namespace Nova_Medical_Center.Scripts
     
         public static void RoomUpdate(int roomIdx) 
         {
-            if (Data.Data.CriticalQueue?.Count > 0)
+            if (Data.Data.VipQueue?.Count > 0 && Data.Data.rooms[roomIdx].Type.Equals("VIP"))
             {
-                var patient = Data.Data.CriticalQueue.Dequeue();
+                var patient = Data.Data.VipQueue.Dequeue();
 
                 Data.Data.rooms[roomIdx].Occupied = true;
                 patient.RoomOccupied = Data.Data.rooms[roomIdx];
@@ -100,10 +100,12 @@ namespace Nova_Medical_Center.Scripts
                 {
                     Data.Data.patients.Add(patient);
                 }
+
+                return;
             }
-            else if (Data.Data.VipQueue?.Count > 0 && Data.Data.rooms[roomIdx].Type.Equals("VIP"))
+            if (Data.Data.CriticalQueue?.Count > 0)
             {
-                var patient = Data.Data.VipQueue.Dequeue();
+                var patient = Data.Data.CriticalQueue.Dequeue();
 
                 Data.Data.rooms[roomIdx].Occupied = true;
                 patient.RoomOccupied = Data.Data.rooms[roomIdx];
