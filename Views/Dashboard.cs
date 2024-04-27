@@ -22,7 +22,7 @@ namespace Nova_Medical_Center.Views
                 nurseBar.Value = Data.Data.employees["Nurses"].Count;
                 receptionBar.Value = Data.Data.employees["Front Desks"].Count;
 
-                receptionBar.Value = nurseBar.Maximum = doctorBar.Maximum = doctorBar.Value + nurseBar.Value + receptionBar.Value;
+                receptionBar.Maximum = nurseBar.Maximum = doctorBar.Maximum = doctorBar.Value + nurseBar.Value + receptionBar.Value;
             };
             Scripts.Events.OnRoomLoad += (val) => 
             {
@@ -33,41 +33,39 @@ namespace Nova_Medical_Center.Views
         private async void Populate()
         {
             roomBar.Maximum = Data.Data.rooms.Count;
-            roomBar.Value = Data.Data.rooms.Where(r => r.Occupied).Count();
             var val = await Task.Run(() => {
-                int[][] arr = { new int[]{0,0}, new int[] { 0, 0 }, new int[] { 0, 0 }, new int[] { 0, 0 }, new int[] { 0, 0 } };
+                int[][] arr = { new int[]{0,0}, new int[] { 0, 0 }, new int[] { 0, 0 }, new int[] { 0, 0 }, new int[] { 0, 0 }, new int[] { 0,0 } };
                 foreach (var item in Data.Data.rooms) // literally the worst code i've ever written
                 {
-                    if (item.Type.Equals("Normal"))
+                    switch (item.Type) 
                     {
-                        ++arr[0][1];
-                        if (item.Occupied)
-                            ++arr[0][0];
+                        case "Normal":
+                            ++arr[0][1];
+                            if (item.Occupied)
+                                ++arr[0][0];
+                            break;
+                        case "Surgery":
+                            ++arr[1][1];
+                            if (item.Occupied)
+                                ++arr[1][0];
+                            break;
+                        case "VIP":
+                            ++arr[2][1];
+                            if (item.Occupied)
+                                ++arr[2][0];
+                            break;
+                        case "Delivery":
+                            ++arr[3][1];
+                            if (item.Occupied)
+                                ++arr[3][0];
+                            break;
+                        case "ICU":
+                            ++arr[4][1];
+                            if (item.Occupied)
+                                ++arr[4][0];
+                            break;
                     }
-                    else if (item.Type.Equals("Surgery"))
-                    {
-                        ++arr[1][1];
-                        if (item.Occupied)
-                            ++arr[1][0];
-                    }
-                    else if (item.Type.Equals("VIP"))
-                    {
-                        ++arr[2][1];
-                        if (item.Occupied)
-                            ++arr[2][0];
-                    }
-                    else if (item.Type.Equals("Delivery"))
-                    {
-                        ++arr[3][1];
-                        if (item.Occupied)
-                            ++arr[3][0];
-                    }
-                    else if (item.Type.Equals("ICU"))
-                    { 
-                        ++arr[4][1];
-                        if (item.Occupied)
-                            ++arr[4][0];
-                    }
+                    _= item.Occupied ? ++arr[5][0] : 0;
                 }
 
                 return arr;
@@ -89,10 +87,14 @@ namespace Nova_Medical_Center.Views
             icuBar.Value = val[4][0];
             icuBar.Maximum = val[4][1];
             icuBar.Text = icuBar.Maximum.ToString();
+
+            roomBar.Value = val[5][0];
         }
 
         private async void Dashboard_Load(object sender, EventArgs e)
         {
+            doctorBar.Value = nurseBar.Value = receptionBar.Value = roomBar.Value = normalBar.Value = icuBar.Value = surgeryBar.Value = deliveryBar.Value = vipBar.Value = 0;
+
             if (Data.Data.employees == null)
                 DataLoader.LoadEmployees();
             else
