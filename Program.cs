@@ -19,7 +19,7 @@ namespace Nova_Medical_Center
             Events.OnDischarge += CentralControler.RoomUpdate;
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new HomePage());
+            Application.Run(new LoginPage());
         }
     }
 }

@@ -43,6 +43,7 @@
             this.icuBar = new CircularProgressBar.CircularProgressBar();
             this.label5 = new System.Windows.Forms.Label();
             this.deliveryBar = new CircularProgressBar.CircularProgressBar();
+            this.line = new MaterialSkin.Controls.MaterialDivider();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,21 +52,21 @@
             this.doctorBar.AnimationFunction = WinFormAnimation.KnownAnimationFunctions.Liner;
             this.doctorBar.AnimationSpeed = 500;
             this.doctorBar.BackColor = System.Drawing.Color.Transparent;
-            this.doctorBar.Font = new System.Drawing.Font("Segoe UI Semibold", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.doctorBar.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold);
             this.doctorBar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.doctorBar.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.doctorBar.InnerMargin = 2;
             this.doctorBar.InnerWidth = -1;
-            this.doctorBar.Location = new System.Drawing.Point(22, 12);
+            this.doctorBar.Location = new System.Drawing.Point(128, 29);
             this.doctorBar.MarqueeAnimationSpeed = 2000;
             this.doctorBar.Name = "doctorBar";
             this.doctorBar.OuterColor = System.Drawing.Color.Gray;
             this.doctorBar.OuterMargin = -25;
-            this.doctorBar.OuterWidth = 15;
+            this.doctorBar.OuterWidth = 20;
             this.doctorBar.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            this.doctorBar.ProgressWidth = 20;
+            this.doctorBar.ProgressWidth = 10;
             this.doctorBar.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 36F);
-            this.doctorBar.Size = new System.Drawing.Size(200, 200);
+            this.doctorBar.Size = new System.Drawing.Size(165, 165);
             this.doctorBar.StartAngle = 270;
             this.doctorBar.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
             this.doctorBar.SubscriptMargin = new System.Windows.Forms.Padding(10, -35, 0, 0);
@@ -75,7 +76,7 @@
             this.doctorBar.SuperscriptText = "";
             this.doctorBar.TabIndex = 0;
             this.doctorBar.Text = "Doctors";
-            this.doctorBar.TextMargin = new System.Windows.Forms.Padding(8, 8, 8, 0);
+            this.doctorBar.TextMargin = new System.Windows.Forms.Padding(8, 8, 10, 8);
             this.doctorBar.Value = 68;
             // 
             // roomBar
@@ -88,16 +89,16 @@
             this.roomBar.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.roomBar.InnerMargin = 2;
             this.roomBar.InnerWidth = -1;
-            this.roomBar.Location = new System.Drawing.Point(817, 12);
+            this.roomBar.Location = new System.Drawing.Point(98, 303);
             this.roomBar.MarqueeAnimationSpeed = 2000;
             this.roomBar.Name = "roomBar";
             this.roomBar.OuterColor = System.Drawing.Color.Gray;
             this.roomBar.OuterMargin = -25;
-            this.roomBar.OuterWidth = 26;
+            this.roomBar.OuterWidth = 20;
             this.roomBar.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            this.roomBar.ProgressWidth = 25;
+            this.roomBar.ProgressWidth = 10;
             this.roomBar.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 36F);
-            this.roomBar.Size = new System.Drawing.Size(200, 200);
+            this.roomBar.Size = new System.Drawing.Size(300, 300);
             this.roomBar.StartAngle = 270;
             this.roomBar.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
             this.roomBar.SubscriptMargin = new System.Windows.Forms.Padding(10, -35, 0, 0);
@@ -107,7 +108,7 @@
             this.roomBar.SuperscriptText = "";
             this.roomBar.TabIndex = 3;
             this.roomBar.Text = "Rooms";
-            this.roomBar.TextMargin = new System.Windows.Forms.Padding(8, 8, 0, 0);
+            this.roomBar.TextMargin = new System.Windows.Forms.Padding(8, 8, 8, 10);
             this.roomBar.Value = 68;
             // 
             // nurseBar
@@ -115,21 +116,21 @@
             this.nurseBar.AnimationFunction = WinFormAnimation.KnownAnimationFunctions.Liner;
             this.nurseBar.AnimationSpeed = 500;
             this.nurseBar.BackColor = System.Drawing.Color.Transparent;
-            this.nurseBar.Font = new System.Drawing.Font("Segoe UI Semibold", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nurseBar.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold);
             this.nurseBar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.nurseBar.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.nurseBar.InnerMargin = 2;
             this.nurseBar.InnerWidth = -1;
-            this.nurseBar.Location = new System.Drawing.Point(22, 237);
+            this.nurseBar.Location = new System.Drawing.Point(440, 29);
             this.nurseBar.MarqueeAnimationSpeed = 2000;
             this.nurseBar.Name = "nurseBar";
             this.nurseBar.OuterColor = System.Drawing.Color.Gray;
             this.nurseBar.OuterMargin = -25;
-            this.nurseBar.OuterWidth = 15;
+            this.nurseBar.OuterWidth = 20;
             this.nurseBar.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            this.nurseBar.ProgressWidth = 20;
+            this.nurseBar.ProgressWidth = 10;
             this.nurseBar.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 36F);
-            this.nurseBar.Size = new System.Drawing.Size(200, 200);
+            this.nurseBar.Size = new System.Drawing.Size(165, 165);
             this.nurseBar.StartAngle = 270;
             this.nurseBar.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
             this.nurseBar.SubscriptMargin = new System.Windows.Forms.Padding(10, -35, 0, 0);
@@ -139,7 +140,7 @@
             this.nurseBar.SuperscriptText = "";
             this.nurseBar.TabIndex = 4;
             this.nurseBar.Text = "Nurses";
-            this.nurseBar.TextMargin = new System.Windows.Forms.Padding(8, 8, 8, 0);
+            this.nurseBar.TextMargin = new System.Windows.Forms.Padding(8, 8, 10, 8);
             this.nurseBar.Value = 68;
             // 
             // receptionBar
@@ -147,21 +148,21 @@
             this.receptionBar.AnimationFunction = WinFormAnimation.KnownAnimationFunctions.Liner;
             this.receptionBar.AnimationSpeed = 500;
             this.receptionBar.BackColor = System.Drawing.Color.Transparent;
-            this.receptionBar.Font = new System.Drawing.Font("Segoe UI Semibold", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.receptionBar.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold);
             this.receptionBar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.receptionBar.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.receptionBar.InnerMargin = 2;
             this.receptionBar.InnerWidth = -1;
-            this.receptionBar.Location = new System.Drawing.Point(22, 443);
+            this.receptionBar.Location = new System.Drawing.Point(718, 29);
             this.receptionBar.MarqueeAnimationSpeed = 2000;
             this.receptionBar.Name = "receptionBar";
             this.receptionBar.OuterColor = System.Drawing.Color.Gray;
             this.receptionBar.OuterMargin = -25;
-            this.receptionBar.OuterWidth = 15;
+            this.receptionBar.OuterWidth = 20;
             this.receptionBar.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            this.receptionBar.ProgressWidth = 20;
+            this.receptionBar.ProgressWidth = 10;
             this.receptionBar.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 36F);
-            this.receptionBar.Size = new System.Drawing.Size(200, 200);
+            this.receptionBar.Size = new System.Drawing.Size(165, 165);
             this.receptionBar.StartAngle = 270;
             this.receptionBar.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
             this.receptionBar.SubscriptMargin = new System.Windows.Forms.Padding(10, -35, 0, 0);
@@ -171,7 +172,7 @@
             this.receptionBar.SuperscriptText = "";
             this.receptionBar.TabIndex = 5;
             this.receptionBar.Text = "Reception";
-            this.receptionBar.TextMargin = new System.Windows.Forms.Padding(8, 8, 8, 0);
+            this.receptionBar.TextMargin = new System.Windows.Forms.Padding(8, 8, 10, 8);
             this.receptionBar.Value = 68;
             // 
             // normalBar
@@ -189,7 +190,7 @@
             this.normalBar.Name = "normalBar";
             this.normalBar.OuterColor = System.Drawing.Color.Gray;
             this.normalBar.OuterMargin = -25;
-            this.normalBar.OuterWidth = 25;
+            this.normalBar.OuterWidth = 20;
             this.normalBar.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
             this.normalBar.ProgressWidth = 15;
             this.normalBar.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 36F);
@@ -203,7 +204,7 @@
             this.normalBar.SuperscriptText = "";
             this.normalBar.TabIndex = 6;
             this.normalBar.Text = "44";
-            this.normalBar.TextMargin = new System.Windows.Forms.Padding(8, 8, 10, 8);
+            this.normalBar.TextMargin = new System.Windows.Forms.Padding(8, 8, 10, 10);
             this.normalBar.Value = 68;
             // 
             // label1
@@ -229,7 +230,7 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.normalBar);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(605, 303);
+            this.groupBox1.Location = new System.Drawing.Point(531, 275);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(429, 328);
             this.groupBox1.TabIndex = 8;
@@ -261,7 +262,7 @@
             this.surgeryBar.Name = "surgeryBar";
             this.surgeryBar.OuterColor = System.Drawing.Color.Gray;
             this.surgeryBar.OuterMargin = -25;
-            this.surgeryBar.OuterWidth = 25;
+            this.surgeryBar.OuterWidth = 20;
             this.surgeryBar.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
             this.surgeryBar.ProgressWidth = 15;
             this.surgeryBar.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 36F);
@@ -274,7 +275,7 @@
             this.surgeryBar.SuperscriptMargin = new System.Windows.Forms.Padding(10, 35, 0, 0);
             this.surgeryBar.SuperscriptText = "";
             this.surgeryBar.TabIndex = 8;
-            this.surgeryBar.TextMargin = new System.Windows.Forms.Padding(8, 8, 10, 8);
+            this.surgeryBar.TextMargin = new System.Windows.Forms.Padding(8, 8, 10, 10);
             this.surgeryBar.Value = 68;
             // 
             // label3
@@ -302,7 +303,7 @@
             this.vipBar.Name = "vipBar";
             this.vipBar.OuterColor = System.Drawing.Color.Gray;
             this.vipBar.OuterMargin = -25;
-            this.vipBar.OuterWidth = 25;
+            this.vipBar.OuterWidth = 20;
             this.vipBar.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
             this.vipBar.ProgressWidth = 15;
             this.vipBar.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 36F);
@@ -315,7 +316,7 @@
             this.vipBar.SuperscriptMargin = new System.Windows.Forms.Padding(10, 35, 0, 0);
             this.vipBar.SuperscriptText = "";
             this.vipBar.TabIndex = 10;
-            this.vipBar.TextMargin = new System.Windows.Forms.Padding(8, 8, 10, 8);
+            this.vipBar.TextMargin = new System.Windows.Forms.Padding(8, 8, 10, 10);
             this.vipBar.Value = 68;
             // 
             // label4
@@ -343,7 +344,7 @@
             this.icuBar.Name = "icuBar";
             this.icuBar.OuterColor = System.Drawing.Color.Gray;
             this.icuBar.OuterMargin = -25;
-            this.icuBar.OuterWidth = 25;
+            this.icuBar.OuterWidth = 20;
             this.icuBar.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
             this.icuBar.ProgressWidth = 15;
             this.icuBar.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 36F);
@@ -356,7 +357,7 @@
             this.icuBar.SuperscriptMargin = new System.Windows.Forms.Padding(10, 35, 0, 0);
             this.icuBar.SuperscriptText = "";
             this.icuBar.TabIndex = 12;
-            this.icuBar.TextMargin = new System.Windows.Forms.Padding(8, 8, 10, 8);
+            this.icuBar.TextMargin = new System.Windows.Forms.Padding(8, 8, 10, 10);
             this.icuBar.Value = 68;
             // 
             // label5
@@ -384,7 +385,7 @@
             this.deliveryBar.Name = "deliveryBar";
             this.deliveryBar.OuterColor = System.Drawing.Color.Gray;
             this.deliveryBar.OuterMargin = -25;
-            this.deliveryBar.OuterWidth = 25;
+            this.deliveryBar.OuterWidth = 20;
             this.deliveryBar.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
             this.deliveryBar.ProgressWidth = 15;
             this.deliveryBar.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 36F);
@@ -397,14 +398,26 @@
             this.deliveryBar.SuperscriptMargin = new System.Windows.Forms.Padding(10, 35, 0, 0);
             this.deliveryBar.SuperscriptText = "";
             this.deliveryBar.TabIndex = 14;
-            this.deliveryBar.TextMargin = new System.Windows.Forms.Padding(8, 8, 10, 8);
+            this.deliveryBar.TextMargin = new System.Windows.Forms.Padding(8, 8, 10, 10);
             this.deliveryBar.Value = 68;
+            // 
+            // line
+            // 
+            this.line.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.line.Depth = 0;
+            this.line.Location = new System.Drawing.Point(22, 232);
+            this.line.MouseState = MaterialSkin.MouseState.HOVER;
+            this.line.Name = "line";
+            this.line.Size = new System.Drawing.Size(984, 4);
+            this.line.TabIndex = 9;
+            this.line.Text = "materialDivider1";
             // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1046, 675);
+            this.Controls.Add(this.line);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.receptionBar);
             this.Controls.Add(this.nurseBar);
@@ -437,5 +450,6 @@
         private CircularProgressBar.CircularProgressBar surgeryBar;
         private System.Windows.Forms.Label label5;
         private CircularProgressBar.CircularProgressBar deliveryBar;
+        private MaterialSkin.Controls.MaterialDivider line;
     }
 }

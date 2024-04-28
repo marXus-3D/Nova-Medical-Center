@@ -89,6 +89,8 @@ namespace Nova_Medical_Center.Views
             icuBar.Text = icuBar.Maximum.ToString();
 
             roomBar.Value = val[5][0];
+
+            //Should probably retire
         }
 
         private async void Dashboard_Load(object sender, EventArgs e)
