@@ -34,7 +34,7 @@ namespace Nova_Medical_Center.Models
             }
         }
 
-        public static void SerializeEmployees(List<Employee> employees)
+        public static void SerializeEmployees(Dictionary<string, List<Employee>> employees)
         {
             string jsonString = JsonConvert.SerializeObject(employees, Newtonsoft.Json.Formatting.Indented);
             File.WriteAllText("employees.json", jsonString, Encoding.UTF8);

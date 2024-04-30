@@ -24,10 +24,10 @@ namespace Nova_Medical_Center.Models
         //public int BedId { get; set; }
         public bool Vip { get; set; }
 
-        public static void SerializePatients(List<Patient> patients)
+        public static async void SerializePatients(List<Patient> patients)
         {
-            string jsonString = JsonConvert.SerializeObject(patients, Newtonsoft.Json.Formatting.Indented);
-            File.WriteAllText("patients.json", jsonString, Encoding.UTF8);
+            string jsonString = await Task.Run(() => JsonConvert.SerializeObject(patients, Newtonsoft.Json.Formatting.Indented));
+            await Task.Run(() => File.WriteAllText("patients.json", jsonString, Encoding.UTF8));
         }
 
         public static async Task<List<Patient>> DeserializePatients()

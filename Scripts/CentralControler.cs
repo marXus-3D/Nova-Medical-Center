@@ -1,4 +1,5 @@
-﻿using Nova_Medical_Center.Data;
+﻿using MaterialSkin.Controls;
+using Nova_Medical_Center.Data;
 using Nova_Medical_Center.Models;
 using System;
 using System.Collections.Generic;
@@ -165,6 +166,8 @@ namespace Nova_Medical_Center.Scripts
             return await Task.Run(() =>
             {
                 List<Employee> res = new List<Employee>();
+                if (list.Last().First_Name.ToLower()[0] < searchTerm.ToLower()[0])
+                    return null;
 
                 foreach (var emp in list)
                 {
