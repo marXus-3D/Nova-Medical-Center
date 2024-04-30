@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DialogBox));
             this.fnameField = new MaterialSkin.Controls.MaterialTextBox();
             this.lnameField = new MaterialSkin.Controls.MaterialTextBox();
             this.addressField = new MaterialSkin.Controls.MaterialTextBox();
@@ -245,6 +246,7 @@
             this.Controls.Add(this.lnameField);
             this.Controls.Add(this.fnameField);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "DialogBox";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DialogBox";

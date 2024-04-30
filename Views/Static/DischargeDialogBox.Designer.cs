@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DischargeDialogBox));
             this.diagnosisField = new MaterialSkin.Controls.MaterialTextBox();
             this.medicationCombobox = new MaterialSkin.Controls.MaterialComboBox();
             this.spinnerField = new MaterialSkin.Controls.MaterialTextBox();
@@ -206,6 +207,7 @@
             this.Controls.Add(this.editBtn);
             this.Controls.Add(this.diagnosisField);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "DischargeDialogBox";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DialogBox";

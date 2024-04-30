@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PasswordDialogBox));
             this.editBtn = new FontAwesome.Sharp.IconButton();
             this.confirmField = new Nova_Medical_Center.Views.Controls.RJTextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -126,6 +127,7 @@
             this.Controls.Add(this.confirmField);
             this.Controls.Add(this.editBtn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "PasswordDialogBox";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DialogBox";

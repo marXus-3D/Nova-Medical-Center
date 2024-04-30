@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QRForm));
             this.qrBox = new System.Windows.Forms.PictureBox();
             this.buttonExit = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.qrBox)).BeginInit();
@@ -67,6 +68,7 @@
             this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.qrBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "QRForm";
             this.Text = "SecurityForm";
             ((System.ComponentModel.ISupportInitialize)(this.qrBox)).EndInit();
