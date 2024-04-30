@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginPage));
             this.loginBtn = new MaterialSkin.Controls.MaterialButton();
             this.empBox = new MaterialSkin.Controls.MaterialComboBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -161,6 +162,7 @@
             this.Controls.Add(this.passwordField);
             this.Controls.Add(this.loginBtn);
             this.FormStyle = MaterialSkin.Controls.MaterialForm.FormStyles.StatusAndActionBar_None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "LoginPage";
             this.Padding = new System.Windows.Forms.Padding(3, 0, 3, 3);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
