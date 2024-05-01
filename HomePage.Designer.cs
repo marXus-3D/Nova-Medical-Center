@@ -31,33 +31,33 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomePage));
             this.titleBar = new System.Windows.Forms.Panel();
-            this.buttonMinimize = new FontAwesome.Sharp.IconButton();
             this.label1 = new System.Windows.Forms.Label();
-            this.buttonMaximize = new FontAwesome.Sharp.IconButton();
-            this.buttonExit = new FontAwesome.Sharp.IconButton();
-            this.hamBurgerMenu = new System.Windows.Forms.PictureBox();
             this.sideBar = new System.Windows.Forms.FlowLayoutPanel();
-            this.dashboardBtn = new FontAwesome.Sharp.IconButton();
-            this.patientsBtn = new FontAwesome.Sharp.IconButton();
-            this.roomBtn = new FontAwesome.Sharp.IconButton();
             this.employeePanel = new System.Windows.Forms.FlowLayoutPanel();
-            this.empBtn = new FontAwesome.Sharp.IconButton();
-            this.doctorButton = new FontAwesome.Sharp.IconButton();
-            this.nurseButton = new FontAwesome.Sharp.IconButton();
-            this.deskBtn = new FontAwesome.Sharp.IconButton();
             this.settingPanel = new System.Windows.Forms.FlowLayoutPanel();
-            this.settingBtn = new FontAwesome.Sharp.IconButton();
-            this.accountBtn = new FontAwesome.Sharp.IconButton();
-            this.logoutBtn = new FontAwesome.Sharp.IconButton();
             this.settingTransition = new System.Windows.Forms.Timer(this.components);
             this.sideBarTransition = new System.Windows.Forms.Timer(this.components);
             this.panelDesktop = new System.Windows.Forms.Panel();
             this.employeeTransition = new System.Windows.Forms.Timer(this.components);
+            this.dashboardBtn = new FontAwesome.Sharp.IconButton();
+            this.patientsBtn = new FontAwesome.Sharp.IconButton();
+            this.roomBtn = new FontAwesome.Sharp.IconButton();
+            this.empBtn = new FontAwesome.Sharp.IconButton();
+            this.doctorButton = new FontAwesome.Sharp.IconButton();
+            this.nurseButton = new FontAwesome.Sharp.IconButton();
+            this.deskBtn = new FontAwesome.Sharp.IconButton();
+            this.settingBtn = new FontAwesome.Sharp.IconButton();
+            this.accountBtn = new FontAwesome.Sharp.IconButton();
+            this.logoutBtn = new FontAwesome.Sharp.IconButton();
+            this.buttonMinimize = new FontAwesome.Sharp.IconButton();
+            this.buttonMaximize = new FontAwesome.Sharp.IconButton();
+            this.buttonExit = new FontAwesome.Sharp.IconButton();
+            this.hamBurgerMenu = new System.Windows.Forms.PictureBox();
             this.titleBar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.hamBurgerMenu)).BeginInit();
             this.sideBar.SuspendLayout();
             this.employeePanel.SuspendLayout();
             this.settingPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.hamBurgerMenu)).BeginInit();
             this.SuspendLayout();
             // 
             // titleBar
@@ -75,22 +75,6 @@
             this.titleBar.TabIndex = 0;
             this.titleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.titleBar_MouseDown);
             // 
-            // buttonMinimize
-            // 
-            this.buttonMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonMinimize.FlatAppearance.BorderSize = 0;
-            this.buttonMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonMinimize.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize;
-            this.buttonMinimize.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            this.buttonMinimize.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.buttonMinimize.IconSize = 32;
-            this.buttonMinimize.Location = new System.Drawing.Point(1183, 4);
-            this.buttonMinimize.Name = "buttonMinimize";
-            this.buttonMinimize.Size = new System.Drawing.Size(27, 28);
-            this.buttonMinimize.TabIndex = 7;
-            this.buttonMinimize.UseVisualStyleBackColor = true;
-            this.buttonMinimize.Click += new System.EventHandler(this.buttonMinimize_Click);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -100,50 +84,6 @@
             this.label1.Size = new System.Drawing.Size(131, 17);
             this.label1.TabIndex = 1;
             this.label1.Text = "Nova Medical Center";
-            // 
-            // buttonMaximize
-            // 
-            this.buttonMaximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonMaximize.FlatAppearance.BorderSize = 0;
-            this.buttonMaximize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonMaximize.IconChar = FontAwesome.Sharp.IconChar.WindowMaximize;
-            this.buttonMaximize.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            this.buttonMaximize.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.buttonMaximize.IconSize = 32;
-            this.buttonMaximize.Location = new System.Drawing.Point(1216, 4);
-            this.buttonMaximize.Name = "buttonMaximize";
-            this.buttonMaximize.Size = new System.Drawing.Size(27, 28);
-            this.buttonMaximize.TabIndex = 6;
-            this.buttonMaximize.UseVisualStyleBackColor = true;
-            this.buttonMaximize.Click += new System.EventHandler(this.buttonMaximize_Click);
-            // 
-            // buttonExit
-            // 
-            this.buttonExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonExit.FlatAppearance.BorderSize = 0;
-            this.buttonExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonExit.IconChar = FontAwesome.Sharp.IconChar.TimesRectangle;
-            this.buttonExit.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            this.buttonExit.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.buttonExit.IconSize = 32;
-            this.buttonExit.Location = new System.Drawing.Point(1249, 4);
-            this.buttonExit.Name = "buttonExit";
-            this.buttonExit.Size = new System.Drawing.Size(27, 28);
-            this.buttonExit.TabIndex = 5;
-            this.buttonExit.UseVisualStyleBackColor = true;
-            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
-            // 
-            // hamBurgerMenu
-            // 
-            this.hamBurgerMenu.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.hamBurgerMenu.Image = global::Nova_Medical_Center.Properties.Resources.icons8_hamburger_500;
-            this.hamBurgerMenu.Location = new System.Drawing.Point(3, 3);
-            this.hamBurgerMenu.Name = "hamBurgerMenu";
-            this.hamBurgerMenu.Size = new System.Drawing.Size(40, 40);
-            this.hamBurgerMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.hamBurgerMenu.TabIndex = 0;
-            this.hamBurgerMenu.TabStop = false;
-            this.hamBurgerMenu.Click += new System.EventHandler(this.hamBurgerMenu_Click);
             // 
             // sideBar
             // 
@@ -159,6 +99,52 @@
             this.sideBar.Name = "sideBar";
             this.sideBar.Size = new System.Drawing.Size(234, 675);
             this.sideBar.TabIndex = 1;
+            // 
+            // employeePanel
+            // 
+            this.employeePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
+            this.employeePanel.Controls.Add(this.empBtn);
+            this.employeePanel.Controls.Add(this.doctorButton);
+            this.employeePanel.Controls.Add(this.nurseButton);
+            this.employeePanel.Controls.Add(this.deskBtn);
+            this.employeePanel.Location = new System.Drawing.Point(3, 180);
+            this.employeePanel.Name = "employeePanel";
+            this.employeePanel.Size = new System.Drawing.Size(235, 60);
+            this.employeePanel.TabIndex = 5;
+            // 
+            // settingPanel
+            // 
+            this.settingPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
+            this.settingPanel.Controls.Add(this.settingBtn);
+            this.settingPanel.Controls.Add(this.accountBtn);
+            this.settingPanel.Controls.Add(this.logoutBtn);
+            this.settingPanel.Location = new System.Drawing.Point(3, 246);
+            this.settingPanel.Name = "settingPanel";
+            this.settingPanel.Size = new System.Drawing.Size(235, 60);
+            this.settingPanel.TabIndex = 2;
+            // 
+            // settingTransition
+            // 
+            this.settingTransition.Interval = 50;
+            this.settingTransition.Tick += new System.EventHandler(this.settingTransition_Tick);
+            // 
+            // sideBarTransition
+            // 
+            this.sideBarTransition.Interval = 5;
+            this.sideBarTransition.Tick += new System.EventHandler(this.sideBarTransition_Tick);
+            // 
+            // panelDesktop
+            // 
+            this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelDesktop.Location = new System.Drawing.Point(234, 45);
+            this.panelDesktop.Name = "panelDesktop";
+            this.panelDesktop.Size = new System.Drawing.Size(1046, 675);
+            this.panelDesktop.TabIndex = 2;
+            // 
+            // employeeTransition
+            // 
+            this.employeeTransition.Interval = 10;
+            this.employeeTransition.Tick += new System.EventHandler(this.employeeTransition_Tick);
             // 
             // dashboardBtn
             // 
@@ -219,18 +205,6 @@
             this.roomBtn.Text = "Rooms";
             this.roomBtn.UseVisualStyleBackColor = false;
             this.roomBtn.Click += new System.EventHandler(this.roomBtn_Click);
-            // 
-            // employeePanel
-            // 
-            this.employeePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
-            this.employeePanel.Controls.Add(this.empBtn);
-            this.employeePanel.Controls.Add(this.doctorButton);
-            this.employeePanel.Controls.Add(this.nurseButton);
-            this.employeePanel.Controls.Add(this.deskBtn);
-            this.employeePanel.Location = new System.Drawing.Point(3, 180);
-            this.employeePanel.Name = "employeePanel";
-            this.employeePanel.Size = new System.Drawing.Size(235, 60);
-            this.employeePanel.TabIndex = 5;
             // 
             // empBtn
             // 
@@ -312,17 +286,6 @@
             this.deskBtn.UseVisualStyleBackColor = false;
             this.deskBtn.Click += new System.EventHandler(this.deskBtn_Click);
             // 
-            // settingPanel
-            // 
-            this.settingPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
-            this.settingPanel.Controls.Add(this.settingBtn);
-            this.settingPanel.Controls.Add(this.accountBtn);
-            this.settingPanel.Controls.Add(this.logoutBtn);
-            this.settingPanel.Location = new System.Drawing.Point(3, 246);
-            this.settingPanel.Name = "settingPanel";
-            this.settingPanel.Size = new System.Drawing.Size(235, 60);
-            this.settingPanel.TabIndex = 2;
-            // 
             // settingBtn
             // 
             this.settingBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
@@ -350,7 +313,7 @@
             this.accountBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.accountBtn.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.accountBtn.ForeColor = System.Drawing.Color.White;
-            this.accountBtn.IconChar = FontAwesome.Sharp.IconChar.AddressBook;
+            this.accountBtn.IconChar = FontAwesome.Sharp.IconChar.Info;
             this.accountBtn.IconColor = System.Drawing.Color.White;
             this.accountBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.accountBtn.IconSize = 32;
@@ -359,8 +322,9 @@
             this.accountBtn.Name = "accountBtn";
             this.accountBtn.Size = new System.Drawing.Size(231, 53);
             this.accountBtn.TabIndex = 4;
-            this.accountBtn.Text = "Account";
+            this.accountBtn.Text = "About";
             this.accountBtn.UseVisualStyleBackColor = false;
+            this.accountBtn.Click += new System.EventHandler(this.accountBtn_Click);
             // 
             // logoutBtn
             // 
@@ -380,29 +344,67 @@
             this.logoutBtn.TabIndex = 5;
             this.logoutBtn.Text = "Logout";
             this.logoutBtn.UseVisualStyleBackColor = false;
+            this.logoutBtn.Click += new System.EventHandler(this.logoutBtn_Click);
             // 
-            // settingTransition
+            // buttonMinimize
             // 
-            this.settingTransition.Interval = 50;
-            this.settingTransition.Tick += new System.EventHandler(this.settingTransition_Tick);
+            this.buttonMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonMinimize.FlatAppearance.BorderSize = 0;
+            this.buttonMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonMinimize.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize;
+            this.buttonMinimize.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.buttonMinimize.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.buttonMinimize.IconSize = 32;
+            this.buttonMinimize.Location = new System.Drawing.Point(1183, 4);
+            this.buttonMinimize.Name = "buttonMinimize";
+            this.buttonMinimize.Size = new System.Drawing.Size(27, 28);
+            this.buttonMinimize.TabIndex = 7;
+            this.buttonMinimize.UseVisualStyleBackColor = true;
+            this.buttonMinimize.Click += new System.EventHandler(this.buttonMinimize_Click);
             // 
-            // sideBarTransition
+            // buttonMaximize
             // 
-            this.sideBarTransition.Interval = 5;
-            this.sideBarTransition.Tick += new System.EventHandler(this.sideBarTransition_Tick);
+            this.buttonMaximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonMaximize.FlatAppearance.BorderSize = 0;
+            this.buttonMaximize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonMaximize.IconChar = FontAwesome.Sharp.IconChar.WindowMaximize;
+            this.buttonMaximize.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.buttonMaximize.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.buttonMaximize.IconSize = 32;
+            this.buttonMaximize.Location = new System.Drawing.Point(1216, 4);
+            this.buttonMaximize.Name = "buttonMaximize";
+            this.buttonMaximize.Size = new System.Drawing.Size(27, 28);
+            this.buttonMaximize.TabIndex = 6;
+            this.buttonMaximize.UseVisualStyleBackColor = true;
+            this.buttonMaximize.Click += new System.EventHandler(this.buttonMaximize_Click);
             // 
-            // panelDesktop
+            // buttonExit
             // 
-            this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDesktop.Location = new System.Drawing.Point(234, 45);
-            this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(1046, 675);
-            this.panelDesktop.TabIndex = 2;
+            this.buttonExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonExit.FlatAppearance.BorderSize = 0;
+            this.buttonExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonExit.IconChar = FontAwesome.Sharp.IconChar.TimesRectangle;
+            this.buttonExit.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.buttonExit.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.buttonExit.IconSize = 32;
+            this.buttonExit.Location = new System.Drawing.Point(1249, 4);
+            this.buttonExit.Name = "buttonExit";
+            this.buttonExit.Size = new System.Drawing.Size(27, 28);
+            this.buttonExit.TabIndex = 5;
+            this.buttonExit.UseVisualStyleBackColor = true;
+            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
             // 
-            // employeeTransition
+            // hamBurgerMenu
             // 
-            this.employeeTransition.Interval = 10;
-            this.employeeTransition.Tick += new System.EventHandler(this.employeeTransition_Tick);
+            this.hamBurgerMenu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.hamBurgerMenu.Image = global::Nova_Medical_Center.Properties.Resources.icons8_hamburger_500;
+            this.hamBurgerMenu.Location = new System.Drawing.Point(3, 3);
+            this.hamBurgerMenu.Name = "hamBurgerMenu";
+            this.hamBurgerMenu.Size = new System.Drawing.Size(40, 40);
+            this.hamBurgerMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.hamBurgerMenu.TabIndex = 0;
+            this.hamBurgerMenu.TabStop = false;
+            this.hamBurgerMenu.Click += new System.EventHandler(this.hamBurgerMenu_Click);
             // 
             // HomePage
             // 
@@ -419,10 +421,10 @@
             this.Text = "Form1";
             this.titleBar.ResumeLayout(false);
             this.titleBar.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.hamBurgerMenu)).EndInit();
             this.sideBar.ResumeLayout(false);
             this.employeePanel.ResumeLayout(false);
             this.settingPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.hamBurgerMenu)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -49,12 +49,17 @@ namespace Nova_Medical_Center
                         else
                         {
                             MessageBox.Show("Wrong Password");
+                            break;
                         }
                     }
-                    else MessageBox.Show("Wrong Username");
+                    else 
+                    {
+                        MessageBox.Show("Wrong Username");
+                        break;
+                    }
                 }
             }else
-            MessageBox.Show("Not Loaded");
+            MessageBox.Show("Loading Employees wait a min then try again.");
         }
 
         private void LoginPage_Load(object sender, EventArgs e)

@@ -196,6 +196,17 @@ namespace Nova_Medical_Center
             settingTransition.Start();
         }
 
+        private void accountBtn_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color8);
+            OpenChildForm(new AboutForm());
+        }
+
+        private void logoutBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void settingTransition_Tick(object sender, EventArgs e)
         {
             if (!settingExpanded)
