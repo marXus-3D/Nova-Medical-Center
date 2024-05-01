@@ -1,0 +1,6356 @@
+﻿[
+  {
+    "Id": 100,
+    "Ward": "Pediatrics",
+    "Type": "Normal",
+    "Occupied":  true,
+    "Beds": [
+      {
+        "Id": 10000,
+        "Available": false
+      },
+      {
+        "Id": 10001,
+        "Available": false
+      },
+      {
+        "Id": 10002,
+        "Available": true
+      },
+      {
+        "Id": 10003,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 101,
+    "Ward": "Oncology",
+    "Type": "ICU",
+    "Occupied": false,
+    "Beds": [
+      {
+        "Id": 10100,
+        "Available": true
+      },
+      {
+        "Id": 10101,
+        "Available": true
+      },
+      {
+        "Id": 10102,
+        "Available": false
+      },
+      {
+        "Id": 10103,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 102,
+    "Ward": "Neurology",
+    "Type": "ICU",
+    "Occupied": true,
+    "Beds": [
+      {
+        "Id": 10200,
+        "Available": false
+      },
+      {
+        "Id": 10201,
+        "Available": true
+      },
+      {
+        "Id": 10202,
+        "Available": false
+      },
+      {
+        "Id": 10203,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 103,
+    "Ward": "Cardiology",
+    "Type": "ICU",
+    "Occupied": true,
+    "Beds": [
+      {
+        "Id": 10300,
+        "Available": false
+      },
+      {
+        "Id": 10301,
+        "Available": true
+      },
+      {
+        "Id": 10302,
+        "Available": true
+      },
+      {
+        "Id": 10303,
+        "Available": false
+      },
+      {
+        "Id": 10304,
+        "Available": false
+      },
+      {
+        "Id": 10305,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 104,
+    "Ward": "Oncology",
+    "Type": "Normal",
+    "Beds": [
+      {
+        "Id": 10400,
+        "Available": false
+      },
+      {
+        "Id": 10401,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 105,
+    "Ward": "Pediatrics",
+    "Type": "Normal",
+    "Beds": [
+      {
+        "Id": 10500,
+        "Available": true
+      },
+      {
+        "Id": 10501,
+        "Available": false
+      },
+      {
+        "Id": 10502,
+        "Available": true
+      },
+      {
+        "Id": 10503,
+        "Available": false
+      },
+      {
+        "Id": 10504,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 106,
+    "Ward": "Surgery",
+    "Type": "VIP",
+    "Beds": [
+      {
+        "Id": 10600,
+        "Available": false
+      },
+      {
+        "Id": 10601,
+        "Available": false
+      },
+      {
+        "Id": 10602,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 107,
+    "Ward": "Surgery",
+    "Type": "Normal",
+    "Beds": [
+      {
+        "Id": 10700,
+        "Available": true
+      },
+      {
+        "Id": 10701,
+        "Available": false
+      },
+      {
+        "Id": 10702,
+        "Available": false
+      },
+      {
+        "Id": 10703,
+        "Available": false
+      },
+      {
+        "Id": 10704,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 108,
+    "Ward": "Cardiology",
+    "Type": "Surgery",
+    "Beds": [
+      {
+        "Id": 10800,
+        "Available": false
+      },
+      {
+        "Id": 10801,
+        "Available": false
+      },
+      {
+        "Id": 10802,
+        "Available": false
+      },
+      {
+        "Id": 10803,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 109,
+    "Ward": "Neurology",
+    "Type": "Surgery",
+    "Beds": [
+      {
+        "Id": 10900,
+        "Available": true
+      },
+      {
+        "Id": 10901,
+        "Available": false
+      },
+      {
+        "Id": 10902,
+        "Available": true
+      },
+      {
+        "Id": 10903,
+        "Available": false
+      },
+      {
+        "Id": 10904,
+        "Available": false
+      },
+      {
+        "Id": 10905,
+        "Available": true
+      },
+      {
+        "Id": 10906,
+        "Available": true
+      },
+      {
+        "Id": 10907,
+        "Available": true
+      },
+      {
+        "Id": 10908,
+        "Available": false
+      },
+      {
+        "Id": 10909,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 110,
+    "Ward": "Neurology",
+    "Type": "Surgery",
+    "Beds": [
+      {
+        "Id": 11000,
+        "Available": false
+      },
+      {
+        "Id": 11001,
+        "Available": false
+      },
+      {
+        "Id": 11002,
+        "Available": true
+      },
+      {
+        "Id": 11003,
+        "Available": false
+      },
+      {
+        "Id": 11004,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 111,
+    "Ward": "Pediatrics",
+    "Type": "Normal",
+    "Beds": [
+      {
+        "Id": 11100,
+        "Available": false
+      },
+      {
+        "Id": 11101,
+        "Available": false
+      },
+      {
+        "Id": 11102,
+        "Available": true
+      },
+      {
+        "Id": 11103,
+        "Available": false
+      },
+      {
+        "Id": 11104,
+        "Available": true
+      },
+      {
+        "Id": 11105,
+        "Available": true
+      },
+      {
+        "Id": 11106,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 112,
+    "Ward": "Neurology",
+    "Type": "ICU",
+    "Beds": [
+      {
+        "Id": 11200,
+        "Available": true
+      },
+      {
+        "Id": 11201,
+        "Available": false
+      },
+      {
+        "Id": 11202,
+        "Available": false
+      },
+      {
+        "Id": 11203,
+        "Available": true
+      },
+      {
+        "Id": 11204,
+        "Available": true
+      },
+      {
+        "Id": 11205,
+        "Available": true
+      },
+      {
+        "Id": 11206,
+        "Available": false
+      },
+      {
+        "Id": 11207,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 113,
+    "Ward": "Pediatrics",
+    "Type": "ICU",
+    "Beds": [
+      {
+        "Id": 11300,
+        "Available": false
+      },
+      {
+        "Id": 11301,
+        "Available": false
+      },
+      {
+        "Id": 11302,
+        "Available": true
+      },
+      {
+        "Id": 11303,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 114,
+    "Ward": "Neurology",
+    "Type": "VIP",
+    "Beds": [
+      {
+        "Id": 11400,
+        "Available": false
+      },
+      {
+        "Id": 11401,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 115,
+    "Ward": "Neurology",
+    "Type": "Normal",
+    "Beds": [
+      {
+        "Id": 11500,
+        "Available": true
+      },
+      {
+        "Id": 11501,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 116,
+    "Ward": "Oncology",
+    "Type": "ICU",
+    "Beds": [
+      {
+        "Id": 11600,
+        "Available": false
+      },
+      {
+        "Id": 11601,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 117,
+    "Ward": "Neurology",
+    "Type": "Delivery",
+    "Beds": [
+      {
+        "Id": 11700,
+        "Available": true
+      },
+      {
+        "Id": 11701,
+        "Available": true
+      },
+      {
+        "Id": 11702,
+        "Available": true
+      },
+      {
+        "Id": 11703,
+        "Available": false
+      },
+      {
+        "Id": 11704,
+        "Available": false
+      },
+      {
+        "Id": 11705,
+        "Available": false
+      },
+      {
+        "Id": 11706,
+        "Available": true
+      },
+      {
+        "Id": 11707,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 118,
+    "Ward": "Neurology",
+    "Type": "Normal",
+    "Beds": [
+      {
+        "Id": 11800,
+        "Available": true
+      },
+      {
+        "Id": 11801,
+        "Available": true
+      },
+      {
+        "Id": 11802,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 119,
+    "Ward": "Neurology",
+    "Type": "ICU",
+    "Beds": [
+      {
+        "Id": 11900,
+        "Available": false
+      },
+      {
+        "Id": 11901,
+        "Available": true
+      },
+      {
+        "Id": 11902,
+        "Available": false
+      },
+      {
+        "Id": 11903,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 120,
+    "Ward": "Surgery",
+    "Type": "Normal",
+    "Beds": [
+      {
+        "Id": 12000,
+        "Available": true
+      },
+      {
+        "Id": 12001,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 121,
+    "Ward": "Pediatrics",
+    "Type": "Delivery",
+    "Beds": [
+      {
+        "Id": 12100,
+        "Available": true
+      },
+      {
+        "Id": 12101,
+        "Available": false
+      },
+      {
+        "Id": 12102,
+        "Available": true
+      },
+      {
+        "Id": 12103,
+        "Available": false
+      },
+      {
+        "Id": 12104,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 122,
+    "Ward": "Cardiology",
+    "Type": "Normal",
+    "Beds": [
+      {
+        "Id": 12200,
+        "Available": false
+      },
+      {
+        "Id": 12201,
+        "Available": false
+      },
+      {
+        "Id": 12202,
+        "Available": true
+      },
+      {
+        "Id": 12203,
+        "Available": true
+      },
+      {
+        "Id": 12204,
+        "Available": true
+      },
+      {
+        "Id": 12205,
+        "Available": false
+      },
+      {
+        "Id": 12206,
+        "Available": false
+      },
+      {
+        "Id": 12207,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 123,
+    "Ward": "Neurology",
+    "Type": "Surgery",
+    "Beds": [
+      {
+        "Id": 12300,
+        "Available": false
+      },
+      {
+        "Id": 12301,
+        "Available": false
+      },
+      {
+        "Id": 12302,
+        "Available": false
+      },
+      {
+        "Id": 12303,
+        "Available": true
+      },
+      {
+        "Id": 12304,
+        "Available": true
+      },
+      {
+        "Id": 12305,
+        "Available": false
+      },
+      {
+        "Id": 12306,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 124,
+    "Ward": "Pediatrics",
+    "Type": "VIP",
+    "Beds": [
+      {
+        "Id": 12400,
+        "Available": false
+      },
+      {
+        "Id": 12401,
+        "Available": false
+      },
+      {
+        "Id": 12402,
+        "Available": true
+      },
+      {
+        "Id": 12403,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 100,
+    "Ward": "Oncology",
+    "Type": "VIP",
+    "Beds": [
+      {
+        "Id": 10000,
+        "Available": true
+      },
+      {
+        "Id": 10001,
+        "Available": true
+      },
+      {
+        "Id": 10002,
+        "Available": true
+      },
+      {
+        "Id": 10003,
+        "Available": true
+      },
+      {
+        "Id": 10004,
+        "Available": false
+      },
+      {
+        "Id": 10005,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 101,
+    "Ward": "Pediatrics",
+    "Type": "ICU",
+    "Beds": [
+      {
+        "Id": 10100,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 102,
+    "Ward": "Oncology",
+    "Type": "VIP",
+    "Beds": [
+      {
+        "Id": 10200,
+        "Available": false
+      },
+      {
+        "Id": 10201,
+        "Available": false
+      },
+      {
+        "Id": 10202,
+        "Available": false
+      },
+      {
+        "Id": 10203,
+        "Available": false
+      },
+      {
+        "Id": 10204,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 103,
+    "Ward": "Neurology",
+    "Type": "ICU",
+    "Beds": [
+      {
+        "Id": 10300,
+        "Available": true
+      },
+      {
+        "Id": 10301,
+        "Available": false
+      },
+      {
+        "Id": 10302,
+        "Available": true
+      },
+      {
+        "Id": 10303,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 104,
+    "Ward": "Cardiology",
+    "Type": "Delivery",
+    "Beds": [
+      {
+        "Id": 10400,
+        "Available": true
+      },
+      {
+        "Id": 10401,
+        "Available": false
+      },
+      {
+        "Id": 10402,
+        "Available": false
+      },
+      {
+        "Id": 10403,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 105,
+    "Ward": "Surgery",
+    "Type": "VIP",
+    "Beds": [
+      {
+        "Id": 10500,
+        "Available": true
+      },
+      {
+        "Id": 10501,
+        "Available": true
+      },
+      {
+        "Id": 10502,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 106,
+    "Ward": "Pediatrics",
+    "Type": "VIP",
+    "Beds": [
+      {
+        "Id": 10600,
+        "Available": false
+      },
+      {
+        "Id": 10601,
+        "Available": true
+      },
+      {
+        "Id": 10602,
+        "Available": true
+      },
+      {
+        "Id": 10603,
+        "Available": true
+      },
+      {
+        "Id": 10604,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 107,
+    "Ward": "Cardiology",
+    "Type": "Normal",
+    "Beds": [
+      {
+        "Id": 10700,
+        "Available": false
+      },
+      {
+        "Id": 10701,
+        "Available": true
+      },
+      {
+        "Id": 10702,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 108,
+    "Ward": "Cardiology",
+    "Type": "ICU",
+    "Beds": [
+      {
+        "Id": 10800,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 109,
+    "Ward": "Oncology",
+    "Type": "Normal",
+    "Beds": [
+      {
+        "Id": 10900,
+        "Available": false
+      },
+      {
+        "Id": 10901,
+        "Available": true
+      },
+      {
+        "Id": 10902,
+        "Available": true
+      },
+      {
+        "Id": 10903,
+        "Available": true
+      },
+      {
+        "Id": 10904,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 110,
+    "Ward": "Pediatrics",
+    "Type": "Surgery",
+    "Beds": [
+      {
+        "Id": 11000,
+        "Available": true
+      },
+      {
+        "Id": 11001,
+        "Available": false
+      },
+      {
+        "Id": 11002,
+        "Available": true
+      },
+      {
+        "Id": 11003,
+        "Available": true
+      },
+      {
+        "Id": 11004,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 111,
+    "Ward": "Pediatrics",
+    "Type": "Delivery",
+    "Beds": [
+      {
+        "Id": 11100,
+        "Available": false
+      },
+      {
+        "Id": 11101,
+        "Available": true
+      },
+      {
+        "Id": 11102,
+        "Available": false
+      },
+      {
+        "Id": 11103,
+        "Available": false
+      },
+      {
+        "Id": 11104,
+        "Available": false
+      },
+      {
+        "Id": 11105,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 112,
+    "Ward": "Pediatrics",
+    "Type": "VIP",
+    "Beds": [
+      {
+        "Id": 11200,
+        "Available": true
+      },
+      {
+        "Id": 11201,
+        "Available": true
+      },
+      {
+        "Id": 11202,
+        "Available": false
+      },
+      {
+        "Id": 11203,
+        "Available": true
+      },
+      {
+        "Id": 11204,
+        "Available": true
+      },
+      {
+        "Id": 11205,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 113,
+    "Ward": "Cardiology",
+    "Type": "Delivery",
+    "Beds": [
+      {
+        "Id": 11300,
+        "Available": false
+      },
+      {
+        "Id": 11301,
+        "Available": false
+      },
+      {
+        "Id": 11302,
+        "Available": false
+      },
+      {
+        "Id": 11303,
+        "Available": true
+      },
+      {
+        "Id": 11304,
+        "Available": true
+      },
+      {
+        "Id": 11305,
+        "Available": true
+      },
+      {
+        "Id": 11306,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 114,
+    "Ward": "Surgery",
+    "Type": "VIP",
+    "Beds": [
+      {
+        "Id": 11400,
+        "Available": false
+      },
+      {
+        "Id": 11401,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 115,
+    "Ward": "Pediatrics",
+    "Type": "Surgery",
+    "Beds": [
+      {
+        "Id": 11500,
+        "Available": true
+      },
+      {
+        "Id": 11501,
+        "Available": true
+      },
+      {
+        "Id": 11502,
+        "Available": true
+      },
+      {
+        "Id": 11503,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 116,
+    "Ward": "Cardiology",
+    "Type": "Normal",
+    "Beds": [
+      {
+        "Id": 11600,
+        "Available": true
+      },
+      {
+        "Id": 11601,
+        "Available": true
+      },
+      {
+        "Id": 11602,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 117,
+    "Ward": "Neurology",
+    "Type": "VIP",
+    "Beds": [
+      {
+        "Id": 11700,
+        "Available": false
+      },
+      {
+        "Id": 11701,
+        "Available": false
+      },
+      {
+        "Id": 11702,
+        "Available": false
+      },
+      {
+        "Id": 11703,
+        "Available": true
+      },
+      {
+        "Id": 11704,
+        "Available": true
+      },
+      {
+        "Id": 11705,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 118,
+    "Ward": "Surgery",
+    "Type": "Delivery",
+    "Beds": [
+      {
+        "Id": 11800,
+        "Available": true
+      },
+      {
+        "Id": 11801,
+        "Available": true
+      },
+      {
+        "Id": 11802,
+        "Available": true
+      },
+      {
+        "Id": 11803,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 119,
+    "Ward": "Oncology",
+    "Type": "Normal",
+    "Beds": [
+      {
+        "Id": 11900,
+        "Available": false
+      },
+      {
+        "Id": 11901,
+        "Available": true
+      },
+      {
+        "Id": 11902,
+        "Available": true
+      },
+      {
+        "Id": 11903,
+        "Available": false
+      },
+      {
+        "Id": 11904,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 120,
+    "Ward": "Oncology",
+    "Type": "ICU",
+    "Beds": [
+      {
+        "Id": 12000,
+        "Available": true
+      },
+      {
+        "Id": 12001,
+        "Available": false
+      },
+      {
+        "Id": 12002,
+        "Available": false
+      },
+      {
+        "Id": 12003,
+        "Available": false
+      },
+      {
+        "Id": 12004,
+        "Available": false
+      },
+      {
+        "Id": 12005,
+        "Available": true
+      },
+      {
+        "Id": 12006,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 121,
+    "Ward": "Pediatrics",
+    "Type": "Delivery",
+    "Beds": [
+      {
+        "Id": 12100,
+        "Available": true
+      },
+      {
+        "Id": 12101,
+        "Available": true
+      },
+      {
+        "Id": 12102,
+        "Available": false
+      },
+      {
+        "Id": 12103,
+        "Available": true
+      },
+      {
+        "Id": 12104,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 122,
+    "Ward": "Pediatrics",
+    "Type": "ICU",
+    "Beds": [
+      {
+        "Id": 12200,
+        "Available": true
+      },
+      {
+        "Id": 12201,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 123,
+    "Ward": "Surgery",
+    "Type": "Delivery",
+    "Beds": [
+      {
+        "Id": 12300,
+        "Available": true
+      },
+      {
+        "Id": 12301,
+        "Available": false
+      },
+      {
+        "Id": 12302,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 124,
+    "Ward": "Cardiology",
+    "Type": "Surgery",
+    "Beds": [
+      {
+        "Id": 12400,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 100,
+    "Ward": "Oncology",
+    "Type": "ICU",
+    "Beds": [
+      {
+        "Id": 10000,
+        "Available": false
+      },
+      {
+        "Id": 10001,
+        "Available": true
+      },
+      {
+        "Id": 10002,
+        "Available": false
+      },
+      {
+        "Id": 10003,
+        "Available": true
+      },
+      {
+        "Id": 10004,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 101,
+    "Ward": "Surgery",
+    "Type": "Delivery",
+    "Beds": [
+      {
+        "Id": 10100,
+        "Available": false
+      },
+      {
+        "Id": 10101,
+        "Available": false
+      },
+      {
+        "Id": 10102,
+        "Available": false
+      },
+      {
+        "Id": 10103,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 102,
+    "Ward": "Pediatrics",
+    "Type": "Delivery",
+    "Beds": [
+      {
+        "Id": 10200,
+        "Available": false
+      },
+      {
+        "Id": 10201,
+        "Available": true
+      },
+      {
+        "Id": 10202,
+        "Available": false
+      },
+      {
+        "Id": 10203,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 103,
+    "Ward": "Neurology",
+    "Type": "Delivery",
+    "Beds": [
+      {
+        "Id": 10300,
+        "Available": false
+      },
+      {
+        "Id": 10301,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 104,
+    "Ward": "Oncology",
+    "Type": "VIP",
+    "Beds": [
+      {
+        "Id": 10400,
+        "Available": true
+      },
+      {
+        "Id": 10401,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 105,
+    "Ward": "Cardiology",
+    "Type": "Delivery",
+    "Beds": [
+      {
+        "Id": 10500,
+        "Available": true
+      },
+      {
+        "Id": 10501,
+        "Available": false
+      },
+      {
+        "Id": 10502,
+        "Available": true
+      },
+      {
+        "Id": 10503,
+        "Available": false
+      },
+      {
+        "Id": 10504,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 106,
+    "Ward": "Pediatrics",
+    "Type": "VIP",
+    "Beds": [
+      {
+        "Id": 10600,
+        "Available": false
+      },
+      {
+        "Id": 10601,
+        "Available": false
+      },
+      {
+        "Id": 10602,
+        "Available": false
+      },
+      {
+        "Id": 10603,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 107,
+    "Ward": "Pediatrics",
+    "Type": "VIP",
+    "Beds": [
+      {
+        "Id": 10700,
+        "Available": true
+      },
+      {
+        "Id": 10701,
+        "Available": false
+      },
+      {
+        "Id": 10702,
+        "Available": false
+      },
+      {
+        "Id": 10703,
+        "Available": true
+      },
+      {
+        "Id": 10704,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 108,
+    "Ward": "Cardiology",
+    "Type": "VIP",
+    "Beds": [
+      {
+        "Id": 10800,
+        "Available": false
+      },
+      {
+        "Id": 10801,
+        "Available": true
+      },
+      {
+        "Id": 10802,
+        "Available": false
+      },
+      {
+        "Id": 10803,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 109,
+    "Ward": "Surgery",
+    "Type": "VIP",
+    "Beds": [
+      {
+        "Id": 10900,
+        "Available": true
+      },
+      {
+        "Id": 10901,
+        "Available": false
+      },
+      {
+        "Id": 10902,
+        "Available": true
+      },
+      {
+        "Id": 10903,
+        "Available": false
+      },
+      {
+        "Id": 10904,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 110,
+    "Ward": "Neurology",
+    "Type": "Delivery",
+    "Beds": [
+      {
+        "Id": 11000,
+        "Available": true
+      },
+      {
+        "Id": 11001,
+        "Available": true
+      },
+      {
+        "Id": 11002,
+        "Available": false
+      },
+      {
+        "Id": 11003,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 111,
+    "Ward": "Oncology",
+    "Type": "Normal",
+    "Beds": [
+      {
+        "Id": 11100,
+        "Available": false
+      },
+      {
+        "Id": 11101,
+        "Available": false
+      },
+      {
+        "Id": 11102,
+        "Available": true
+      },
+      {
+        "Id": 11103,
+        "Available": true
+      },
+      {
+        "Id": 11104,
+        "Available": true
+      },
+      {
+        "Id": 11105,
+        "Available": false
+      },
+      {
+        "Id": 11106,
+        "Available": false
+      },
+      {
+        "Id": 11107,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 112,
+    "Ward": "Surgery",
+    "Type": "VIP",
+    "Beds": [
+      {
+        "Id": 11200,
+        "Available": true
+      },
+      {
+        "Id": 11201,
+        "Available": false
+      },
+      {
+        "Id": 11202,
+        "Available": false
+      },
+      {
+        "Id": 11203,
+        "Available": true
+      },
+      {
+        "Id": 11204,
+        "Available": true
+      },
+      {
+        "Id": 11205,
+        "Available": true
+      },
+      {
+        "Id": 11206,
+        "Available": true
+      },
+      {
+        "Id": 11207,
+        "Available": true
+      },
+      {
+        "Id": 11208,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 113,
+    "Ward": "Pediatrics",
+    "Type": "ICU",
+    "Beds": [
+      {
+        "Id": 11300,
+        "Available": true
+      },
+      {
+        "Id": 11301,
+        "Available": true
+      },
+      {
+        "Id": 11302,
+        "Available": false
+      },
+      {
+        "Id": 11303,
+        "Available": false
+      },
+      {
+        "Id": 11304,
+        "Available": false
+      },
+      {
+        "Id": 11305,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 114,
+    "Ward": "Neurology",
+    "Type": "VIP",
+    "Beds": [
+      {
+        "Id": 11400,
+        "Available": true
+      },
+      {
+        "Id": 11401,
+        "Available": false
+      },
+      {
+        "Id": 11402,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 115,
+    "Ward": "Neurology",
+    "Type": "ICU",
+    "Beds": [
+      {
+        "Id": 11500,
+        "Available": false
+      },
+      {
+        "Id": 11501,
+        "Available": true
+      },
+      {
+        "Id": 11502,
+        "Available": true
+      },
+      {
+        "Id": 11503,
+        "Available": false
+      },
+      {
+        "Id": 11504,
+        "Available": false
+      },
+      {
+        "Id": 11505,
+        "Available": false
+      },
+      {
+        "Id": 11506,
+        "Available": false
+      },
+      {
+        "Id": 11507,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 116,
+    "Ward": "Cardiology",
+    "Type": "Surgery",
+    "Beds": [
+      {
+        "Id": 11600,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 117,
+    "Ward": "Neurology",
+    "Type": "Delivery",
+    "Beds": [
+      {
+        "Id": 11700,
+        "Available": true
+      },
+      {
+        "Id": 11701,
+        "Available": true
+      },
+      {
+        "Id": 11702,
+        "Available": false
+      },
+      {
+        "Id": 11703,
+        "Available": true
+      },
+      {
+        "Id": 11704,
+        "Available": false
+      },
+      {
+        "Id": 11705,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 118,
+    "Ward": "Pediatrics",
+    "Type": "Surgery",
+    "Beds": [
+      {
+        "Id": 11800,
+        "Available": true
+      },
+      {
+        "Id": 11801,
+        "Available": true
+      },
+      {
+        "Id": 11802,
+        "Available": false
+      },
+      {
+        "Id": 11803,
+        "Available": false
+      },
+      {
+        "Id": 11804,
+        "Available": true
+      },
+      {
+        "Id": 11805,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 119,
+    "Ward": "Pediatrics",
+    "Type": "ICU",
+    "Beds": [
+      {
+        "Id": 11900,
+        "Available": true
+      },
+      {
+        "Id": 11901,
+        "Available": false
+      },
+      {
+        "Id": 11902,
+        "Available": true
+      },
+      {
+        "Id": 11903,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 120,
+    "Ward": "Pediatrics",
+    "Type": "ICU",
+    "Beds": [
+      {
+        "Id": 12000,
+        "Available": true
+      },
+      {
+        "Id": 12001,
+        "Available": true
+      },
+      {
+        "Id": 12002,
+        "Available": false
+      },
+      {
+        "Id": 12003,
+        "Available": true
+      },
+      {
+        "Id": 12004,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 121,
+    "Ward": "Neurology",
+    "Type": "ICU",
+    "Beds": [
+      {
+        "Id": 12100,
+        "Available": true
+      },
+      {
+        "Id": 12101,
+        "Available": true
+      },
+      {
+        "Id": 12102,
+        "Available": false
+      },
+      {
+        "Id": 12103,
+        "Available": true
+      },
+      {
+        "Id": 12104,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 122,
+    "Ward": "Pediatrics",
+    "Type": "VIP",
+    "Beds": [
+      {
+        "Id": 12200,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 123,
+    "Ward": "Pediatrics",
+    "Type": "VIP",
+    "Beds": [
+      {
+        "Id": 12300,
+        "Available": false
+      },
+      {
+        "Id": 12301,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 124,
+    "Ward": "Cardiology",
+    "Type": "VIP",
+    "Beds": [
+      {
+        "Id": 12400,
+        "Available": true
+      },
+      {
+        "Id": 12401,
+        "Available": true
+      },
+      {
+        "Id": 12402,
+        "Available": true
+      },
+      {
+        "Id": 12403,
+        "Available": false
+      },
+      {
+        "Id": 12404,
+        "Available": false
+      },
+      {
+        "Id": 12405,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 100,
+    "Ward": "Surgery",
+    "Type": "Delivery",
+    "Beds": [
+      {
+        "Id": 10000,
+        "Available": true
+      },
+      {
+        "Id": 10001,
+        "Available": true
+      },
+      {
+        "Id": 10002,
+        "Available": true
+      },
+      {
+        "Id": 10003,
+        "Available": false
+      },
+      {
+        "Id": 10004,
+        "Available": true
+      },
+      {
+        "Id": 10005,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 101,
+    "Ward": "Neurology",
+    "Type": "Normal",
+    "Beds": [
+      {
+        "Id": 10100,
+        "Available": false
+      },
+      {
+        "Id": 10101,
+        "Available": false
+      },
+      {
+        "Id": 10102,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 102,
+    "Ward": "Neurology",
+    "Type": "ICU",
+    "Beds": [
+      {
+        "Id": 10200,
+        "Available": false
+      },
+      {
+        "Id": 10201,
+        "Available": false
+      },
+      {
+        "Id": 10202,
+        "Available": false
+      },
+      {
+        "Id": 10203,
+        "Available": true
+      },
+      {
+        "Id": 10204,
+        "Available": false
+      },
+      {
+        "Id": 10205,
+        "Available": true
+      },
+      {
+        "Id": 10206,
+        "Available": true
+      },
+      {
+        "Id": 10207,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 103,
+    "Ward": "Surgery",
+    "Type": "Delivery",
+    "Beds": [
+      {
+        "Id": 10300,
+        "Available": false
+      },
+      {
+        "Id": 10301,
+        "Available": true
+      },
+      {
+        "Id": 10302,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 104,
+    "Ward": "Oncology",
+    "Type": "Delivery",
+    "Beds": [
+      {
+        "Id": 10400,
+        "Available": true
+      },
+      {
+        "Id": 10401,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 105,
+    "Ward": "Oncology",
+    "Type": "Normal",
+    "Beds": [
+      {
+        "Id": 10500,
+        "Available": true
+      },
+      {
+        "Id": 10501,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 106,
+    "Ward": "Pediatrics",
+    "Type": "Surgery",
+    "Beds": [
+      {
+        "Id": 10600,
+        "Available": true
+      },
+      {
+        "Id": 10601,
+        "Available": true
+      },
+      {
+        "Id": 10602,
+        "Available": false
+      },
+      {
+        "Id": 10603,
+        "Available": true
+      },
+      {
+        "Id": 10604,
+        "Available": true
+      },
+      {
+        "Id": 10605,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 107,
+    "Ward": "Oncology",
+    "Type": "VIP",
+    "Beds": [
+      {
+        "Id": 10700,
+        "Available": true
+      },
+      {
+        "Id": 10701,
+        "Available": true
+      },
+      {
+        "Id": 10702,
+        "Available": true
+      },
+      {
+        "Id": 10703,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 108,
+    "Ward": "Cardiology",
+    "Type": "VIP",
+    "Beds": [
+      {
+        "Id": 10800,
+        "Available": true
+      },
+      {
+        "Id": 10801,
+        "Available": true
+      },
+      {
+        "Id": 10802,
+        "Available": true
+      },
+      {
+        "Id": 10803,
+        "Available": false
+      },
+      {
+        "Id": 10804,
+        "Available": true
+      },
+      {
+        "Id": 10805,
+        "Available": false
+      },
+      {
+        "Id": 10806,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 109,
+    "Ward": "Pediatrics",
+    "Type": "Surgery",
+    "Beds": [
+      {
+        "Id": 10900,
+        "Available": true
+      },
+      {
+        "Id": 10901,
+        "Available": false
+      },
+      {
+        "Id": 10902,
+        "Available": true
+      },
+      {
+        "Id": 10903,
+        "Available": true
+      },
+      {
+        "Id": 10904,
+        "Available": true
+      },
+      {
+        "Id": 10905,
+        "Available": true
+      },
+      {
+        "Id": 10906,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 110,
+    "Ward": "Cardiology",
+    "Type": "Surgery",
+    "Beds": [
+      {
+        "Id": 11000,
+        "Available": true
+      },
+      {
+        "Id": 11001,
+        "Available": true
+      },
+      {
+        "Id": 11002,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 111,
+    "Ward": "Pediatrics",
+    "Type": "Delivery",
+    "Beds": [
+      {
+        "Id": 11100,
+        "Available": true
+      },
+      {
+        "Id": 11101,
+        "Available": true
+      },
+      {
+        "Id": 11102,
+        "Available": false
+      },
+      {
+        "Id": 11103,
+        "Available": false
+      },
+      {
+        "Id": 11104,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 112,
+    "Ward": "Cardiology",
+    "Type": "Normal",
+    "Beds": [
+      {
+        "Id": 11200,
+        "Available": true
+      },
+      {
+        "Id": 11201,
+        "Available": true
+      },
+      {
+        "Id": 11202,
+        "Available": true
+      },
+      {
+        "Id": 11203,
+        "Available": true
+      },
+      {
+        "Id": 11204,
+        "Available": false
+      },
+      {
+        "Id": 11205,
+        "Available": false
+      },
+      {
+        "Id": 11206,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 113,
+    "Ward": "Neurology",
+    "Type": "Surgery",
+    "Beds": [
+      {
+        "Id": 11300,
+        "Available": true
+      },
+      {
+        "Id": 11301,
+        "Available": true
+      },
+      {
+        "Id": 11302,
+        "Available": false
+      },
+      {
+        "Id": 11303,
+        "Available": true
+      },
+      {
+        "Id": 11304,
+        "Available": true
+      },
+      {
+        "Id": 11305,
+        "Available": false
+      },
+      {
+        "Id": 11306,
+        "Available": true
+      },
+      {
+        "Id": 11307,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 114,
+    "Ward": "Pediatrics",
+    "Type": "Surgery",
+    "Beds": [
+      {
+        "Id": 11400,
+        "Available": true
+      },
+      {
+        "Id": 11401,
+        "Available": false
+      },
+      {
+        "Id": 11402,
+        "Available": true
+      },
+      {
+        "Id": 11403,
+        "Available": true
+      },
+      {
+        "Id": 11404,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 115,
+    "Ward": "Pediatrics",
+    "Type": "Delivery",
+    "Beds": [
+      {
+        "Id": 11500,
+        "Available": true
+      },
+      {
+        "Id": 11501,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 116,
+    "Ward": "Oncology",
+    "Type": "Normal",
+    "Beds": [
+      {
+        "Id": 11600,
+        "Available": false
+      },
+      {
+        "Id": 11601,
+        "Available": false
+      },
+      {
+        "Id": 11602,
+        "Available": true
+      },
+      {
+        "Id": 11603,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 117,
+    "Ward": "Neurology",
+    "Type": "VIP",
+    "Beds": [
+      {
+        "Id": 11700,
+        "Available": true
+      },
+      {
+        "Id": 11701,
+        "Available": true
+      },
+      {
+        "Id": 11702,
+        "Available": true
+      },
+      {
+        "Id": 11703,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 118,
+    "Ward": "Pediatrics",
+    "Type": "Delivery",
+    "Beds": [
+      {
+        "Id": 11800,
+        "Available": false
+      },
+      {
+        "Id": 11801,
+        "Available": false
+      },
+      {
+        "Id": 11802,
+        "Available": true
+      },
+      {
+        "Id": 11803,
+        "Available": false
+      },
+      {
+        "Id": 11804,
+        "Available": false
+      },
+      {
+        "Id": 11805,
+        "Available": true
+      },
+      {
+        "Id": 11806,
+        "Available": false
+      },
+      {
+        "Id": 11807,
+        "Available": true
+      },
+      {
+        "Id": 11808,
+        "Available": false
+      },
+      {
+        "Id": 11809,
+        "Available": true
+      },
+      {
+        "Id": 11810,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 119,
+    "Ward": "Oncology",
+    "Type": "Normal",
+    "Beds": [
+      {
+        "Id": 11900,
+        "Available": false
+      },
+      {
+        "Id": 11901,
+        "Available": false
+      },
+      {
+        "Id": 11902,
+        "Available": true
+      },
+      {
+        "Id": 11903,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 120,
+    "Ward": "Pediatrics",
+    "Type": "Delivery",
+    "Beds": [
+      {
+        "Id": 12000,
+        "Available": true
+      },
+      {
+        "Id": 12001,
+        "Available": false
+      },
+      {
+        "Id": 12002,
+        "Available": true
+      },
+      {
+        "Id": 12003,
+        "Available": false
+      },
+      {
+        "Id": 12004,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 121,
+    "Ward": "Neurology",
+    "Type": "Delivery",
+    "Beds": [
+      {
+        "Id": 12100,
+        "Available": true
+      },
+      {
+        "Id": 12101,
+        "Available": true
+      },
+      {
+        "Id": 12102,
+        "Available": false
+      },
+      {
+        "Id": 12103,
+        "Available": true
+      },
+      {
+        "Id": 12104,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 122,
+    "Ward": "Neurology",
+    "Type": "Delivery",
+    "Beds": [
+      {
+        "Id": 12200,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 123,
+    "Ward": "Cardiology",
+    "Type": "Surgery",
+    "Beds": [
+      {
+        "Id": 12300,
+        "Available": false
+      },
+      {
+        "Id": 12301,
+        "Available": false
+      },
+      {
+        "Id": 12302,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 124,
+    "Ward": "Neurology",
+    "Type": "ICU",
+    "Beds": [
+      {
+        "Id": 12400,
+        "Available": true
+      },
+      {
+        "Id": 12401,
+        "Available": false
+      },
+      {
+        "Id": 12402,
+        "Available": true
+      },
+      {
+        "Id": 12403,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 100,
+    "Ward": "Pediatrics",
+    "Type": "ICU",
+    "Beds": [
+      {
+        "Id": 10000,
+        "Available": false
+      },
+      {
+        "Id": 10001,
+        "Available": false
+      },
+      {
+        "Id": 10002,
+        "Available": true
+      },
+      {
+        "Id": 10003,
+        "Available": true
+      },
+      {
+        "Id": 10004,
+        "Available": true
+      },
+      {
+        "Id": 10005,
+        "Available": true
+      },
+      {
+        "Id": 10006,
+        "Available": false
+      },
+      {
+        "Id": 10007,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 101,
+    "Ward": "Pediatrics",
+    "Type": "Normal",
+    "Beds": [
+      {
+        "Id": 10100,
+        "Available": false
+      },
+      {
+        "Id": 10101,
+        "Available": true
+      },
+      {
+        "Id": 10102,
+        "Available": true
+      },
+      {
+        "Id": 10103,
+        "Available": true
+      },
+      {
+        "Id": 10104,
+        "Available": true
+      },
+      {
+        "Id": 10105,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 102,
+    "Ward": "Neurology",
+    "Type": "Surgery",
+    "Beds": [
+      {
+        "Id": 10200,
+        "Available": true
+      },
+      {
+        "Id": 10201,
+        "Available": true
+      },
+      {
+        "Id": 10202,
+        "Available": false
+      },
+      {
+        "Id": 10203,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 103,
+    "Ward": "Cardiology",
+    "Type": "Delivery",
+    "Beds": [
+      {
+        "Id": 10300,
+        "Available": true
+      },
+      {
+        "Id": 10301,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 104,
+    "Ward": "Surgery",
+    "Type": "Delivery",
+    "Beds": [
+      {
+        "Id": 10400,
+        "Available": true
+      },
+      {
+        "Id": 10401,
+        "Available": false
+      },
+      {
+        "Id": 10402,
+        "Available": true
+      },
+      {
+        "Id": 10403,
+        "Available": false
+      },
+      {
+        "Id": 10404,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 105,
+    "Ward": "Oncology",
+    "Type": "VIP",
+    "Beds": [
+      {
+        "Id": 10500,
+        "Available": false
+      },
+      {
+        "Id": 10501,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 106,
+    "Ward": "Neurology",
+    "Type": "Delivery",
+    "Beds": [
+      {
+        "Id": 10600,
+        "Available": true
+      },
+      {
+        "Id": 10601,
+        "Available": true
+      },
+      {
+        "Id": 10602,
+        "Available": false
+      },
+      {
+        "Id": 10603,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 107,
+    "Ward": "Neurology",
+    "Type": "VIP",
+    "Beds": [
+      {
+        "Id": 10700,
+        "Available": false
+      },
+      {
+        "Id": 10701,
+        "Available": true
+      },
+      {
+        "Id": 10702,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 108,
+    "Ward": "Pediatrics",
+    "Type": "Normal",
+    "Beds": [
+      {
+        "Id": 10800,
+        "Available": true
+      },
+      {
+        "Id": 10801,
+        "Available": true
+      },
+      {
+        "Id": 10802,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 109,
+    "Ward": "Oncology",
+    "Type": "VIP",
+    "Beds": [
+      {
+        "Id": 10900,
+        "Available": false
+      },
+      {
+        "Id": 10901,
+        "Available": true
+      },
+      {
+        "Id": 10902,
+        "Available": false
+      },
+      {
+        "Id": 10903,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 110,
+    "Ward": "Neurology",
+    "Type": "Delivery",
+    "Beds": [
+      {
+        "Id": 11000,
+        "Available": false
+      },
+      {
+        "Id": 11001,
+        "Available": false
+      },
+      {
+        "Id": 11002,
+        "Available": true
+      },
+      {
+        "Id": 11003,
+        "Available": false
+      },
+      {
+        "Id": 11004,
+        "Available": false
+      },
+      {
+        "Id": 11005,
+        "Available": false
+      },
+      {
+        "Id": 11006,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 111,
+    "Ward": "Oncology",
+    "Type": "Normal",
+    "Beds": [
+      {
+        "Id": 11100,
+        "Available": true
+      },
+      {
+        "Id": 11101,
+        "Available": false
+      },
+      {
+        "Id": 11102,
+        "Available": false
+      },
+      {
+        "Id": 11103,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 112,
+    "Ward": "Cardiology",
+    "Type": "Surgery",
+    "Beds": [
+      {
+        "Id": 11200,
+        "Available": true
+      },
+      {
+        "Id": 11201,
+        "Available": false
+      },
+      {
+        "Id": 11202,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 113,
+    "Ward": "Cardiology",
+    "Type": "ICU",
+    "Beds": [
+      {
+        "Id": 11300,
+        "Available": false
+      },
+      {
+        "Id": 11301,
+        "Available": true
+      },
+      {
+        "Id": 11302,
+        "Available": false
+      },
+      {
+        "Id": 11303,
+        "Available": true
+      },
+      {
+        "Id": 11304,
+        "Available": false
+      },
+      {
+        "Id": 11305,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 114,
+    "Ward": "Oncology",
+    "Type": "ICU",
+    "Beds": [
+      {
+        "Id": 11400,
+        "Available": true
+      },
+      {
+        "Id": 11401,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 115,
+    "Ward": "Neurology",
+    "Type": "Surgery",
+    "Beds": [
+      {
+        "Id": 11500,
+        "Available": false
+      },
+      {
+        "Id": 11501,
+        "Available": false
+      },
+      {
+        "Id": 11502,
+        "Available": true
+      },
+      {
+        "Id": 11503,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 116,
+    "Ward": "Pediatrics",
+    "Type": "Normal",
+    "Beds": [
+      {
+        "Id": 11600,
+        "Available": true
+      },
+      {
+        "Id": 11601,
+        "Available": true
+      },
+      {
+        "Id": 11602,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 117,
+    "Ward": "Neurology",
+    "Type": "Surgery",
+    "Beds": [
+      {
+        "Id": 11700,
+        "Available": false
+      },
+      {
+        "Id": 11701,
+        "Available": false
+      },
+      {
+        "Id": 11702,
+        "Available": false
+      },
+      {
+        "Id": 11703,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 118,
+    "Ward": "Surgery",
+    "Type": "VIP",
+    "Beds": [
+      {
+        "Id": 11800,
+        "Available": false
+      },
+      {
+        "Id": 11801,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 119,
+    "Ward": "Surgery",
+    "Type": "VIP",
+    "Beds": [
+      {
+        "Id": 11900,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 120,
+    "Ward": "Cardiology",
+    "Type": "VIP",
+    "Beds": [
+      {
+        "Id": 12000,
+        "Available": true
+      },
+      {
+        "Id": 12001,
+        "Available": true
+      },
+      {
+        "Id": 12002,
+        "Available": true
+      },
+      {
+        "Id": 12003,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 121,
+    "Ward": "Surgery",
+    "Type": "ICU",
+    "Beds": [
+      {
+        "Id": 12100,
+        "Available": false
+      },
+      {
+        "Id": 12101,
+        "Available": true
+      },
+      {
+        "Id": 12102,
+        "Available": false
+      },
+      {
+        "Id": 12103,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 122,
+    "Ward": "Neurology",
+    "Type": "ICU",
+    "Beds": [
+      {
+        "Id": 12200,
+        "Available": false
+      },
+      {
+        "Id": 12201,
+        "Available": true
+      },
+      {
+        "Id": 12202,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 123,
+    "Ward": "Neurology",
+    "Type": "VIP",
+    "Beds": [
+      {
+        "Id": 12300,
+        "Available": false
+      },
+      {
+        "Id": 12301,
+        "Available": true
+      },
+      {
+        "Id": 12302,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 124,
+    "Ward": "Pediatrics",
+    "Type": "Normal",
+    "Beds": [
+      {
+        "Id": 12400,
+        "Available": true
+      },
+      {
+        "Id": 12401,
+        "Available": false
+      },
+      {
+        "Id": 12402,
+        "Available": false
+      },
+      {
+        "Id": 12403,
+        "Available": false
+      },
+      {
+        "Id": 12404,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 100,
+    "Ward": "Pediatrics",
+    "Type": "Delivery",
+    "Beds": [
+      {
+        "Id": 10000,
+        "Available": true
+      },
+      {
+        "Id": 10001,
+        "Available": true
+      },
+      {
+        "Id": 10002,
+        "Available": true
+      },
+      {
+        "Id": 10003,
+        "Available": true
+      },
+      {
+        "Id": 10004,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 101,
+    "Ward": "Neurology",
+    "Type": "Normal",
+    "Beds": [
+      {
+        "Id": 10100,
+        "Available": false
+      },
+      {
+        "Id": 10101,
+        "Available": false
+      },
+      {
+        "Id": 10102,
+        "Available": true
+      },
+      {
+        "Id": 10103,
+        "Available": false
+      },
+      {
+        "Id": 10104,
+        "Available": true
+      },
+      {
+        "Id": 10105,
+        "Available": true
+      },
+      {
+        "Id": 10106,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 102,
+    "Ward": "Pediatrics",
+    "Type": "Normal",
+    "Beds": [
+      {
+        "Id": 10200,
+        "Available": true
+      },
+      {
+        "Id": 10201,
+        "Available": false
+      },
+      {
+        "Id": 10202,
+        "Available": false
+      },
+      {
+        "Id": 10203,
+        "Available": true
+      },
+      {
+        "Id": 10204,
+        "Available": true
+      },
+      {
+        "Id": 10205,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 103,
+    "Ward": "Surgery",
+    "Type": "VIP",
+    "Beds": [
+      {
+        "Id": 10300,
+        "Available": true
+      },
+      {
+        "Id": 10301,
+        "Available": false
+      },
+      {
+        "Id": 10302,
+        "Available": false
+      },
+      {
+        "Id": 10303,
+        "Available": true
+      },
+      {
+        "Id": 10304,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 104,
+    "Ward": "Neurology",
+    "Type": "Delivery",
+    "Beds": [
+      {
+        "Id": 10400,
+        "Available": true
+      },
+      {
+        "Id": 10401,
+        "Available": true
+      },
+      {
+        "Id": 10402,
+        "Available": true
+      },
+      {
+        "Id": 10403,
+        "Available": true
+      },
+      {
+        "Id": 10404,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 105,
+    "Ward": "Surgery",
+    "Type": "VIP",
+    "Beds": [
+      {
+        "Id": 10500,
+        "Available": false
+      },
+      {
+        "Id": 10501,
+        "Available": false
+      },
+      {
+        "Id": 10502,
+        "Available": false
+      },
+      {
+        "Id": 10503,
+        "Available": true
+      },
+      {
+        "Id": 10504,
+        "Available": true
+      },
+      {
+        "Id": 10505,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 106,
+    "Ward": "Neurology",
+    "Type": "Surgery",
+    "Beds": [
+      {
+        "Id": 10600,
+        "Available": false
+      },
+      {
+        "Id": 10601,
+        "Available": true
+      },
+      {
+        "Id": 10602,
+        "Available": false
+      },
+      {
+        "Id": 10603,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 107,
+    "Ward": "Surgery",
+    "Type": "VIP",
+    "Beds": [
+      {
+        "Id": 10700,
+        "Available": true
+      },
+      {
+        "Id": 10701,
+        "Available": true
+      },
+      {
+        "Id": 10702,
+        "Available": false
+      },
+      {
+        "Id": 10703,
+        "Available": true
+      },
+      {
+        "Id": 10704,
+        "Available": true
+      },
+      {
+        "Id": 10705,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 108,
+    "Ward": "Neurology",
+    "Type": "Surgery",
+    "Beds": [
+      {
+        "Id": 10800,
+        "Available": false
+      },
+      {
+        "Id": 10801,
+        "Available": false
+      },
+      {
+        "Id": 10802,
+        "Available": true
+      },
+      {
+        "Id": 10803,
+        "Available": false
+      },
+      {
+        "Id": 10804,
+        "Available": false
+      },
+      {
+        "Id": 10805,
+        "Available": false
+      },
+      {
+        "Id": 10806,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 109,
+    "Ward": "Pediatrics",
+    "Type": "Delivery",
+    "Beds": [
+      {
+        "Id": 10900,
+        "Available": false
+      },
+      {
+        "Id": 10901,
+        "Available": false
+      },
+      {
+        "Id": 10902,
+        "Available": true
+      },
+      {
+        "Id": 10903,
+        "Available": false
+      },
+      {
+        "Id": 10904,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 110,
+    "Ward": "Oncology",
+    "Type": "Normal",
+    "Beds": [
+      {
+        "Id": 11000,
+        "Available": true
+      },
+      {
+        "Id": 11001,
+        "Available": true
+      },
+      {
+        "Id": 11002,
+        "Available": true
+      },
+      {
+        "Id": 11003,
+        "Available": true
+      },
+      {
+        "Id": 11004,
+        "Available": true
+      },
+      {
+        "Id": 11005,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 111,
+    "Ward": "Oncology",
+    "Type": "Normal",
+    "Beds": [
+      {
+        "Id": 11100,
+        "Available": true
+      },
+      {
+        "Id": 11101,
+        "Available": true
+      },
+      {
+        "Id": 11102,
+        "Available": true
+      },
+      {
+        "Id": 11103,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 112,
+    "Ward": "Surgery",
+    "Type": "VIP",
+    "Beds": [
+      {
+        "Id": 11200,
+        "Available": true
+      },
+      {
+        "Id": 11201,
+        "Available": false
+      },
+      {
+        "Id": 11202,
+        "Available": true
+      },
+      {
+        "Id": 11203,
+        "Available": true
+      },
+      {
+        "Id": 11204,
+        "Available": true
+      },
+      {
+        "Id": 11205,
+        "Available": true
+      },
+      {
+        "Id": 11206,
+        "Available": false
+      },
+      {
+        "Id": 11207,
+        "Available": false
+      },
+      {
+        "Id": 11208,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 113,
+    "Ward": "Cardiology",
+    "Type": "ICU",
+    "Beds": [
+      {
+        "Id": 11300,
+        "Available": false
+      },
+      {
+        "Id": 11301,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 114,
+    "Ward": "Cardiology",
+    "Type": "Surgery",
+    "Beds": [
+      {
+        "Id": 11400,
+        "Available": true
+      },
+      {
+        "Id": 11401,
+        "Available": true
+      },
+      {
+        "Id": 11402,
+        "Available": true
+      },
+      {
+        "Id": 11403,
+        "Available": false
+      },
+      {
+        "Id": 11404,
+        "Available": true
+      },
+      {
+        "Id": 11405,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 115,
+    "Ward": "Pediatrics",
+    "Type": "VIP",
+    "Beds": [
+      {
+        "Id": 11500,
+        "Available": true
+      },
+      {
+        "Id": 11501,
+        "Available": false
+      },
+      {
+        "Id": 11502,
+        "Available": false
+      },
+      {
+        "Id": 11503,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 116,
+    "Ward": "Pediatrics",
+    "Type": "Normal",
+    "Beds": [
+      {
+        "Id": 11600,
+        "Available": true
+      },
+      {
+        "Id": 11601,
+        "Available": true
+      },
+      {
+        "Id": 11602,
+        "Available": false
+      },
+      {
+        "Id": 11603,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 117,
+    "Ward": "Oncology",
+    "Type": "Normal",
+    "Beds": [
+      {
+        "Id": 11700,
+        "Available": true
+      },
+      {
+        "Id": 11701,
+        "Available": false
+      },
+      {
+        "Id": 11702,
+        "Available": true
+      },
+      {
+        "Id": 11703,
+        "Available": true
+      },
+      {
+        "Id": 11704,
+        "Available": true
+      },
+      {
+        "Id": 11705,
+        "Available": false
+      },
+      {
+        "Id": 11706,
+        "Available": true
+      },
+      {
+        "Id": 11707,
+        "Available": false
+      },
+      {
+        "Id": 11708,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 118,
+    "Ward": "Pediatrics",
+    "Type": "Surgery",
+    "Beds": [
+      {
+        "Id": 11800,
+        "Available": true
+      },
+      {
+        "Id": 11801,
+        "Available": true
+      },
+      {
+        "Id": 11802,
+        "Available": false
+      },
+      {
+        "Id": 11803,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 119,
+    "Ward": "Neurology",
+    "Type": "Surgery",
+    "Beds": [
+      {
+        "Id": 11900,
+        "Available": false
+      },
+      {
+        "Id": 11901,
+        "Available": false
+      },
+      {
+        "Id": 11902,
+        "Available": false
+      },
+      {
+        "Id": 11903,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 120,
+    "Ward": "Surgery",
+    "Type": "ICU",
+    "Beds": [
+      {
+        "Id": 12000,
+        "Available": true
+      },
+      {
+        "Id": 12001,
+        "Available": true
+      },
+      {
+        "Id": 12002,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 121,
+    "Ward": "Cardiology",
+    "Type": "Normal",
+    "Beds": [
+      {
+        "Id": 12100,
+        "Available": true
+      },
+      {
+        "Id": 12101,
+        "Available": true
+      },
+      {
+        "Id": 12102,
+        "Available": false
+      },
+      {
+        "Id": 12103,
+        "Available": false
+      },
+      {
+        "Id": 12104,
+        "Available": true
+      },
+      {
+        "Id": 12105,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 122,
+    "Ward": "Oncology",
+    "Type": "Normal",
+    "Beds": [
+      {
+        "Id": 12200,
+        "Available": false
+      },
+      {
+        "Id": 12201,
+        "Available": false
+      },
+      {
+        "Id": 12202,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 123,
+    "Ward": "Cardiology",
+    "Type": "Surgery",
+    "Beds": [
+      {
+        "Id": 12300,
+        "Available": false
+      },
+      {
+        "Id": 12301,
+        "Available": false
+      },
+      {
+        "Id": 12302,
+        "Available": true
+      },
+      {
+        "Id": 12303,
+        "Available": true
+      },
+      {
+        "Id": 12304,
+        "Available": true
+      },
+      {
+        "Id": 12305,
+        "Available": false
+      },
+      {
+        "Id": 12306,
+        "Available": true
+      },
+      {
+        "Id": 12307,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 124,
+    "Ward": "Neurology",
+    "Type": "ICU",
+    "Beds": [
+      {
+        "Id": 12400,
+        "Available": false
+      },
+      {
+        "Id": 12401,
+        "Available": false
+      },
+      {
+        "Id": 12402,
+        "Available": false
+      },
+      {
+        "Id": 12403,
+        "Available": false
+      },
+      {
+        "Id": 12404,
+        "Available": false
+      },
+      {
+        "Id": 12405,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 100,
+    "Ward": "Pediatrics",
+    "Type": "ICU",
+    "Beds": [
+      {
+        "Id": 10000,
+        "Available": true
+      },
+      {
+        "Id": 10001,
+        "Available": true
+      },
+      {
+        "Id": 10002,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 101,
+    "Ward": "Surgery",
+    "Type": "VIP",
+    "Beds": [
+      {
+        "Id": 10100,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 102,
+    "Ward": "Oncology",
+    "Type": "VIP",
+    "Beds": [
+      {
+        "Id": 10200,
+        "Available": true
+      },
+      {
+        "Id": 10201,
+        "Available": true
+      },
+      {
+        "Id": 10202,
+        "Available": true
+      },
+      {
+        "Id": 10203,
+        "Available": true
+      },
+      {
+        "Id": 10204,
+        "Available": false
+      },
+      {
+        "Id": 10205,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 103,
+    "Ward": "Neurology",
+    "Type": "Delivery",
+    "Beds": [
+      {
+        "Id": 10300,
+        "Available": true
+      },
+      {
+        "Id": 10301,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 104,
+    "Ward": "Neurology",
+    "Type": "Surgery",
+    "Beds": [
+      {
+        "Id": 10400,
+        "Available": false
+      },
+      {
+        "Id": 10401,
+        "Available": false
+      },
+      {
+        "Id": 10402,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 105,
+    "Ward": "Pediatrics",
+    "Type": "Delivery",
+    "Beds": [
+      {
+        "Id": 10500,
+        "Available": false
+      },
+      {
+        "Id": 10501,
+        "Available": false
+      },
+      {
+        "Id": 10502,
+        "Available": false
+      },
+      {
+        "Id": 10503,
+        "Available": false
+      },
+      {
+        "Id": 10504,
+        "Available": false
+      },
+      {
+        "Id": 10505,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 106,
+    "Ward": "Pediatrics",
+    "Type": "Surgery",
+    "Beds": [
+      {
+        "Id": 10600,
+        "Available": false
+      },
+      {
+        "Id": 10601,
+        "Available": true
+      },
+      {
+        "Id": 10602,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 107,
+    "Ward": "Pediatrics",
+    "Type": "Surgery",
+    "Beds": [
+      {
+        "Id": 10700,
+        "Available": false
+      },
+      {
+        "Id": 10701,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 108,
+    "Ward": "Neurology",
+    "Type": "ICU",
+    "Beds": [
+      {
+        "Id": 10800,
+        "Available": true
+      },
+      {
+        "Id": 10801,
+        "Available": true
+      },
+      {
+        "Id": 10802,
+        "Available": false
+      },
+      {
+        "Id": 10803,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 109,
+    "Ward": "Pediatrics",
+    "Type": "Surgery",
+    "Beds": [
+      {
+        "Id": 10900,
+        "Available": true
+      },
+      {
+        "Id": 10901,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 110,
+    "Ward": "Pediatrics",
+    "Type": "Delivery",
+    "Beds": [
+      {
+        "Id": 11000,
+        "Available": true
+      },
+      {
+        "Id": 11001,
+        "Available": true
+      },
+      {
+        "Id": 11002,
+        "Available": true
+      },
+      {
+        "Id": 11003,
+        "Available": false
+      },
+      {
+        "Id": 11004,
+        "Available": true
+      },
+      {
+        "Id": 11005,
+        "Available": true
+      },
+      {
+        "Id": 11006,
+        "Available": false
+      },
+      {
+        "Id": 11007,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 111,
+    "Ward": "Pediatrics",
+    "Type": "Delivery",
+    "Beds": [
+      {
+        "Id": 11100,
+        "Available": false
+      },
+      {
+        "Id": 11101,
+        "Available": true
+      },
+      {
+        "Id": 11102,
+        "Available": true
+      },
+      {
+        "Id": 11103,
+        "Available": true
+      },
+      {
+        "Id": 11104,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 112,
+    "Ward": "Surgery",
+    "Type": "ICU",
+    "Beds": [
+      {
+        "Id": 11200,
+        "Available": false
+      },
+      {
+        "Id": 11201,
+        "Available": true
+      },
+      {
+        "Id": 11202,
+        "Available": false
+      },
+      {
+        "Id": 11203,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 113,
+    "Ward": "Neurology",
+    "Type": "VIP",
+    "Beds": [
+      {
+        "Id": 11300,
+        "Available": true
+      },
+      {
+        "Id": 11301,
+        "Available": true
+      },
+      {
+        "Id": 11302,
+        "Available": false
+      },
+      {
+        "Id": 11303,
+        "Available": false
+      },
+      {
+        "Id": 11304,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 114,
+    "Ward": "Cardiology",
+    "Type": "Normal",
+    "Beds": [
+      {
+        "Id": 11400,
+        "Available": false
+      },
+      {
+        "Id": 11401,
+        "Available": true
+      },
+      {
+        "Id": 11402,
+        "Available": false
+      },
+      {
+        "Id": 11403,
+        "Available": true
+      },
+      {
+        "Id": 11404,
+        "Available": false
+      },
+      {
+        "Id": 11405,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 115,
+    "Ward": "Oncology",
+    "Type": "ICU",
+    "Beds": [
+      {
+        "Id": 11500,
+        "Available": false
+      },
+      {
+        "Id": 11501,
+        "Available": true
+      },
+      {
+        "Id": 11502,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 116,
+    "Ward": "Cardiology",
+    "Type": "Surgery",
+    "Beds": [
+      {
+        "Id": 11600,
+        "Available": true
+      },
+      {
+        "Id": 11601,
+        "Available": true
+      },
+      {
+        "Id": 11602,
+        "Available": false
+      },
+      {
+        "Id": 11603,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 117,
+    "Ward": "Oncology",
+    "Type": "Delivery",
+    "Beds": [
+      {
+        "Id": 11700,
+        "Available": true
+      },
+      {
+        "Id": 11701,
+        "Available": true
+      },
+      {
+        "Id": 11702,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 118,
+    "Ward": "Surgery",
+    "Type": "Delivery",
+    "Beds": [
+      {
+        "Id": 11800,
+        "Available": false
+      },
+      {
+        "Id": 11801,
+        "Available": true
+      },
+      {
+        "Id": 11802,
+        "Available": true
+      },
+      {
+        "Id": 11803,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 119,
+    "Ward": "Surgery",
+    "Type": "Normal",
+    "Beds": [
+      {
+        "Id": 11900,
+        "Available": false
+      },
+      {
+        "Id": 11901,
+        "Available": false
+      },
+      {
+        "Id": 11902,
+        "Available": true
+      },
+      {
+        "Id": 11903,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 120,
+    "Ward": "Surgery",
+    "Type": "Delivery",
+    "Beds": [
+      {
+        "Id": 12000,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 121,
+    "Ward": "Pediatrics",
+    "Type": "ICU",
+    "Beds": [
+      {
+        "Id": 12100,
+        "Available": true
+      },
+      {
+        "Id": 12101,
+        "Available": false
+      },
+      {
+        "Id": 12102,
+        "Available": true
+      },
+      {
+        "Id": 12103,
+        "Available": true
+      },
+      {
+        "Id": 12104,
+        "Available": true
+      },
+      {
+        "Id": 12105,
+        "Available": true
+      },
+      {
+        "Id": 12106,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 122,
+    "Ward": "Surgery",
+    "Type": "ICU",
+    "Beds": [
+      {
+        "Id": 12200,
+        "Available": false
+      },
+      {
+        "Id": 12201,
+        "Available": true
+      },
+      {
+        "Id": 12202,
+        "Available": false
+      },
+      {
+        "Id": 12203,
+        "Available": true
+      },
+      {
+        "Id": 12204,
+        "Available": false
+      },
+      {
+        "Id": 12205,
+        "Available": true
+      },
+      {
+        "Id": 12206,
+        "Available": false
+      },
+      {
+        "Id": 12207,
+        "Available": true
+      },
+      {
+        "Id": 12208,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 123,
+    "Ward": "Cardiology",
+    "Type": "Surgery",
+    "Beds": [
+      {
+        "Id": 12300,
+        "Available": false
+      },
+      {
+        "Id": 12301,
+        "Available": false
+      },
+      {
+        "Id": 12302,
+        "Available": false
+      },
+      {
+        "Id": 12303,
+        "Available": false
+      },
+      {
+        "Id": 12304,
+        "Available": false
+      },
+      {
+        "Id": 12305,
+        "Available": true
+      },
+      {
+        "Id": 12306,
+        "Available": true
+      },
+      {
+        "Id": 12307,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 124,
+    "Ward": "Surgery",
+    "Type": "VIP",
+    "Beds": [
+      {
+        "Id": 12400,
+        "Available": false
+      },
+      {
+        "Id": 12401,
+        "Available": true
+      },
+      {
+        "Id": 12402,
+        "Available": true
+      },
+      {
+        "Id": 12403,
+        "Available": false
+      },
+      {
+        "Id": 12404,
+        "Available": false
+      },
+      {
+        "Id": 12405,
+        "Available": true
+      },
+      {
+        "Id": 12406,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 100,
+    "Ward": "Oncology",
+    "Type": "Normal",
+    "Beds": [
+      {
+        "Id": 10000,
+        "Available": true
+      },
+      {
+        "Id": 10001,
+        "Available": false
+      },
+      {
+        "Id": 10002,
+        "Available": false
+      },
+      {
+        "Id": 10003,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 101,
+    "Ward": "Surgery",
+    "Type": "Delivery",
+    "Beds": [
+      {
+        "Id": 10100,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 102,
+    "Ward": "Surgery",
+    "Type": "Surgery",
+    "Beds": [
+      {
+        "Id": 10200,
+        "Available": false
+      },
+      {
+        "Id": 10201,
+        "Available": false
+      },
+      {
+        "Id": 10202,
+        "Available": false
+      },
+      {
+        "Id": 10203,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 103,
+    "Ward": "Surgery",
+    "Type": "ICU",
+    "Beds": [
+      {
+        "Id": 10300,
+        "Available": false
+      },
+      {
+        "Id": 10301,
+        "Available": false
+      },
+      {
+        "Id": 10302,
+        "Available": true
+      },
+      {
+        "Id": 10303,
+        "Available": false
+      },
+      {
+        "Id": 10304,
+        "Available": false
+      },
+      {
+        "Id": 10305,
+        "Available": true
+      },
+      {
+        "Id": 10306,
+        "Available": false
+      },
+      {
+        "Id": 10307,
+        "Available": false
+      },
+      {
+        "Id": 10308,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 104,
+    "Ward": "Cardiology",
+    "Type": "Surgery",
+    "Beds": [
+      {
+        "Id": 10400,
+        "Available": true
+      },
+      {
+        "Id": 10401,
+        "Available": false
+      },
+      {
+        "Id": 10402,
+        "Available": false
+      },
+      {
+        "Id": 10403,
+        "Available": false
+      },
+      {
+        "Id": 10404,
+        "Available": true
+      },
+      {
+        "Id": 10405,
+        "Available": false
+      },
+      {
+        "Id": 10406,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 105,
+    "Ward": "Cardiology",
+    "Type": "ICU",
+    "Beds": [
+      {
+        "Id": 10500,
+        "Available": false
+      },
+      {
+        "Id": 10501,
+        "Available": false
+      },
+      {
+        "Id": 10502,
+        "Available": true
+      },
+      {
+        "Id": 10503,
+        "Available": false
+      },
+      {
+        "Id": 10504,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 106,
+    "Ward": "Neurology",
+    "Type": "Delivery",
+    "Beds": [
+      {
+        "Id": 10600,
+        "Available": true
+      },
+      {
+        "Id": 10601,
+        "Available": false
+      },
+      {
+        "Id": 10602,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 107,
+    "Ward": "Pediatrics",
+    "Type": "ICU",
+    "Beds": [
+      {
+        "Id": 10700,
+        "Available": true
+      },
+      {
+        "Id": 10701,
+        "Available": true
+      },
+      {
+        "Id": 10702,
+        "Available": false
+      },
+      {
+        "Id": 10703,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 108,
+    "Ward": "Neurology",
+    "Type": "Normal",
+    "Beds": [
+      {
+        "Id": 10800,
+        "Available": true
+      },
+      {
+        "Id": 10801,
+        "Available": false
+      },
+      {
+        "Id": 10802,
+        "Available": true
+      },
+      {
+        "Id": 10803,
+        "Available": false
+      },
+      {
+        "Id": 10804,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 109,
+    "Ward": "Pediatrics",
+    "Type": "VIP",
+    "Beds": [
+      {
+        "Id": 10900,
+        "Available": false
+      },
+      {
+        "Id": 10901,
+        "Available": true
+      },
+      {
+        "Id": 10902,
+        "Available": false
+      },
+      {
+        "Id": 10903,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 110,
+    "Ward": "Oncology",
+    "Type": "Surgery",
+    "Beds": [
+      {
+        "Id": 11000,
+        "Available": false
+      },
+      {
+        "Id": 11001,
+        "Available": false
+      },
+      {
+        "Id": 11002,
+        "Available": false
+      },
+      {
+        "Id": 11003,
+        "Available": true
+      },
+      {
+        "Id": 11004,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 111,
+    "Ward": "Pediatrics",
+    "Type": "Delivery",
+    "Beds": [
+      {
+        "Id": 11100,
+        "Available": false
+      },
+      {
+        "Id": 11101,
+        "Available": true
+      },
+      {
+        "Id": 11102,
+        "Available": false
+      },
+      {
+        "Id": 11103,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 112,
+    "Ward": "Surgery",
+    "Type": "Delivery",
+    "Beds": [
+      {
+        "Id": 11200,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 113,
+    "Ward": "Cardiology",
+    "Type": "Surgery",
+    "Beds": [
+      {
+        "Id": 11300,
+        "Available": true
+      },
+      {
+        "Id": 11301,
+        "Available": true
+      },
+      {
+        "Id": 11302,
+        "Available": true
+      },
+      {
+        "Id": 11303,
+        "Available": false
+      },
+      {
+        "Id": 11304,
+        "Available": false
+      },
+      {
+        "Id": 11305,
+        "Available": false
+      },
+      {
+        "Id": 11306,
+        "Available": true
+      },
+      {
+        "Id": 11307,
+        "Available": true
+      },
+      {
+        "Id": 11308,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 114,
+    "Ward": "Pediatrics",
+    "Type": "Surgery",
+    "Beds": [
+      {
+        "Id": 11400,
+        "Available": true
+      },
+      {
+        "Id": 11401,
+        "Available": false
+      },
+      {
+        "Id": 11402,
+        "Available": true
+      },
+      {
+        "Id": 11403,
+        "Available": false
+      },
+      {
+        "Id": 11404,
+        "Available": false
+      },
+      {
+        "Id": 11405,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 115,
+    "Ward": "Oncology",
+    "Type": "Surgery",
+    "Beds": [
+      {
+        "Id": 11500,
+        "Available": false
+      },
+      {
+        "Id": 11501,
+        "Available": false
+      },
+      {
+        "Id": 11502,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 116,
+    "Ward": "Cardiology",
+    "Type": "Normal",
+    "Beds": [
+      {
+        "Id": 11600,
+        "Available": true
+      },
+      {
+        "Id": 11601,
+        "Available": false
+      },
+      {
+        "Id": 11602,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 117,
+    "Ward": "Surgery",
+    "Type": "Delivery",
+    "Beds": [
+      {
+        "Id": 11700,
+        "Available": false
+      },
+      {
+        "Id": 11701,
+        "Available": false
+      },
+      {
+        "Id": 11702,
+        "Available": false
+      },
+      {
+        "Id": 11703,
+        "Available": true
+      },
+      {
+        "Id": 11704,
+        "Available": false
+      },
+      {
+        "Id": 11705,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 118,
+    "Ward": "Cardiology",
+    "Type": "VIP",
+    "Beds": [
+      {
+        "Id": 11800,
+        "Available": false
+      },
+      {
+        "Id": 11801,
+        "Available": true
+      },
+      {
+        "Id": 11802,
+        "Available": true
+      },
+      {
+        "Id": 11803,
+        "Available": true
+      },
+      {
+        "Id": 11804,
+        "Available": false
+      },
+      {
+        "Id": 11805,
+        "Available": true
+      },
+      {
+        "Id": 11806,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 119,
+    "Ward": "Neurology",
+    "Type": "Delivery",
+    "Beds": [
+      {
+        "Id": 11900,
+        "Available": false
+      },
+      {
+        "Id": 11901,
+        "Available": false
+      },
+      {
+        "Id": 11902,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 120,
+    "Ward": "Neurology",
+    "Type": "ICU",
+    "Beds": [
+      {
+        "Id": 12000,
+        "Available": true
+      },
+      {
+        "Id": 12001,
+        "Available": true
+      },
+      {
+        "Id": 12002,
+        "Available": false
+      },
+      {
+        "Id": 12003,
+        "Available": true
+      },
+      {
+        "Id": 12004,
+        "Available": false
+      },
+      {
+        "Id": 12005,
+        "Available": true
+      },
+      {
+        "Id": 12006,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 121,
+    "Ward": "Surgery",
+    "Type": "VIP",
+    "Beds": [
+      {
+        "Id": 12100,
+        "Available": false
+      },
+      {
+        "Id": 12101,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 122,
+    "Ward": "Pediatrics",
+    "Type": "VIP",
+    "Beds": [
+      {
+        "Id": 12200,
+        "Available": false
+      },
+      {
+        "Id": 12201,
+        "Available": false
+      },
+      {
+        "Id": 12202,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 123,
+    "Ward": "Surgery",
+    "Type": "Normal",
+    "Beds": [
+      {
+        "Id": 12300,
+        "Available": false
+      },
+      {
+        "Id": 12301,
+        "Available": false
+      },
+      {
+        "Id": 12302,
+        "Available": true
+      },
+      {
+        "Id": 12303,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 124,
+    "Ward": "Cardiology",
+    "Type": "Delivery",
+    "Beds": [
+      {
+        "Id": 12400,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 100,
+    "Ward": "Cardiology",
+    "Type": "Delivery",
+    "Beds": [
+      {
+        "Id": 10000,
+        "Available": false
+      },
+      {
+        "Id": 10001,
+        "Available": true
+      },
+      {
+        "Id": 10002,
+        "Available": true
+      },
+      {
+        "Id": 10003,
+        "Available": false
+      },
+      {
+        "Id": 10004,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 101,
+    "Ward": "Pediatrics",
+    "Type": "VIP",
+    "Beds": [
+      {
+        "Id": 10100,
+        "Available": true
+      },
+      {
+        "Id": 10101,
+        "Available": false
+      },
+      {
+        "Id": 10102,
+        "Available": false
+      },
+      {
+        "Id": 10103,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 102,
+    "Ward": "Cardiology",
+    "Type": "Surgery",
+    "Beds": [
+      {
+        "Id": 10200,
+        "Available": true
+      },
+      {
+        "Id": 10201,
+        "Available": false
+      },
+      {
+        "Id": 10202,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 103,
+    "Ward": "Neurology",
+    "Type": "VIP",
+    "Beds": [
+      {
+        "Id": 10300,
+        "Available": true
+      },
+      {
+        "Id": 10301,
+        "Available": true
+      },
+      {
+        "Id": 10302,
+        "Available": true
+      },
+      {
+        "Id": 10303,
+        "Available": false
+      },
+      {
+        "Id": 10304,
+        "Available": false
+      },
+      {
+        "Id": 10305,
+        "Available": true
+      },
+      {
+        "Id": 10306,
+        "Available": true
+      },
+      {
+        "Id": 10307,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 104,
+    "Ward": "Oncology",
+    "Type": "Delivery",
+    "Beds": [
+      {
+        "Id": 10400,
+        "Available": true
+      },
+      {
+        "Id": 10401,
+        "Available": true
+      },
+      {
+        "Id": 10402,
+        "Available": false
+      },
+      {
+        "Id": 10403,
+        "Available": true
+      },
+      {
+        "Id": 10404,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 105,
+    "Ward": "Oncology",
+    "Type": "Normal",
+    "Beds": [
+      {
+        "Id": 10500,
+        "Available": false
+      },
+      {
+        "Id": 10501,
+        "Available": false
+      },
+      {
+        "Id": 10502,
+        "Available": true
+      },
+      {
+        "Id": 10503,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 106,
+    "Ward": "Cardiology",
+    "Type": "Surgery",
+    "Beds": [
+      {
+        "Id": 10600,
+        "Available": false
+      },
+      {
+        "Id": 10601,
+        "Available": false
+      },
+      {
+        "Id": 10602,
+        "Available": false
+      },
+      {
+        "Id": 10603,
+        "Available": false
+      },
+      {
+        "Id": 10604,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 107,
+    "Ward": "Cardiology",
+    "Type": "Surgery",
+    "Beds": [
+      {
+        "Id": 10700,
+        "Available": true
+      },
+      {
+        "Id": 10701,
+        "Available": true
+      },
+      {
+        "Id": 10702,
+        "Available": true
+      },
+      {
+        "Id": 10703,
+        "Available": true
+      },
+      {
+        "Id": 10704,
+        "Available": false
+      },
+      {
+        "Id": 10705,
+        "Available": true
+      },
+      {
+        "Id": 10706,
+        "Available": false
+      },
+      {
+        "Id": 10707,
+        "Available": false
+      },
+      {
+        "Id": 10708,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 108,
+    "Ward": "Neurology",
+    "Type": "VIP",
+    "Beds": [
+      {
+        "Id": 10800,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 109,
+    "Ward": "Oncology",
+    "Type": "VIP",
+    "Beds": [
+      {
+        "Id": 10900,
+        "Available": false
+      },
+      {
+        "Id": 10901,
+        "Available": false
+      },
+      {
+        "Id": 10902,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 110,
+    "Ward": "Cardiology",
+    "Type": "ICU",
+    "Beds": [
+      {
+        "Id": 11000,
+        "Available": false
+      },
+      {
+        "Id": 11001,
+        "Available": false
+      },
+      {
+        "Id": 11002,
+        "Available": true
+      },
+      {
+        "Id": 11003,
+        "Available": true
+      },
+      {
+        "Id": 11004,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 111,
+    "Ward": "Surgery",
+    "Type": "Normal",
+    "Beds": [
+      {
+        "Id": 11100,
+        "Available": false
+      },
+      {
+        "Id": 11101,
+        "Available": false
+      },
+      {
+        "Id": 11102,
+        "Available": true
+      },
+      {
+        "Id": 11103,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 112,
+    "Ward": "Pediatrics",
+    "Type": "VIP",
+    "Beds": [
+      {
+        "Id": 11200,
+        "Available": true
+      },
+      {
+        "Id": 11201,
+        "Available": true
+      },
+      {
+        "Id": 11202,
+        "Available": true
+      },
+      {
+        "Id": 11203,
+        "Available": false
+      },
+      {
+        "Id": 11204,
+        "Available": false
+      },
+      {
+        "Id": 11205,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 113,
+    "Ward": "Pediatrics",
+    "Type": "Surgery",
+    "Beds": [
+      {
+        "Id": 11300,
+        "Available": true
+      },
+      {
+        "Id": 11301,
+        "Available": true
+      },
+      {
+        "Id": 11302,
+        "Available": false
+      },
+      {
+        "Id": 11303,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 114,
+    "Ward": "Neurology",
+    "Type": "ICU",
+    "Beds": [
+      {
+        "Id": 11400,
+        "Available": true
+      },
+      {
+        "Id": 11401,
+        "Available": false
+      },
+      {
+        "Id": 11402,
+        "Available": false
+      },
+      {
+        "Id": 11403,
+        "Available": true
+      },
+      {
+        "Id": 11404,
+        "Available": false
+      },
+      {
+        "Id": 11405,
+        "Available": false
+      },
+      {
+        "Id": 11406,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 115,
+    "Ward": "Pediatrics",
+    "Type": "Delivery",
+    "Beds": [
+      {
+        "Id": 11500,
+        "Available": true
+      },
+      {
+        "Id": 11501,
+        "Available": true
+      },
+      {
+        "Id": 11502,
+        "Available": true
+      },
+      {
+        "Id": 11503,
+        "Available": true
+      },
+      {
+        "Id": 11504,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 116,
+    "Ward": "Oncology",
+    "Type": "ICU",
+    "Beds": [
+      {
+        "Id": 11600,
+        "Available": false
+      },
+      {
+        "Id": 11601,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 117,
+    "Ward": "Pediatrics",
+    "Type": "VIP",
+    "Beds": [
+      {
+        "Id": 11700,
+        "Available": true
+      },
+      {
+        "Id": 11701,
+        "Available": false
+      },
+      {
+        "Id": 11702,
+        "Available": false
+      },
+      {
+        "Id": 11703,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 118,
+    "Ward": "Neurology",
+    "Type": "VIP",
+    "Beds": [
+      {
+        "Id": 11800,
+        "Available": false
+      },
+      {
+        "Id": 11801,
+        "Available": false
+      },
+      {
+        "Id": 11802,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 119,
+    "Ward": "Cardiology",
+    "Type": "ICU",
+    "Beds": [
+      {
+        "Id": 11900,
+        "Available": false
+      },
+      {
+        "Id": 11901,
+        "Available": true
+      },
+      {
+        "Id": 11902,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 120,
+    "Ward": "Neurology",
+    "Type": "ICU",
+    "Beds": [
+      {
+        "Id": 12000,
+        "Available": true
+      },
+      {
+        "Id": 12001,
+        "Available": false
+      },
+      {
+        "Id": 12002,
+        "Available": true
+      },
+      {
+        "Id": 12003,
+        "Available": false
+      },
+      {
+        "Id": 12004,
+        "Available": false
+      },
+      {
+        "Id": 12005,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 121,
+    "Ward": "Oncology",
+    "Type": "VIP",
+    "Beds": [
+      {
+        "Id": 12100,
+        "Available": true
+      },
+      {
+        "Id": 12101,
+        "Available": true
+      },
+      {
+        "Id": 12102,
+        "Available": true
+      },
+      {
+        "Id": 12103,
+        "Available": false
+      },
+      {
+        "Id": 12104,
+        "Available": false
+      },
+      {
+        "Id": 12105,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 122,
+    "Ward": "Surgery",
+    "Type": "Surgery",
+    "Beds": [
+      {
+        "Id": 12200,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 123,
+    "Ward": "Pediatrics",
+    "Type": "Delivery",
+    "Beds": [
+      {
+        "Id": 12300,
+        "Available": false
+      },
+      {
+        "Id": 12301,
+        "Available": true
+      },
+      {
+        "Id": 12302,
+        "Available": true
+      },
+      {
+        "Id": 12303,
+        "Available": true
+      },
+      {
+        "Id": 12304,
+        "Available": true
+      },
+      {
+        "Id": 12305,
+        "Available": false
+      },
+      {
+        "Id": 12306,
+        "Available": false
+      },
+      {
+        "Id": 12307,
+        "Available": false
+      },
+      {
+        "Id": 12308,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 124,
+    "Ward": "Surgery",
+    "Type": "VIP",
+    "Beds": [
+      {
+        "Id": 12400,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 100,
+    "Ward": "Neurology",
+    "Type": "Surgery",
+    "Beds": [
+      {
+        "Id": 10000,
+        "Available": true
+      },
+      {
+        "Id": 10001,
+        "Available": false
+      },
+      {
+        "Id": 10002,
+        "Available": true
+      },
+      {
+        "Id": 10003,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 101,
+    "Ward": "Neurology",
+    "Type": "Delivery",
+    "Beds": [
+      {
+        "Id": 10100,
+        "Available": true
+      },
+      {
+        "Id": 10101,
+        "Available": false
+      },
+      {
+        "Id": 10102,
+        "Available": true
+      },
+      {
+        "Id": 10103,
+        "Available": true
+      },
+      {
+        "Id": 10104,
+        "Available": true
+      },
+      {
+        "Id": 10105,
+        "Available": true
+      },
+      {
+        "Id": 10106,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 102,
+    "Ward": "Neurology",
+    "Type": "Surgery",
+    "Beds": [
+      {
+        "Id": 10200,
+        "Available": false
+      },
+      {
+        "Id": 10201,
+        "Available": false
+      },
+      {
+        "Id": 10202,
+        "Available": false
+      },
+      {
+        "Id": 10203,
+        "Available": true
+      },
+      {
+        "Id": 10204,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 103,
+    "Ward": "Cardiology",
+    "Type": "ICU",
+    "Beds": [
+      {
+        "Id": 10300,
+        "Available": false
+      },
+      {
+        "Id": 10301,
+        "Available": true
+      },
+      {
+        "Id": 10302,
+        "Available": true
+      },
+      {
+        "Id": 10303,
+        "Available": true
+      },
+      {
+        "Id": 10304,
+        "Available": true
+      },
+      {
+        "Id": 10305,
+        "Available": true
+      },
+      {
+        "Id": 10306,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 104,
+    "Ward": "Cardiology",
+    "Type": "Surgery",
+    "Beds": [
+      {
+        "Id": 10400,
+        "Available": false
+      },
+      {
+        "Id": 10401,
+        "Available": true
+      },
+      {
+        "Id": 10402,
+        "Available": true
+      },
+      {
+        "Id": 10403,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 105,
+    "Ward": "Cardiology",
+    "Type": "VIP",
+    "Beds": [
+      {
+        "Id": 10500,
+        "Available": true
+      },
+      {
+        "Id": 10501,
+        "Available": true
+      },
+      {
+        "Id": 10502,
+        "Available": false
+      },
+      {
+        "Id": 10503,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 106,
+    "Ward": "Pediatrics",
+    "Type": "Normal",
+    "Beds": [
+      {
+        "Id": 10600,
+        "Available": false
+      },
+      {
+        "Id": 10601,
+        "Available": true
+      },
+      {
+        "Id": 10602,
+        "Available": false
+      },
+      {
+        "Id": 10603,
+        "Available": true
+      },
+      {
+        "Id": 10604,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 107,
+    "Ward": "Oncology",
+    "Type": "VIP",
+    "Beds": [
+      {
+        "Id": 10700,
+        "Available": true
+      },
+      {
+        "Id": 10701,
+        "Available": false
+      },
+      {
+        "Id": 10702,
+        "Available": false
+      },
+      {
+        "Id": 10703,
+        "Available": true
+      },
+      {
+        "Id": 10704,
+        "Available": false
+      },
+      {
+        "Id": 10705,
+        "Available": true
+      },
+      {
+        "Id": 10706,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 108,
+    "Ward": "Neurology",
+    "Type": "Delivery",
+    "Beds": [
+      {
+        "Id": 10800,
+        "Available": false
+      },
+      {
+        "Id": 10801,
+        "Available": false
+      },
+      {
+        "Id": 10802,
+        "Available": false
+      },
+      {
+        "Id": 10803,
+        "Available": false
+      },
+      {
+        "Id": 10804,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 109,
+    "Ward": "Surgery",
+    "Type": "Normal",
+    "Beds": [
+      {
+        "Id": 10900,
+        "Available": false
+      },
+      {
+        "Id": 10901,
+        "Available": true
+      },
+      {
+        "Id": 10902,
+        "Available": false
+      },
+      {
+        "Id": 10903,
+        "Available": true
+      },
+      {
+        "Id": 10904,
+        "Available": true
+      },
+      {
+        "Id": 10905,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 110,
+    "Ward": "Pediatrics",
+    "Type": "Delivery",
+    "Beds": [
+      {
+        "Id": 11000,
+        "Available": true
+      },
+      {
+        "Id": 11001,
+        "Available": false
+      },
+      {
+        "Id": 11002,
+        "Available": false
+      },
+      {
+        "Id": 11003,
+        "Available": true
+      },
+      {
+        "Id": 11004,
+        "Available": false
+      },
+      {
+        "Id": 11005,
+        "Available": true
+      },
+      {
+        "Id": 11006,
+        "Available": false
+      },
+      {
+        "Id": 11007,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 111,
+    "Ward": "Pediatrics",
+    "Type": "VIP",
+    "Beds": [
+      {
+        "Id": 11100,
+        "Available": true
+      },
+      {
+        "Id": 11101,
+        "Available": true
+      },
+      {
+        "Id": 11102,
+        "Available": true
+      },
+      {
+        "Id": 11103,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 112,
+    "Ward": "Neurology",
+    "Type": "VIP",
+    "Beds": [
+      {
+        "Id": 11200,
+        "Available": true
+      },
+      {
+        "Id": 11201,
+        "Available": true
+      },
+      {
+        "Id": 11202,
+        "Available": true
+      },
+      {
+        "Id": 11203,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 113,
+    "Ward": "Oncology",
+    "Type": "Surgery",
+    "Beds": [
+      {
+        "Id": 11300,
+        "Available": false
+      },
+      {
+        "Id": 11301,
+        "Available": true
+      },
+      {
+        "Id": 11302,
+        "Available": false
+      },
+      {
+        "Id": 11303,
+        "Available": true
+      },
+      {
+        "Id": 11304,
+        "Available": false
+      },
+      {
+        "Id": 11305,
+        "Available": false
+      },
+      {
+        "Id": 11306,
+        "Available": true
+      },
+      {
+        "Id": 11307,
+        "Available": false
+      },
+      {
+        "Id": 11308,
+        "Available": false
+      },
+      {
+        "Id": 11309,
+        "Available": true
+      },
+      {
+        "Id": 11310,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 114,
+    "Ward": "Oncology",
+    "Type": "Delivery",
+    "Beds": [
+      {
+        "Id": 11400,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 115,
+    "Ward": "Surgery",
+    "Type": "ICU",
+    "Beds": [
+      {
+        "Id": 11500,
+        "Available": true
+      },
+      {
+        "Id": 11501,
+        "Available": false
+      },
+      {
+        "Id": 11502,
+        "Available": true
+      },
+      {
+        "Id": 11503,
+        "Available": false
+      },
+      {
+        "Id": 11504,
+        "Available": false
+      },
+      {
+        "Id": 11505,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 116,
+    "Ward": "Cardiology",
+    "Type": "Normal",
+    "Beds": [
+      {
+        "Id": 11600,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 117,
+    "Ward": "Oncology",
+    "Type": "Surgery",
+    "Beds": [
+      {
+        "Id": 11700,
+        "Available": false
+      },
+      {
+        "Id": 11701,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 118,
+    "Ward": "Cardiology",
+    "Type": "Delivery",
+    "Beds": [
+      {
+        "Id": 11800,
+        "Available": false
+      },
+      {
+        "Id": 11801,
+        "Available": true
+      },
+      {
+        "Id": 11802,
+        "Available": true
+      },
+      {
+        "Id": 11803,
+        "Available": false
+      }
+    ]
+  },
+  {
+    "Id": 119,
+    "Ward": "Surgery",
+    "Type": "Surgery",
+    "Beds": [
+      {
+        "Id": 11900,
+        "Available": false
+      },
+      {
+        "Id": 11901,
+        "Available": false
+      },
+      {
+        "Id": 11902,
+        "Available": true
+      },
+      {
+        "Id": 11903,
+        "Available": false
+      },
+      {
+        "Id": 11904,
+        "Available": false
+      },
+      {
+        "Id": 11905,
+        "Available": false
+      },
+      {
+        "Id": 11906,
+        "Available": true
+      },
+      {
+        "Id": 11907,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 120,
+    "Ward": "Neurology",
+    "Type": "VIP",
+    "Beds": [
+      {
+        "Id": 12000,
+        "Available": true
+      },
+      {
+        "Id": 12001,
+        "Available": true
+      },
+      {
+        "Id": 12002,
+        "Available": true
+      },
+      {
+        "Id": 12003,
+        "Available": false
+      },
+      {
+        "Id": 12004,
+        "Available": true
+      },
+      {
+        "Id": 12005,
+        "Available": false
+      },
+      {
+        "Id": 12006,
+        "Available": false
+      },
+      {
+        "Id": 12007,
+        "Available": false
+      },
+      {
+        "Id": 12008,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 121,
+    "Ward": "Cardiology",
+    "Type": "Delivery",
+    "Beds": [
+      {
+        "Id": 12100,
+        "Available": false
+      },
+      {
+        "Id": 12101,
+        "Available": false
+      },
+      {
+        "Id": 12102,
+        "Available": true
+      },
+      {
+        "Id": 12103,
+        "Available": true
+      },
+      {
+        "Id": 12104,
+        "Available": false
+      },
+      {
+        "Id": 12105,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 122,
+    "Ward": "Cardiology",
+    "Type": "VIP",
+    "Beds": [
+      {
+        "Id": 12200,
+        "Available": false
+      },
+      {
+        "Id": 12201,
+        "Available": true
+      },
+      {
+        "Id": 12202,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 123,
+    "Ward": "Cardiology",
+    "Type": "Normal",
+    "Beds": [
+      {
+        "Id": 12300,
+        "Available": false
+      },
+      {
+        "Id": 12301,
+        "Available": true
+      },
+      {
+        "Id": 12302,
+        "Available": true
+      },
+      {
+        "Id": 12303,
+        "Available": false
+      },
+      {
+        "Id": 12304,
+        "Available": false
+      },
+      {
+        "Id": 12305,
+        "Available": true
+      },
+      {
+        "Id": 12306,
+        "Available": false
+      },
+      {
+        "Id": 12307,
+        "Available": true
+      }
+    ]
+  },
+  {
+    "Id": 124,
+    "Ward": "Pediatrics",
+    "Type": "Delivery",
+    "Beds": [
+      {
+        "Id": 12400,
+        "Available": true
+      },
+      {
+        "Id": 12401,
+        "Available": false
+      },
+      {
+        "Id": 12402,
+        "Available": true
+      },
+      {
+        "Id": 12403,
+        "Available": false
+      }
+    ]
+  }
+]

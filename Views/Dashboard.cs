@@ -102,6 +102,9 @@ namespace Nova_Medical_Center.Views
             else
             {
                 doctorBar.Value = Data.Data.employees["Doctors"].Count;
+                nurseBar.Value = Data.Data.employees["Nurses"].Count;
+                receptionBar.Value = Data.Data.employees["Front Desks"].Count;
+
             }
             if (Data.Data.rooms == null)
                 await DataLoader.LoadRooms();

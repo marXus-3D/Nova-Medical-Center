@@ -1,0 +1,896 @@
+﻿[
+  {
+    "Id": null,
+    "First_Name": "Ashley",
+    "Last_Name": "Miller",
+    "MedicalHistory": [
+      {
+        "Name": "Asthma",
+        "DiagnosisDate": "2021-04-09T20:36:12.4574864+03:00",
+        "Medications": [
+          "Medication 3"
+        ]
+      },
+      {
+        "Name": "Diabetes",
+        "DiagnosisDate": "2019-04-09T20:36:12.4574891+03:00",
+        "Medications": [
+          "Medication 1",
+          "Medication 1",
+          "Medication 3"
+        ]
+      },
+      {
+        "Name": "Diabetes",
+        "DiagnosisDate": "2021-04-09T20:36:12.4574908+03:00",
+        "Medications": [
+          "Medication 2",
+          "Medication 1"
+        ]
+      },
+      {
+        "Name": "Diabetes",
+        "DiagnosisDate": "2015-04-09T20:36:12.4574924+03:00",
+        "Medications": [
+          "Medication 3"
+        ]
+      },
+      {
+        "Name": "Anxiety",
+        "DiagnosisDate": "2009-04-09T20:36:12.4574941+03:00",
+        "Medications": [
+          "Medication 3",
+          "Medication 1"
+        ]
+      },
+      {
+        "Name": "Anxiety",
+        "DiagnosisDate": "2014-04-09T20:36:12.4574969+03:00",
+        "Medications": [
+          "Medication 2",
+          "Medication 2",
+          "Medication 2"
+        ]
+      },
+      {
+        "Name": "Anxiety",
+        "DiagnosisDate": "2016-04-09T20:36:12.4574987+03:00",
+        "Medications": [
+          "Medication 1",
+          "Medication 2",
+          "Medication 1"
+        ]
+      },
+      {
+        "Name": "Migraine",
+        "DiagnosisDate": "2007-04-09T20:36:12.4575003+03:00",
+        "Medications": [
+          "Medication 1"
+        ]
+      },
+      {
+        "Name": "Asthma",
+        "DiagnosisDate": "2006-04-09T20:36:12.457502+03:00",
+        "Medications": [
+          "Medication 3",
+          "Medication 3"
+        ]
+      },
+      {
+        "Name": "Diabetes",
+        "DiagnosisDate": "2018-04-09T20:36:12.4575047+03:00",
+        "Medications": [
+          "Medication 2",
+          "Medication 2",
+          "Medication 1"
+        ]
+      }
+    ],
+    "AdmissionDate": "2018-05-20T00:00:00",
+    "UrgencyLevel": -1
+  },
+  {
+    "Id": null,
+    "First_Name": "William",
+    "Last_Name": "Johnson",
+    "MedicalHistory": [
+      {
+        "Name": "Diabetes",
+        "DiagnosisDate": "2015-04-09T20:36:12.4573755+03:00",
+        "Medications": [
+          "Medication 2",
+          "Medication 1",
+          "Medication 3"
+        ]
+      },
+      {
+        "Name": "Anxiety",
+        "DiagnosisDate": "2011-04-09T20:36:12.4573789+03:00",
+        "Medications": [
+          "Medication 2",
+          "Medication 3",
+          "Medication 2"
+        ]
+      },
+      {
+        "Name": "Diabetes",
+        "DiagnosisDate": "2020-04-09T20:36:12.4574122+03:00",
+        "Medications": [
+          "Medication 1",
+          "Medication 3",
+          "Medication 1"
+        ]
+      },
+      {
+        "Name": "Diabetes",
+        "DiagnosisDate": "2019-04-09T20:36:12.457416+03:00",
+        "Medications": [
+          "Medication 3",
+          "Medication 1"
+        ]
+      },
+      {
+        "Name": "Migraine",
+        "DiagnosisDate": "2006-04-09T20:36:12.457419+03:00",
+        "Medications": [
+          "Medication 3",
+          "Medication 1"
+        ]
+      },
+      {
+        "Name": "Hypertension",
+        "DiagnosisDate": "2012-04-09T20:36:12.4574214+03:00",
+        "Medications": [
+          "Medication 2"
+        ]
+      },
+      {
+        "Name": "Diabetes",
+        "DiagnosisDate": "2006-04-09T20:36:12.4574232+03:00",
+        "Medications": [
+          "Medication 3",
+          "Medication 1"
+        ]
+      },
+      {
+        "Name": "Diabetes",
+        "DiagnosisDate": "2013-04-09T20:36:12.4574253+03:00",
+        "Medications": [
+          "Medication 1"
+        ]
+      },
+      {
+        "Name": "Migraine",
+        "DiagnosisDate": "2018-04-09T20:36:12.4574268+03:00",
+        "Medications": [
+          "Medication 1",
+          "Medication 1"
+        ]
+      },
+      {
+        "Name": "Anxiety",
+        "DiagnosisDate": "2015-04-09T20:36:12.4574288+03:00",
+        "Medications": [
+          "Medication 1",
+          "Medication 3",
+          "Medication 3"
+        ]
+      }
+    ],
+    "AdmissionDate": "2016-05-02T00:00:00",
+    "UrgencyLevel": 1
+  },
+  {
+    "Id": null,
+    "First_Name": "Mike",
+    "Last_Name": "Rodriguez",
+    "MedicalHistory": [
+      {
+        "Name": "Migraine",
+        "DiagnosisDate": "2009-04-09T20:36:12.457331+03:00",
+        "Medications": [
+          "Medication 3",
+          "Medication 2"
+        ]
+      },
+      {
+        "Name": "Anxiety",
+        "DiagnosisDate": "2012-04-09T20:36:12.457333+03:00",
+        "Medications": [
+          "Medication 2",
+          "Medication 2",
+          "Medication 3"
+        ]
+      },
+      {
+        "Name": "Migraine",
+        "DiagnosisDate": "2023-04-09T20:36:12.4573348+03:00",
+        "Medications": [
+          "Medication 1"
+        ]
+      },
+      {
+        "Name": "Diabetes",
+        "DiagnosisDate": "2011-04-09T20:36:12.4573373+03:00",
+        "Medications": [
+          "Medication 1"
+        ]
+      },
+      {
+        "Name": "Asthma",
+        "DiagnosisDate": "2006-04-09T20:36:12.4573391+03:00",
+        "Medications": [
+          "Medication 2"
+        ]
+      },
+      {
+        "Name": "Diabetes",
+        "DiagnosisDate": "2009-04-09T20:36:12.4573413+03:00",
+        "Medications": [
+          "Medication 3"
+        ]
+      },
+      {
+        "Name": "Diabetes",
+        "DiagnosisDate": "2023-04-09T20:36:12.4573429+03:00",
+        "Medications": [
+          "Medication 2"
+        ]
+      },
+      {
+        "Name": "Diabetes",
+        "DiagnosisDate": "2020-04-09T20:36:12.4573453+03:00",
+        "Medications": [
+          "Medication 1",
+          "Medication 2"
+        ]
+      },
+      {
+        "Name": "Migraine",
+        "DiagnosisDate": "2011-04-09T20:36:12.4573469+03:00",
+        "Medications": [
+          "Medication 3"
+        ]
+      },
+      {
+        "Name": "Anxiety",
+        "DiagnosisDate": "2007-04-09T20:36:12.4573491+03:00",
+        "Medications": [
+          "Medication 3"
+        ]
+      }
+    ],
+    "AdmissionDate": "2018-05-20T00:00:00",
+    "UrgencyLevel": -1
+  },
+  {
+    "Id": null,
+    "First_Name": "Mike",
+    "Last_Name": "Wilson",
+    "MedicalHistory": [
+      {
+        "Name": "Diabetes",
+        "DiagnosisDate": "2014-04-09T20:36:12.4575068+03:00",
+        "Medications": [
+          "Medication 2",
+          "Medication 2",
+          "Medication 1"
+        ]
+      },
+      {
+        "Name": "Diabetes",
+        "DiagnosisDate": "2021-04-09T20:36:12.4575088+03:00",
+        "Medications": [
+          "Medication 3"
+        ]
+      },
+      {
+        "Name": "Diabetes",
+        "DiagnosisDate": "2011-04-09T20:36:12.4575106+03:00",
+        "Medications": [
+          "Medication 1",
+          "Medication 3"
+        ]
+      },
+      {
+        "Name": "Migraine",
+        "DiagnosisDate": "2010-04-09T20:36:12.4575131+03:00",
+        "Medications": [
+          "Medication 1"
+        ]
+      },
+      {
+        "Name": "Migraine",
+        "DiagnosisDate": "2014-04-09T20:36:12.457515+03:00",
+        "Medications": [
+          "Medication 3",
+          "Medication 3",
+          "Medication 1"
+        ]
+      },
+      {
+        "Name": "Diabetes",
+        "DiagnosisDate": "2007-04-09T20:36:12.4575171+03:00",
+        "Medications": [
+          "Medication 3",
+          "Medication 3",
+          "Medication 2"
+        ]
+      },
+      {
+        "Name": "Migraine",
+        "DiagnosisDate": "2009-04-09T20:36:12.4575187+03:00",
+        "Medications": [
+          "Medication 2"
+        ]
+      },
+      {
+        "Name": "Anxiety",
+        "DiagnosisDate": "2018-04-09T20:36:12.457521+03:00",
+        "Medications": [
+          "Medication 3"
+        ]
+      },
+      {
+        "Name": "Anxiety",
+        "DiagnosisDate": "2018-04-09T20:36:12.4575228+03:00",
+        "Medications": [
+          "Medication 1",
+          "Medication 1",
+          "Medication 3"
+        ]
+      },
+      {
+        "Name": "Asthma",
+        "DiagnosisDate": "2016-04-09T20:36:12.4575481+03:00",
+        "Medications": [
+          "Medication 2",
+          "Medication 1"
+        ]
+      }
+    ],
+    "AdmissionDate": "2005-04-17T00:00:00",
+    "UrgencyLevel": 1
+  },
+  {
+    "Id": null,
+    "First_Name": "Mike",
+    "Last_Name": "Miller",
+    "MedicalHistory": [
+      {
+        "Name": "Diabetes",
+        "DiagnosisDate": "2015-04-09T20:36:12.4573755+03:00",
+        "Medications": [
+          "Medication 2",
+          "Medication 1",
+          "Medication 3"
+        ]
+      },
+      {
+        "Name": "Anxiety",
+        "DiagnosisDate": "2011-04-09T20:36:12.4573789+03:00",
+        "Medications": [
+          "Medication 2",
+          "Medication 3",
+          "Medication 2"
+        ]
+      },
+      {
+        "Name": "Diabetes",
+        "DiagnosisDate": "2020-04-09T20:36:12.4574122+03:00",
+        "Medications": [
+          "Medication 1",
+          "Medication 3",
+          "Medication 1"
+        ]
+      },
+      {
+        "Name": "Diabetes",
+        "DiagnosisDate": "2019-04-09T20:36:12.457416+03:00",
+        "Medications": [
+          "Medication 3",
+          "Medication 1"
+        ]
+      },
+      {
+        "Name": "Migraine",
+        "DiagnosisDate": "2006-04-09T20:36:12.457419+03:00",
+        "Medications": [
+          "Medication 3",
+          "Medication 1"
+        ]
+      },
+      {
+        "Name": "Hypertension",
+        "DiagnosisDate": "2012-04-09T20:36:12.4574214+03:00",
+        "Medications": [
+          "Medication 2"
+        ]
+      },
+      {
+        "Name": "Diabetes",
+        "DiagnosisDate": "2006-04-09T20:36:12.4574232+03:00",
+        "Medications": [
+          "Medication 3",
+          "Medication 1"
+        ]
+      },
+      {
+        "Name": "Diabetes",
+        "DiagnosisDate": "2013-04-09T20:36:12.4574253+03:00",
+        "Medications": [
+          "Medication 1"
+        ]
+      },
+      {
+        "Name": "Migraine",
+        "DiagnosisDate": "2018-04-09T20:36:12.4574268+03:00",
+        "Medications": [
+          "Medication 1",
+          "Medication 1"
+        ]
+      },
+      {
+        "Name": "Anxiety",
+        "DiagnosisDate": "2015-04-09T20:36:12.4574288+03:00",
+        "Medications": [
+          "Medication 1",
+          "Medication 3",
+          "Medication 3"
+        ]
+      }
+    ],
+    "AdmissionDate": "2021-12-08T00:00:00",
+    "UrgencyLevel": 0
+  },
+  {
+    "Id": null,
+    "First_Name": "Jane",
+    "Last_Name": "Miller",
+    "MedicalHistory": [
+      {
+        "Name": "Diabetes",
+        "DiagnosisDate": "2020-04-09T20:36:12.4572677+03:00",
+        "Medications": [
+          "Medication 1",
+          "Medication 1",
+          "Medication 1"
+        ]
+      },
+      {
+        "Name": "Hypertension",
+        "DiagnosisDate": "2012-04-09T20:36:12.4572732+03:00",
+        "Medications": [
+          "Medication 3"
+        ]
+      },
+      {
+        "Name": "Hypertension",
+        "DiagnosisDate": "2020-04-09T20:36:12.4572751+03:00",
+        "Medications": [
+          "Medication 3",
+          "Medication 2",
+          "Medication 2"
+        ]
+      },
+      {
+        "Name": "Asthma",
+        "DiagnosisDate": "2017-04-09T20:36:12.457278+03:00",
+        "Medications": [
+          "Medication 1"
+        ]
+      },
+      {
+        "Name": "Migraine",
+        "DiagnosisDate": "2022-04-09T20:36:12.4572803+03:00",
+        "Medications": [
+          "Medication 2",
+          "Medication 2",
+          "Medication 1"
+        ]
+      },
+      {
+        "Name": "Hypertension",
+        "DiagnosisDate": "2011-04-09T20:36:12.4572828+03:00",
+        "Medications": [
+          "Medication 3",
+          "Medication 1",
+          "Medication 2"
+        ]
+      },
+      {
+        "Name": "Anxiety",
+        "DiagnosisDate": "2015-04-09T20:36:12.4572847+03:00",
+        "Medications": [
+          "Medication 3",
+          "Medication 2"
+        ]
+      },
+      {
+        "Name": "Anxiety",
+        "DiagnosisDate": "2008-04-09T20:36:12.4572878+03:00",
+        "Medications": [
+          "Medication 1"
+        ]
+      },
+      {
+        "Name": "Asthma",
+        "DiagnosisDate": "2023-04-09T20:36:12.45729+03:00",
+        "Medications": [
+          "Medication 2",
+          "Medication 1"
+        ]
+      },
+      {
+        "Name": "Migraine",
+        "DiagnosisDate": "2014-04-09T20:36:12.4572926+03:00",
+        "Medications": [
+          "Medication 3",
+          "Medication 1",
+          "Medication 3"
+        ]
+      }
+    ],
+    "AdmissionDate": "2017-11-07T00:00:00",
+    "UrgencyLevel": 0
+  },
+  {
+    "Id": null,
+    "First_Name": "Matthew",
+    "Last_Name": "Garcia",
+    "MedicalHistory": [
+      {
+        "Name": "Anxiety",
+        "DiagnosisDate": "2023-04-09T20:36:12.4547706+03:00",
+        "Medications": [
+          "Medication 1"
+        ]
+      },
+      {
+        "Name": "Anxiety",
+        "DiagnosisDate": "2011-04-09T20:36:12.4572048+03:00",
+        "Medications": [
+          "Medication 3",
+          "Medication 2"
+        ]
+      },
+      {
+        "Name": "Hypertension",
+        "DiagnosisDate": "2019-04-09T20:36:12.4572159+03:00",
+        "Medications": [
+          "Medication 1",
+          "Medication 3"
+        ]
+      },
+      {
+        "Name": "Asthma",
+        "DiagnosisDate": "2010-04-09T20:36:12.4572178+03:00",
+        "Medications": [
+          "Medication 2",
+          "Medication 1"
+        ]
+      },
+      {
+        "Name": "Diabetes",
+        "DiagnosisDate": "2007-04-09T20:36:12.4572195+03:00",
+        "Medications": [
+          "Medication 2",
+          "Medication 3"
+        ]
+      },
+      {
+        "Name": "Diabetes",
+        "DiagnosisDate": "2010-04-09T20:36:12.4572542+03:00",
+        "Medications": [
+          "Medication 2",
+          "Medication 2"
+        ]
+      },
+      {
+        "Name": "Hypertension",
+        "DiagnosisDate": "2014-04-09T20:36:12.4572564+03:00",
+        "Medications": [
+          "Medication 2",
+          "Medication 1"
+        ]
+      },
+      {
+        "Name": "Asthma",
+        "DiagnosisDate": "2015-04-09T20:36:12.4572589+03:00",
+        "Medications": [
+          "Medication 1",
+          "Medication 1",
+          "Medication 3"
+        ]
+      },
+      {
+        "Name": "Anxiety",
+        "DiagnosisDate": "2015-04-09T20:36:12.4572611+03:00",
+        "Medications": [
+          "Medication 2",
+          "Medication 2",
+          "Medication 3"
+        ]
+      },
+      {
+        "Name": "Migraine",
+        "DiagnosisDate": "2010-04-09T20:36:12.4572643+03:00",
+        "Medications": [
+          "Medication 1",
+          "Medication 3"
+        ]
+      }
+    ],
+    "AdmissionDate": "2017-11-07T00:00:00",
+    "UrgencyLevel": -1
+  },
+  {
+    "Id": null,
+    "First_Name": "John",
+    "Last_Name": "Williams",
+    "MedicalHistory": [
+      {
+        "Name": "Asthma",
+        "DiagnosisDate": "2021-04-09T20:36:12.4574864+03:00",
+        "Medications": [
+          "Medication 3"
+        ]
+      },
+      {
+        "Name": "Diabetes",
+        "DiagnosisDate": "2019-04-09T20:36:12.4574891+03:00",
+        "Medications": [
+          "Medication 1",
+          "Medication 1",
+          "Medication 3"
+        ]
+      },
+      {
+        "Name": "Diabetes",
+        "DiagnosisDate": "2021-04-09T20:36:12.4574908+03:00",
+        "Medications": [
+          "Medication 2",
+          "Medication 1"
+        ]
+      },
+      {
+        "Name": "Diabetes",
+        "DiagnosisDate": "2015-04-09T20:36:12.4574924+03:00",
+        "Medications": [
+          "Medication 3"
+        ]
+      },
+      {
+        "Name": "Anxiety",
+        "DiagnosisDate": "2009-04-09T20:36:12.4574941+03:00",
+        "Medications": [
+          "Medication 3",
+          "Medication 1"
+        ]
+      },
+      {
+        "Name": "Anxiety",
+        "DiagnosisDate": "2014-04-09T20:36:12.4574969+03:00",
+        "Medications": [
+          "Medication 2",
+          "Medication 2",
+          "Medication 2"
+        ]
+      },
+      {
+        "Name": "Anxiety",
+        "DiagnosisDate": "2016-04-09T20:36:12.4574987+03:00",
+        "Medications": [
+          "Medication 1",
+          "Medication 2",
+          "Medication 1"
+        ]
+      },
+      {
+        "Name": "Migraine",
+        "DiagnosisDate": "2007-04-09T20:36:12.4575003+03:00",
+        "Medications": [
+          "Medication 1"
+        ]
+      },
+      {
+        "Name": "Asthma",
+        "DiagnosisDate": "2006-04-09T20:36:12.457502+03:00",
+        "Medications": [
+          "Medication 3",
+          "Medication 3"
+        ]
+      },
+      {
+        "Name": "Diabetes",
+        "DiagnosisDate": "2018-04-09T20:36:12.4575047+03:00",
+        "Medications": [
+          "Medication 2",
+          "Medication 2",
+          "Medication 1"
+        ]
+      }
+    ],
+    "AdmissionDate": "2018-05-20T00:00:00",
+    "UrgencyLevel": 0
+  },
+  {
+    "Id": null,
+    "First_Name": "Jennifer",
+    "Last_Name": "Johnson",
+    "MedicalHistory": [
+      {
+        "Name": "Hypertension",
+        "DiagnosisDate": "2023-04-09T20:36:12.4572948+03:00",
+        "Medications": [
+          "Medication 3",
+          "Medication 2"
+        ]
+      },
+      {
+        "Name": "Diabetes",
+        "DiagnosisDate": "2008-04-09T20:36:12.4572976+03:00",
+        "Medications": [
+          "Medication 2"
+        ]
+      },
+      {
+        "Name": "Migraine",
+        "DiagnosisDate": "2012-04-09T20:36:12.4573019+03:00",
+        "Medications": [
+          "Medication 2",
+          "Medication 2"
+        ]
+      },
+      {
+        "Name": "Asthma",
+        "DiagnosisDate": "2017-04-09T20:36:12.4573041+03:00",
+        "Medications": [
+          "Medication 3"
+        ]
+      },
+      {
+        "Name": "Diabetes",
+        "DiagnosisDate": "2017-04-09T20:36:12.4573061+03:00",
+        "Medications": [
+          "Medication 2",
+          "Medication 2"
+        ]
+      },
+      {
+        "Name": "Hypertension",
+        "DiagnosisDate": "2020-04-09T20:36:12.4573096+03:00",
+        "Medications": [
+          "Medication 3",
+          "Medication 1",
+          "Medication 2"
+        ]
+      },
+      {
+        "Name": "Diabetes",
+        "DiagnosisDate": "2012-04-09T20:36:12.4573147+03:00",
+        "Medications": [
+          "Medication 2",
+          "Medication 3"
+        ]
+      },
+      {
+        "Name": "Anxiety",
+        "DiagnosisDate": "2012-04-09T20:36:12.4573168+03:00",
+        "Medications": [
+          "Medication 1",
+          "Medication 1"
+        ]
+      },
+      {
+        "Name": "Diabetes",
+        "DiagnosisDate": "2013-04-09T20:36:12.4573188+03:00",
+        "Medications": [
+          "Medication 3"
+        ]
+      },
+      {
+        "Name": "Asthma",
+        "DiagnosisDate": "2023-04-09T20:36:12.457329+03:00",
+        "Medications": [
+          "Medication 3"
+        ]
+      }
+    ],
+    "AdmissionDate": "2017-11-07T00:00:00",
+    "UrgencyLevel": 1
+  },
+  {
+    "Id": "PAT-189-10000",
+    "First_Name": "Sarah",
+    "Last_Name": "Brown",
+    "Gender": "M",
+    "DoB": "2000-01-09",
+    "MedicalHistory": [
+      {
+        "Name": "Diabetes",
+        "DiagnosisDate": "2015-04-09T20:36:12.4573755+03:00",
+        "Medications": [
+          "Medication 2",
+          "Medication 1",
+          "Medication 3"
+        ]
+      },
+      {
+        "Name": "Anxiety",
+        "DiagnosisDate": "2011-04-09T20:36:12.4573789+03:00",
+        "Medications": [
+          "Medication 2",
+          "Medication 3",
+          "Medication 2"
+        ]
+      },
+      {
+        "Name": "Diabetes",
+        "DiagnosisDate": "2020-04-09T20:36:12.4574122+03:00",
+        "Medications": [
+          "Medication 1",
+          "Medication 3",
+          "Medication 1"
+        ]
+      },
+      {
+        "Name": "Diabetes",
+        "DiagnosisDate": "2019-04-09T20:36:12.457416+03:00",
+        "Medications": [
+          "Medication 3",
+          "Medication 1"
+        ]
+      },
+      {
+        "Name": "Migraine",
+        "DiagnosisDate": "2006-04-09T20:36:12.457419+03:00",
+        "Medications": [
+          "Medication 3",
+          "Medication 1"
+        ]
+      },
+      {
+        "Name": "Hypertension",
+        "DiagnosisDate": "2012-04-09T20:36:12.4574214+03:00",
+        "Medications": [
+          "Medication 2"
+        ]
+      },
+      {
+        "Name": "Diabetes",
+        "DiagnosisDate": "2006-04-09T20:36:12.4574232+03:00",
+        "Medications": [
+          "Medication 3",
+          "Medication 1"
+        ]
+      },
+      {
+        "Name": "Diabetes",
+        "DiagnosisDate": "2013-04-09T20:36:12.4574253+03:00",
+        "Medications": [
+          "Medication 1"
+        ]
+      },
+      {
+        "Name": "Migraine",
+        "DiagnosisDate": "2018-04-09T20:36:12.4574268+03:00",
+        "Medications": [
+          "Medication 1",
+          "Medication 1"
+        ]
+      },
+      {
+        "Name": "Anxiety",
+        "DiagnosisDate": "2015-04-09T20:36:12.4574288+03:00",
+        "Medications": [
+          "Medication 1",
+          "Medication 3",
+          "Medication 3"
+        ]
+      }
+    ],
+    "AdmissionDate": "2021-12-08T00:00:00",
+    "UrgencyLevel": 0
+  }
+]
