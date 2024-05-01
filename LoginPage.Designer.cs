@@ -135,6 +135,7 @@
             this.passwordField.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.passwordField.Hint = "Enter Password";
             this.passwordField.LeadingIcon = global::Nova_Medical_Center.Properties.Resources.icons8_password_100;
+            this.passwordField.LeaveOnEnterKey = true;
             this.passwordField.Location = new System.Drawing.Point(95, 225);
             this.passwordField.MaxLength = 50;
             this.passwordField.MouseState = MaterialSkin.MouseState.OUT;
