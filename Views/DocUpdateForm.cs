@@ -29,23 +29,8 @@ namespace Nova_Medical_Center.Views
         {
             DataGridViewRow selectedRow = doctorGridView.SelectedRows[0];
             int selectedRowIndex = doctorGridView.Rows.IndexOf(selectedRow);
-            var emp = new Employee() 
-            { 
-                Id = selectedRow.Cells[0].Value.ToString(),
-                First_Name = selectedRow.Cells[1].Value.ToString(),
-                Last_Name = selectedRow.Cells[2].Value.ToString(),
-                DoB = DateTime.Parse(selectedRow.Cells[3].Value.ToString()),
-                Gender = selectedRow.Cells[4].Value.ToString()[0],
-                Address = selectedRow.Cells[5].Value.ToString(),
-                City = selectedRow.Cells[6].Value.ToString(),
-                PhoneNumber = selectedRow.Cells[7].Value.ToString(),
-                HiredDate = DateTime.Parse(selectedRow.Cells[8].Value.ToString()),
-                Department = selectedRow.Cells[9].Value.ToString(),
-                Position = selectedRow.Cells[10].Value.ToString(),
-                Password = selectedRow.Cells[11].Value.ToString(),
-            };
-            MessageBox.Show(emp.Position + "s");
-            CustomDialog.ShowDialog(Data.Data.employees[emp.Position + "s"][selectedRowIndex], ref selectedRowIndex);
+
+            CustomDialog.ShowDialog(Data.Data.employees["Doctors"][selectedRowIndex], ref selectedRowIndex);
             updateBtn.Enabled = false;
             resetButton.Enabled = false;
         }
