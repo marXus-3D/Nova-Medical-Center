@@ -9,12 +9,13 @@ namespace Nova_Medical_Center
 {
     public partial class LoginPage : MaterialForm
     {
-        
+        public static Action LogOut;
         private bool loaded = false;
         readonly MaterialSkin.MaterialSkinManager materialSkinManager;
         public LoginPage()
         {
             Scripts.Events.OnEmployeeLoad += (val) => loaded = val;
+            LogOut += Logout;
             InitializeComponent();
             materialSkinManager = MaterialSkin.MaterialSkinManager.Instance;
             materialSkinManager.EnforceBackcolorOnAllComponents = true;
@@ -22,6 +23,11 @@ namespace Nova_Medical_Center
             materialSkinManager.Theme = MaterialSkin.MaterialSkinManager.Themes.LIGHT;
             materialSkinManager.ColorScheme = new MaterialSkin.ColorScheme(MaterialSkin.Primary.Grey900, MaterialSkin.Primary.Grey900, MaterialSkin.Primary.Grey900, MaterialSkin.Accent.Amber400, MaterialSkin.TextShade.WHITE);
 
+        }
+
+        private void Logout()
+        {
+            this.Show();
         }
 
         private void loginBtn_Click(object sender, EventArgs e)

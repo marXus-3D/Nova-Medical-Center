@@ -39,18 +39,6 @@ namespace Nova_Medical_Center.Models
             }
         }
 
-        static bool IsLikelyHashed(string input)
-        {
-            MessageBox.Show(input + '\t' + $"\n{input.Length}");
-            if (input.Length != 44)
-                return false;
-
-            if (!Regex.IsMatch(input, @"^[0-9a-fA-F]+$"))
-                return false;
-
-            return true;
-        }
-
         public static void SerializeEmployees(Dictionary<string, List<Employee>> employees)
         {
             string jsonString = JsonConvert.SerializeObject(employees, Newtonsoft.Json.Formatting.Indented);
