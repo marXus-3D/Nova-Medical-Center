@@ -67,6 +67,7 @@ namespace Nova_Medical_Center.Views
                 Generator.GenerateEmployeeID(ref emp);
                 Data.Data.employees["Doctors"].Add(emp);
 
+                Scripts.Events.OnChange?.Invoke();
                 MessageBox.Show("Task Successfull");
             }
         }

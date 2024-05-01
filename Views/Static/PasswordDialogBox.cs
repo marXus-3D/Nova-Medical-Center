@@ -54,13 +54,19 @@ namespace Nova_Medical_Center.Views.Static
 
         private void confirmField_TextChanged(object sender, EventArgs e)
         {
-            if(!(confirmField.Text == "") && !(passwordField.Text == "") && !(confirmField.Text.Contains(" ") || passwordField.Text.Contains(" "))) 
+            if(!(confirmField.Texts == "") && !(passwordField.Texts == "") && !(confirmField.Texts.Contains(" ") || passwordField.Texts.Contains(" "))) 
                 editBtn.Enabled = true;
         }
 
         private void passField_Click(object sender, EventArgs e)
         {
             ((RJTextBox)sender).Texts = "";
+        }
+
+        private void confirmField__TextChanged(object sender, EventArgs e)
+        {
+            if (!(confirmField.Texts == "") && !(passwordField.Texts == "") && !(confirmField.Texts.Contains(" ") || passwordField.Texts.Contains(" ")))
+                editBtn.Enabled = true;
         }
     }
 }

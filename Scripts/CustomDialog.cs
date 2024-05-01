@@ -17,6 +17,7 @@ namespace Nova_Medical_Center.Scripts
         {
            new DialogBox(ref employee).ShowDialog();
            Data.Data.employees[employee.Position + "s"][i] = employee;
+           Scripts.Events.OnChange?.Invoke();
            return value;
         }
 
@@ -25,6 +26,7 @@ namespace Nova_Medical_Center.Scripts
             MessageBox.Show(employee.First_Name + " " + employee.Last_Name + " " + employee.Position);
             new PasswordDialogBox(ref employee).ShowDialog();
             Data.Data.employees[employee.Position  + "s"][i] = employee;
+            Scripts.Events.OnChange?.Invoke();
             return value;
         }
         public static void ShowQuestionDialog(ref int i)

@@ -75,6 +75,7 @@
             this.confirmField.TabIndex = 25;
             this.confirmField.Texts = "Password";
             this.confirmField.UnderlinedStyle = true;
+            this.confirmField._TextChanged += new System.EventHandler(this.confirmField__TextChanged);
             this.confirmField.Click += new System.EventHandler(this.passField_Click);
             // 
             // label1
@@ -115,6 +116,7 @@
             this.passwordField.TabIndex = 27;
             this.passwordField.Texts = "Password";
             this.passwordField.UnderlinedStyle = true;
+            this.passwordField.Click += new System.EventHandler(this.passField_Click);
             // 
             // PasswordDialogBox
             // 
