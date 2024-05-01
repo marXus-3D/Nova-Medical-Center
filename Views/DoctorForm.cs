@@ -1,5 +1,6 @@
 ﻿using FontAwesome.Sharp;
 using Nova_Medical_Center.Models;
+using Nova_Medical_Center.Views.Static;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,7 +21,10 @@ namespace Nova_Medical_Center.Views
         {
             InitializeComponent();
             current = homeBtn;
-            OpenChildForm(new DocHomeForm());
+            if (Data.Data.currentUser.Position.Equals("Front Desk") || Data.Data.currentUser.Position.Equals("Nurse"))
+                OpenChildForm(new SecurityForm());
+            else
+                OpenChildForm(new DocHomeForm());
         }
 
         private void DoctorForm_Load(object sender, EventArgs e)
@@ -31,25 +35,37 @@ namespace Nova_Medical_Center.Views
         private void homeBtn_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
-            OpenChildForm(new DocHomeForm());
+            if (Data.Data.currentUser.Position.Equals("Front Desk") || Data.Data.currentUser.Position.Equals("Nurse"))
+                OpenChildForm(new SecurityForm());
+            else
+                OpenChildForm(new DocHomeForm());
         }
 
         private void updateBtn_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
-            OpenChildForm(new DocUpdateForm());
+            if (Data.Data.currentUser.Position.Equals("Front Desk") || Data.Data.currentUser.Position.Equals("Nurse"))
+                OpenChildForm(new SecurityForm());
+            else
+                OpenChildForm(new DocUpdateForm());
         }
 
         private void addBtn_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
-            OpenChildForm(new DocAddForm());
+            if (Data.Data.currentUser.Position.Equals("Front Desk") || Data.Data.currentUser.Position.Equals("Nurse"))
+                OpenChildForm(new SecurityForm());
+            else
+                OpenChildForm(new DocAddForm());
         }
 
         private void deleteBtn_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
-            OpenChildForm(new DocDeleteForm());
+            if (Data.Data.currentUser.Position.Equals("Front Desk") || Data.Data.currentUser.Position.Equals("Nurse"))
+                OpenChildForm(new SecurityForm());
+            else
+                OpenChildForm(new DocDeleteForm());
         }
 
         private void ActivateButton(object sender)
