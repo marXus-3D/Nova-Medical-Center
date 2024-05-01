@@ -42,6 +42,7 @@ namespace Nova_Medical_Center.Views
                 MedicalHistory = medicalConditions,
             });
             CentralControler.AdmitPatient(Data.Data.patients.Count-1);
+            Scripts.Events.OnChange?.Invoke();
         }
 
         private void historyBtn_Click(object sender, EventArgs e)

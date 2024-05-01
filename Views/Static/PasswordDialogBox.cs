@@ -32,17 +32,16 @@ namespace Nova_Medical_Center.Views.Static
                     FlipForm();
                     return;
                 }
-                if (employee.Password.Equals(Employee.HashPassword(Employee.HashPassword(passwordField.Text)))) 
+                if (employee.Password.Equals(Employee.HashPassword(passwordField.Text))) 
                 {
                     MessageBox.Show("This Password is already in use");
                     FlipForm();
                     return;
                 }
                 
-            employee.Password = passwordField.Text;
-            MessageBox.Show("Closing");
+            employee.Password = passwordField.Texts;
             CustomDialog.OnEmployeeUpdate?.Invoke(true);
-            MessageBox.Show("Closing");
+            MessageBox.Show("Successfully reset password now Closing");
             this.Close();
         }
 

@@ -12,7 +12,7 @@ namespace Nova_Medical_Center.Scripts
     internal class CustomDialog
     {
         private static bool value;
-        public static Action<bool> OnEmployeeUpdate = (val) => value = val;
+        public static Action<bool> OnEmployeeUpdate = (val) => { value = val; Scripts.Events.OnChange?.Invoke(); };
         public static bool ShowDialog(Employee employee,ref int i) 
         {
            new DialogBox(ref employee).ShowDialog();
@@ -26,7 +26,6 @@ namespace Nova_Medical_Center.Scripts
             MessageBox.Show(employee.First_Name + " " + employee.Last_Name + " " + employee.Position);
             new PasswordDialogBox(ref employee).ShowDialog();
             Data.Data.employees[employee.Position  + "s"][i] = employee;
-            Scripts.Events.OnChange?.Invoke();
             return value;
         }
         public static void ShowQuestionDialog(ref int i)

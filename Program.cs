@@ -20,7 +20,7 @@ namespace Nova_Medical_Center
             Events.OnChange += CentralControler.SaveChanges;
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new HomePage());
+            Application.Run(new LoginPage());
         }
     }
 }

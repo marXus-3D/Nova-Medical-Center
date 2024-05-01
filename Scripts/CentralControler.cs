@@ -44,7 +44,7 @@ namespace Nova_Medical_Center.Scripts
                 break;
             }
 
-            Scripts.Events.OnChange?.Invoke();
+            Events.OnChange?.Invoke();
         }
 
         private async static Task<Room> CheckRooms(Patient patient)
@@ -189,9 +189,12 @@ namespace Nova_Medical_Center.Scripts
         {
             await Task.Run(() =>
             {
-                Patient.SerializePatients(Data.Data.patients);
-                Employee.SerializeEmployees(Data.Data.employees);
-                Room.SerializeRooms(Data.Data.rooms);
+                if (Data.Data.patients != null)
+                    Patient.SerializePatients(Data.Data.patients);
+                if (Data.Data.employees != null)
+                    Employee.SerializeEmployees(Data.Data.employees);
+                if(Data.Data.rooms != null)
+                    Room.SerializeRooms(Data.Data.rooms);
             });
         }
     }

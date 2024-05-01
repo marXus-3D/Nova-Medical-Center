@@ -39,7 +39,10 @@ namespace Nova_Medical_Center
                 {
                     if (emp.Id == empBox.SelectedItem.ToString()+'-'+usernameField.Text)
                     {
-                        if (emp.Password.Equals(Employee.HashPassword(Employee.HashPassword(passwordField.Text))))
+                        MessageBox.Show(emp.Password);
+                        MessageBox.Show(Employee.HashPassword(passwordField.Text));
+                        MessageBox.Show(Employee.HashPassword(Employee.HashPassword(passwordField.Text)));
+                        if (emp.Password.Equals(Employee.HashPassword(passwordField.Text)))
                         {
                             Data.Data.currentUser = emp;
                             this.Hide();
