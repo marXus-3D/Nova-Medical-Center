@@ -29,20 +29,8 @@ namespace Nova_Medical_Center.Views
         {
             DataGridViewRow selectedRow = doctorGridView.SelectedRows[0];
             int selectedRowIndex = doctorGridView.Rows.IndexOf(selectedRow);
-            var emp = new Employee() 
-            { 
-                Id = selectedRow.Cells[0].Value.ToString(),
-                First_Name = selectedRow.Cells[1].Value.ToString(),
-                Last_Name = selectedRow.Cells[2].Value.ToString(),
-                Address = selectedRow.Cells[3].Value.ToString(),
-                City = selectedRow.Cells[4].Value.ToString(),
-                PhoneNumber = selectedRow.Cells[5].Value.ToString(),
-                Department = selectedRow.Cells[6].Value.ToString(),
-                Position = selectedRow.Cells[7].Value.ToString(),
-                Password = selectedRow.Cells[8].Value.ToString(),
-            };
-            MessageBox.Show(emp.ToString());
-            CustomDialog.ShowDialog(Data.Data.employees[emp.Position + "s"][selectedRowIndex], ref selectedRowIndex);
+
+            CustomDialog.ShowDialog(Data.Data.employees[selectedRow.Cells[10].Value.ToString() + "s"][selectedRowIndex], ref selectedRowIndex);
             updateBtn.Enabled = false;
             resetButton.Enabled = false;
         }
@@ -57,18 +45,6 @@ namespace Nova_Medical_Center.Views
         {
             DataGridViewRow selectedRow = doctorGridView.SelectedRows[0];
             int selectedRowIndex = doctorGridView.Rows.IndexOf(selectedRow);
-            var emp = new Employee()
-            {
-                Id = selectedRow.Cells[0].Value.ToString(),
-                First_Name = selectedRow.Cells[1].Value.ToString(),
-                Last_Name = selectedRow.Cells[2].Value.ToString(),
-                Address = selectedRow.Cells[3].Value.ToString(),
-                City = selectedRow.Cells[4].Value.ToString(),
-                PhoneNumber = selectedRow.Cells[5].Value.ToString(),
-                Department = selectedRow.Cells[6].Value.ToString(),
-                Position = selectedRow.Cells[7].Value.ToString(),
-                Password = selectedRow.Cells[8].Value.ToString(),
-            };
 
             CustomDialog.ShowPasswordDialog(Data.Data.employees["Nurses"][selectedRowIndex], ref selectedRowIndex);
 

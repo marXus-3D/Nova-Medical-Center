@@ -1,14 +1,8 @@
-﻿using FontAwesome.Sharp;
-using Newtonsoft.Json;
-using Nova_Medical_Center.Data;
+﻿using Newtonsoft.Json;
 using Nova_Medical_Center.Models;
 using Nova_Medical_Center.Scripts;
-using Nova_Medical_Center.Views.Controls;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -48,6 +42,7 @@ namespace Nova_Medical_Center.Views
                 MedicalHistory = medicalConditions,
             });
             CentralControler.AdmitPatient(Data.Data.patients.Count-1);
+            Scripts.Events.OnChange?.Invoke();
         }
 
         private void historyBtn_Click(object sender, EventArgs e)

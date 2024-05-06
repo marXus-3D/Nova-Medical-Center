@@ -43,6 +43,8 @@ namespace Nova_Medical_Center.Scripts
                     Data.Data.SemiCriticalQueue.Enqueue(patient);
                 break;
             }
+
+            Events.OnChange?.Invoke();
         }
 
         private async static Task<Room> CheckRooms(Patient patient)
@@ -140,6 +142,7 @@ namespace Nova_Medical_Center.Scripts
                     Data.Data.patients.Add(patient);
                 }
             }
+            Scripts.Events.OnChange?.Invoke();
         }
 
         public static void InsertionSort<T>(List<T> list, Func<T, string> getProperty) where T : class
@@ -179,6 +182,19 @@ namespace Nova_Medical_Center.Scripts
                 }
 
                 return res;
+            });
+        }
+
+        public static async void SaveChanges() 
+        {
+            await Task.Run(() =>
+            {
+                if (Data.Data.patients != null)
+                    Patient.SerializePatients(Data.Data.patients);
+                if (Data.Data.employees != null)
+                    Employee.SerializeEmployees(Data.Data.employees);
+                if(Data.Data.rooms != null)
+                    Room.SerializeRooms(Data.Data.rooms);
             });
         }
     }

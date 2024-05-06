@@ -34,6 +34,7 @@ namespace Nova_Medical_Center.Views
                 {
                     rmvBtn.Enabled = false;
                     Data.Data.employees["Doctors"].RemoveAt(selectedRowIndex);
+                    Scripts.Events.OnChange?.Invoke();
                     MessageBox.Show("Successfully removed employee");
                 }
         }

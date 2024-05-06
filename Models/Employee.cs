@@ -1,10 +1,12 @@
 ﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using Nova_Medical_Center.Scripts;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Security.Cryptography;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 
@@ -30,7 +32,10 @@ namespace Nova_Medical_Center.Models
             get { return password; }
             set
             {
-                password = HashPassword(value);
+                if(value.Length == 44)
+                    password = value;
+                else
+                    password = HashPassword(value);
             }
         }
 

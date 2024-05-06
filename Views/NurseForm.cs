@@ -1,4 +1,5 @@
 ﻿using FontAwesome.Sharp;
+using Nova_Medical_Center.Views.Static;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -19,7 +20,10 @@ namespace Nova_Medical_Center.Views
         {
             InitializeComponent();
             current = homeBtn;
-            OpenChildForm(new NurseHomeForm());
+            if (Data.Data.currentUser.Position.Equals("Front Desk"))
+                OpenChildForm(new SecurityForm());
+            else
+                OpenChildForm(new NurseHomeForm());
         }
 
         private void DoctorForm_Load(object sender, EventArgs e)
@@ -30,25 +34,37 @@ namespace Nova_Medical_Center.Views
         private void homeBtn_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
-            OpenChildForm(new NurseHomeForm());
+            if (Data.Data.currentUser.Position.Equals("Front Desk"))
+                OpenChildForm(new SecurityForm());
+            else
+                OpenChildForm(new NurseHomeForm());
         }
 
         private void updateBtn_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
-            OpenChildForm(new NurseUpdateForm());
+            if (Data.Data.currentUser.Position.Equals("Front Desk"))
+                OpenChildForm(new SecurityForm());
+            else
+                OpenChildForm(new NurseUpdateForm());
         }
 
         private void addBtn_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
-            OpenChildForm(new NurseAddForm());
+            if (Data.Data.currentUser.Position.Equals("Front Desk"))
+                OpenChildForm(new SecurityForm());
+            else
+                OpenChildForm(new NurseAddForm());
         }
 
         private void deleteBtn_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
-            OpenChildForm(new NurseDeleteForm());
+            if (Data.Data.currentUser.Position.Equals("Front Desk"))
+                OpenChildForm(new SecurityForm());
+            else
+                OpenChildForm(new NurseDeleteForm());
         }
 
         private void ActivateButton(object sender)

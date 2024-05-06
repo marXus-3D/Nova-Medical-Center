@@ -204,7 +204,10 @@ namespace Nova_Medical_Center
 
         private void logoutBtn_Click(object sender, EventArgs e)
         {
-
+            Data.Data.currentUser = null;
+            Scripts.Events.OnChange?.Invoke();
+            this.Close();
+            LoginPage.LogOut?.Invoke();
         }
 
         private void settingTransition_Tick(object sender, EventArgs e)

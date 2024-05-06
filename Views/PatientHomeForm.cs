@@ -41,6 +41,7 @@ namespace Nova_Medical_Center.Views
         {
             CustomDialog.ShowQuestionDialog(ref selectedIdx);
             CentralControler.AdmitPatient(selectedIdx);
+            Scripts.Events.OnChange?.Invoke();
         }
 
         private void doctorGridView_CellClick(object sender, DataGridViewCellEventArgs e)

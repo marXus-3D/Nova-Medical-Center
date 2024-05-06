@@ -39,6 +39,7 @@ namespace Nova_Medical_Center.Views.Static
             Data.Data.patients[idx].RoomOccupied = null;
 
             Scripts.Events.OnDischarge?.Invoke(roomIdx);
+            Scripts.Events.OnChange?.Invoke();
             new PrescriptionForm(ref idx, medicationDate.Value, ref ml).ShowDialog();
             this.Close();
         }

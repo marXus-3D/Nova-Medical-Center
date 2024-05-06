@@ -141,7 +141,6 @@
             this.passwordField.MouseState = MaterialSkin.MouseState.OUT;
             this.passwordField.Multiline = false;
             this.passwordField.Name = "passwordField";
-            this.passwordField.Password = true;
             this.passwordField.Size = new System.Drawing.Size(327, 36);
             this.passwordField.TabIndex = 3;
             this.passwordField.Text = "";
