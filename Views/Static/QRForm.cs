@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using Nova_Medical_Center.Scripts;
 using QRCoder;
 using System;
 using System.Collections.Generic;
@@ -19,7 +20,7 @@ namespace Nova_Medical_Center.Views.Static
         {
             InitializeComponent();
             QRCodeGenerator qr = new QRCodeGenerator();
-            QRCodeData data = qr.CreateQrCode(MinifyJson(JsonConvert.SerializeObject(Data.Data.patients[idx])), QRCodeGenerator.ECCLevel.L);
+            QRCodeData data = qr.CreateQrCode(CentralControler.MinifyJson(JsonConvert.SerializeObject(Data.Data.patients[idx])), QRCodeGenerator.ECCLevel.M);
             QRCode code = new QRCode(data);
             qrBox.Image = code.GetGraphic(10);
             qrBox.Visible = true;
@@ -28,17 +29,6 @@ namespace Nova_Medical_Center.Views.Static
         private void buttonExit_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        public static string MinifyJson(string json)
-        {
-            // Regex patterns for whitespace and comments
-            const string whitespacePattern = @"\s+";
-            const string commentPattern = @"(?s://.*)|(?s:/\*.*?\*/)";
-
-            // Replace whitespace and comments with empty string
-            return Regex.Replace(Regex.Replace(json, whitespacePattern, ""), commentPattern, "", RegexOptions.Singleline);
-
         }
     }
 }

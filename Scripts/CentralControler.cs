@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 
@@ -189,13 +190,27 @@ namespace Nova_Medical_Center.Scripts
         {
             await Task.Run(() =>
             {
-                if (Data.Data.patients != null)
+                if (Data.Data.patients != null) 
+                {
+                    Data.Data.patients.OrderBy((x) => x.Id);
                     Patient.SerializePatients(Data.Data.patients);
+                }
                 if (Data.Data.employees != null)
                     Employee.SerializeEmployees(Data.Data.employees);
                 if(Data.Data.rooms != null)
                     Room.SerializeRooms(Data.Data.rooms);
             });
+        }
+
+        public static string MinifyJson(string json)
+        {
+            // Regex patterns for whitespace and comments
+            const string whitespacePattern = @"\s+";
+            const string commentPattern = @"(?s://.*)|(?s:/\*.*?\*/)";
+
+            // Replace whitespace and comments with empty string
+            return Regex.Replace(Regex.Replace(json, whitespacePattern, ""), commentPattern, "", RegexOptions.Singleline);
+
         }
     }
 }

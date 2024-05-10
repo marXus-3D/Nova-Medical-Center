@@ -9,7 +9,7 @@ namespace Nova_Medical_Center.Scripts
 {
     internal class Generator
     {
-        static Random random = new Random(DateTime.Now.Millisecond);
+        static readonly Random random = new Random(DateTime.Now.Millisecond);
         private static int lastId = 10000;
         const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         public static string GeneratePatientID() 
